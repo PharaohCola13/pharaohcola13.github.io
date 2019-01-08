@@ -144,6 +144,7 @@
 }
 .ai-orcid:before {
   content: "\e840";
+  color: #a6ce39;
 }
 .ai-orcid-square:before {
   content: "\e841";
