@@ -144,7 +144,6 @@
 }
 .ai-orcid:before {
   content: "\e840";
-  color: #a6ce39;
 }
 .ai-orcid-square:before {
   content: "\e841";
@@ -250,7 +249,6 @@
   left: -1.85714286em;
 }
 .ai-border {
-  padding: .2em .25em .15em;
   border: solid 0.08em #eeeeee;
   border-radius: .1em;
 }
@@ -310,7 +308,6 @@
   left: -1.85714286em;
 }
 .fa-border {
-  padding: .2em .25em .15em;
   border: solid 0.08em #eeeeee;
   border-radius: .1em;
 }
