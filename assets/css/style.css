@@ -98,11 +98,11 @@ a:focus{
 	outline-offset:-2px
 }
 a i {
-    background-color: #000010;
-    border-radius: 1000px;
+	background-color: #000010;
+	border-radius: 1000px;
 }
 a i:hover{
-    background-color: #000010;
+	background-color: #000010;
 	color: #00eeee;
 }
 .dropdown{
@@ -116,10 +116,10 @@ a i:hover{
   background-color: #000010;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .dropdown .dropbtn:hover,.dropdown .dropbtn:focus {
-    color: #00eeee
+	color: #00eeee
 }
 .dropdown-content {
   display: none;
@@ -143,7 +143,7 @@ a i:hover{
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background: transparent;
-  	color: #00eeee;
+	color: #00eeee;
 
 }
 .dropdown:hover .dropdown-content {

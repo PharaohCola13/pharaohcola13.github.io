@@ -22,6 +22,12 @@ html{
 		font-size:18px
 		}
 }
+li a.home {
+	color: #fff
+}
+li a.home:hover{
+	color: #c48ef9
+}
 body{
 	margin:0
 	}
@@ -49,19 +55,16 @@ p a{
 	text-decoration: none;
    }
 p a:hover{
-    color: #00eeee;
+	color: #00eeee;
 }
 h1 a, h1 a i{
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 h1 a:hover, h1 a:hover i{
-    color: #00eeee;
+	color: #00eeee;
 
 }
-a:hover,a:active{
-	outline:0
-	}
 sub,sup{
 	position:relative;
 	font-size:75%;
@@ -194,9 +197,6 @@ blockquote cite{
 blockquote cite:before{
 	content:"\2014";
 	padding-right:5px
-	}
-a:hover,a:active{
-	outline:0
 	}
 tt,code,kbd,samp,pre{
 	font-family:Monaco,Consolas,"Lucida Console",monospace
@@ -378,30 +378,7 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
 		display:block
 	}
 }
-.btn,#goog-wm-sb{
-	display:inline-block;
-	margin-bottom:0.25em;
-	padding:0.5em 1em;
-	color:#fff !important;
-	font-family:-apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
-	font-size:.75em;
-	font-weight:bold;
-	text-align:center;
-	text-decoration:none;
-	background-color:#7a8288;
-	border:0 !important;
-	border-radius:4px;
-	cursor:pointer
-}
-.btn:hover,#goog-wm-sb:hover{
-	background-color:#333
-}
-.btn .icon,#goog-wm-sb .icon{
-	margin-right:0.5em
-}
-.btn .icon+.hidden,#goog-wm-sb .icon+.hidden{
-	margin-left:-0.5em
-}
+
 .btn--block{
 	display:block;
 	width:100%
@@ -593,7 +570,7 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
 	height:4px;
 	background:#bdc1c4;
 	width: 100%;
-    -webkit-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
 	transition:all 0.2s ease-in-out;
 	-webkit-transform:scaleX(0);
 	-ms-transform:scaleX(0);
@@ -689,7 +666,7 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
 	-webkit-animation-delay:0.45s;
 	animation-delay:0.45s;
 	background-color:#f2f3f3;
-	border-top:1px solid #bdc1c4
+	border-top:1px solid #bdc1c4;
 	margin: 0px;
 	font: 14px/1.47 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: rgba(255, 255, 255, 0.7);
@@ -766,31 +743,7 @@ div.highlighter-rouge,figure.highlight{
 	background-color:#fafafa;
 	box-shadow:0 1px 1px rgba(0,0,0,0.125)
 }
-div.highlighter-rouge:before,figure.highlight:before{
-	position:absolute;
-	top:0;
-	right:0;
-	padding:0.5em;
-	background-color:#f2f3f3;
-	content:"\f121";
-	font-family:"fontawesome" !important;
-	font-size:.75em;
-	line-height:1;
-	text-transform:none;
-	speak:none
-}
-div.highlighter-rouge .highlight,figure.highlight .highlight{
-	margin:0;
-	font-family:Monaco,Consolas,"Lucida Console",monospace;
-	font-size:.6875em;
-	line-height:1.8
-}
-.highlight table td{
-	padding:5px
-}
-.highlight table pre{
-	margin:0
-}
+
 #main{
 	max-width:925px;
 	margin-left:auto;
@@ -1068,5 +1021,5 @@ div.highlighter-rouge .highlight,figure.highlight .highlight{
 	color: #ffe500;
 }
 .fa-stack-overflow:before{
-    content:""
+	content:""
 }

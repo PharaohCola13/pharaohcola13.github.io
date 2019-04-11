@@ -39,7 +39,8 @@
           <nav id="site-nav" class="greedy-nav">
             <button><div class="navicon"></div></button>
             <ul class="visible-links">
-              <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="home"><img src="assets/images/home-solid.svg"/> Home</a></li>
+                <li class="disable masthead__menu-item"><a href="about.html">About</a></li>
                 <li class="active masthead__menu-item"><a href="portfolio.html">Current Projects</a></li>
                 <li class="disable masthead__menu-item"><a href="cv.html">Curriculum Vitae</a></li>
             </ul>
@@ -74,7 +75,7 @@
                     The applications include a more interactive approach to visual and computational
                     modeling
             </article>
-            <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+            <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork", style="padding-top: 2em">
                 <h1 class="archive__item-title" itemprop="headline">
                     <a href="https://pharaohcola13.github.io/SCARF-Modeling/" rel="permalink" data-toggle="tooltip"
                        title="Riding the Radio Waves"><i  class="fa fa-fw fa-github">
@@ -82,7 +83,10 @@
                 </h1>
                 <p class="archive__item-excerpt" itemprop="description"></p>
                     A research endeavor with the purpose of developing a generalized model
-                    for radio propagation networks. The eventual goal is to have the capabilities
+                    for radio propagation networks. The eventual goal is to have the capabilities to
+                    model networks on other-worldly surfaces such as Mars and Titan. The final product is
+                    expected to be a Python Tkinter application that can import and export various types of
+                    astrophysical and atmospheric data for analysis.
 
                     <br />
             </article>
