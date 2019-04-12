@@ -97,58 +97,19 @@ a:focus{
 	outline:5px auto #f89406;
 	outline-offset:-2px
 }
-a i {
+a {
 	background-color: #000010;
 	border-radius: 1000px;
+	color: white;
+	text-decoration: none;
 }
-a i:hover{
+a:hover{
 	background-color: #000010;
 	color: #00eeee;
-}
-.dropdown{
-	display: inline-block;
+	text-decoration: none;
 
 }
-.dropdown .dropbtn {
-  font-size: 2em;
-  border-color: white;
-  color: white;
-  background-color: #000010;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-	border-radius: 10px;
-}
-.dropdown .dropbtn:hover,.dropdown .dropbtn:focus {
-	color: #00eeee
-}
-.dropdown-content {
-  display: none;
-  border-color: white;
-  position: absolute;
-  background-color: #000010;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background: transparent;
-	color: #00eeee;
-
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 p {
   margin: 0 0 30px 0;
   font-size: 24px;
