@@ -98,13 +98,13 @@ a:focus{
 	outline-offset:-2px
 }
 a {
-	background-color: #000010;
+	background-color: transparent;
 	border-radius: 1000px;
 	color: white;
 	text-decoration: none;
 }
 a:hover{
-	background-color: #000010;
+	background-color: transparent;
 	color: #00eeee;
 	text-decoration: none;
 

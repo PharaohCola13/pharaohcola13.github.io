@@ -893,6 +893,7 @@ article .article-metadata {
 	margin-bottom: 4px;
 }
 
+
 .dark .author-card .card-text {
 	color: rgba(255, 255, 255, 0.76);
 }
@@ -1687,6 +1688,10 @@ body.dark, .dark .docs-toc-link, .dark .docs-sidebar .nav > li:not(.active) > a,
 	color: #29a9ff;
 	border-bottom: solid 1px transparent;
 }
+.dark .card h4 a:hover {
+	color: #00eeee;
+}
+
 
 .dark .card .card-image.hover-overlay::before {
 	background: #666;
@@ -1730,4 +1735,17 @@ body.dark, .dark .docs-toc-link, .dark .docs-sidebar .nav > li:not(.active) > a,
 
 .dark .btn-primary, .dark .btn.btn-primary.active {
 	color: initial;
+}
+video {
+   float: right;
+	width:100px;
+	border-radius: 500px;
+	border: 10px solid #252525;
+}
+video.portrait {
+    float: right;
+	border-radius: 50%;
+	border: 1px outset #fff;
+	width: 100px;
+	height: 100px
 }
