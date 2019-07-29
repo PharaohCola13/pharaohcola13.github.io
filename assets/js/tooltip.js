@@ -58,7 +58,7 @@ tippy("#git", {
     interactive: true,
     placement: 'bottom',
     theme: 'ocean',
-    content: "See some code"
+    content: "Github",
 })
 tippy("#orcid", {
     animation: 'scale',
@@ -67,5 +67,15 @@ tippy("#orcid", {
     interactive: true,
     placement: 'bottom',
     theme: 'ocean',
-    content: "Look, more stuff"
+    content: "ORCiD"
+})
+
+tippy("#twit", {
+    animation: 'scale',
+    duration: 1000,
+    arrow: true,
+    interactive: true,
+    placement: 'bottom',
+    theme: 'ocean',
+    content: "Twitter Profile"
 })
