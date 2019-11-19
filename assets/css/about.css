@@ -1012,13 +1012,12 @@ article .article-metadata {
 }
 
 .project-card {
-	position: relative;
-	width: calc(33.3% - 2*20px)
+	width: 100%
 }
 
 @media screen and (max-width: 1199px) {
 	.project-card {
-		width:calc(50% - 20px)
+		width:100%;
 	}
 }
 
@@ -1523,4 +1522,3 @@ body.dark, .dark .docs-toc-link, .dark .docs-sidebar .nav > li:not(.active) > a,
 .dark .btn-primary, .dark .btn.btn-primary.active {
 	color: initial;
 }
-
