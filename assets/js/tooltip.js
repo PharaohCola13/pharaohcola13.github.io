@@ -7,7 +7,10 @@ tippy('#skill-python', {
 	theme: 'ocean',
 	content: '<strong>Proficiencies:</strong><br />' +
 	'<ul><li>GUI Development</li>' +
-	'<li>Data Analysis</li></ul>'
+	'<li>Data Analysis</li>' +
+	'<li>Machine Learning</li>' +
+	'<li>Quantum Computing</li></ul>'
+
 })
 
 tippy('#skill-r', {
