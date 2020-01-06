@@ -1644,7 +1644,6 @@ article .article-metadata {
 	.navbar-brand {
 		max-width: 100px;
 		margin: 0 auto;
-		position: absolute;
 		left: 0;
 		right: 0;
 		display: inline-block
@@ -1987,7 +1986,7 @@ a.badge:focus, a.badge:hover {
 	.navbar-brand, .navbar-nav li.nav-item a.nav-link {
 		height: inherit;
 		line-height: 40px;
-		padding-top: 5px;
+		padding-top: 0px;
 		padding-bottom: 5px;
 	}
 
