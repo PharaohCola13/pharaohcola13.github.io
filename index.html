@@ -15,7 +15,7 @@
 	<meta property="og:url" content="about.html">
 
 	<meta property="og:description" content="About me">
-	<link rel="icon" href="./assets/images/icon.png" type="image/png">
+	<link rel="icon" href="assets/img/icon.png" type="image/png">
 	<!-- end SEO -->
 	<!-- http://t.co/dKP3o1e -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
@@ -32,8 +32,13 @@
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 	</script>
+	<script>
+        if (document.location.protocol != "https:") {
+            document.location = document.URL.replace(/^http:/i, "https:");
+        }
+	</script>
 
-	<!-- For all browsers -->
+	<!--&lt;!&ndash; For all browsers &ndash;&gt;-->
 	<link rel="stylesheet" href="./assets/css/about.css">
 	<link rel="stylesheet" href="./assets/css/tooltip.css">
 </head>
@@ -68,11 +73,6 @@
                         <span>Conferences</span>
                     </a>
                 </li>
-                <!--<li class="nav-item">-->
-                    <!--<a class="nav-link " href="https://themes.gohugo.io//theme/academic/courses/">-->
-                        <!--<span>Courses</span>-->
-                    <!--</a>-->
-                <!--</li>-->
             </ul>
         </div>
         <!--<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">-->
@@ -91,7 +91,7 @@
 			<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
 				<div class="col-12 col-lg-4">
 					<div id="profile">
-						<img class="portrait" src="./assets/images/profile.jpg" itemprop="image" alt="Avatar">
+						<img class="portrait" src="assets/img/profile.jpg" itemprop="image" alt="Avatar">
 						<div class="portrait-title">
 							<h2 itemprop="name">Spencer Riley</h2>
 							<h3 itemprop="jobTitle">Physics Undergraduate</h3>
@@ -291,6 +291,9 @@
 										direct or indirect impact of the overall restaurant experience from the perspective of the customer.
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -322,7 +325,7 @@
 							<div class="card">
 								<div>
 									<video class="portrait" style="float: left" autoplay loop>
-										<source src="./assets/images/Rings.mp4" type="video/mp4">
+										<source src="assets/img/Rings.mp4" type="video/mp4">
 									</video>
 								</div>
 								<div class="card-text">
@@ -375,6 +378,31 @@
 						<div class="article-metadata">
 							<div>
 								<span>
+									<a href="https://physicsgoddess1972.github.io/">V. Kelsey</a>
+								</span>
+								,
+								<span>
+								<a href="#">S. Riley</a>
+								</span>
+							</div>
+							<span class="article-date">January 2020</span>
+							<span class="middot-divider"></span>
+							<span class="pub-publication">
+								At <em>American Meteorological Society Centennial</em>
+							</span>
+						</div>
+						<img src="assets/img/ams100.png" class="article-banner" alt="">
+						<h3 class="article-subtitle mb-1 mt-3">
+							Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings
+						</h3>
+						<p style="font-size: 13px; line-height: 1.5">
+							Precipitable water is primarily measured using radiosondes, ground-based global positioning systems (GPS), sun photometers, and microwave radiometry (MWRI). This limits the number of precipitable water measurement sites, which affects forecast accuracy in regards to storm formation, strength, and the potential for precipitation. Socorro, NM is among the sites that do not have the capability to measure precipitable water. Our research builds upon a previous study which determined an exponential relationship between infrared clear sky temperature measurements and precipitable water over the Gulf Coast of Texas. We are analyzing this relationship for the climate zone found in Socorro, NM. Daily ground and clear sky temperature measurements are being taken with low-cost infrared thermometers. Radiosonde precipitable water measurements from Albuquerque and Santa Teresa NWS monitoring sites are input into our dataset and analysed via our newly developed computational tool; which shows that there is a correlation ($R^2 = 0.707$) between clear sky temperature and precipitable water. Our research demonstrates the capability to measure and analyze precipitable water with low cost instrumentation in higher altitude arid climate zones similar to those found in the desert Southwest. We are building a platform to expand our tools and methods so that they can be used to determine and analyse similar correlations over a greater variety of climate zones.
+						</p>
+					</div>
+					<div class="card-simple">
+						<div class="article-metadata">
+							<div>
+								<span>
 									<a href=".">S. Riley</a>
 								</span>
 								,
@@ -388,37 +416,12 @@
 								At <em>PhysCon 2019</em>
 							</span>
 						</div>
-							<img src="./assets/images/physcon2019.png" class="article-banner" alt="">
+							<img src="assets/img/physcon2019.png" class="article-banner" alt="">
 						<h3 class="article-subtitle mb-1 mt-3">
 						   Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings: Data Analysis
 						</h3>
 						<p style="font-size: 13px; line-height: 1.5">
 							Precipitable water can be defined as the total amount of water vapor that exists in a vertical column of air, traditionally measured via radiosondes. Global Positioning System (GPS) networks and microwave-infrared radiometers can also be used to measure precipitable water by analyzing signal delay; these methods are used by NOAA. Precipitable water measurements can be used to forecast extreme weather events and the potential for precipitation. Based on a previous that analyzed the relationship between precipitable water and zenith sky temperature using infrared thermometers, we have developed a rigorous computational utility to study this same correlation for the Socorro, NM climate system. This research highlights the impact of using low-cost instrumentation to accurately forecast precipitation in regions where the data is not available. After thirty-five weeks, the results of our analysis show an exponential correlation ($R^2 = 0.707$) between precipitable water and clear sky temperature, similar to the trends found in previous studies. However, as we continue to collect data, the intrinsic properties of the correlation are continuously evolving. With the availability of our computational tool, we aim to widen our data to include a diverse set of climate systems to further study the relationship between clear sky temperature and precipitable water while also continuing to collect data for the Socorro, NM area.
-						</p>
-					</div>
-					<div class="card-simple">
-						<div class="article-metadata">
-							<div>
-								<span>
-									<a href="https://physicsgoddess1972.github.io/">V. Kelsey</a>
-								</span>
-								,
-								<span>
-								<a href="#">S. Riley</a>
-								</span>
-							</div>
-							<span class="article-date">January 2020</span>
-							<span class="middot-divider"></span>
-							<span class="pub-publication">
-								At <em>AMS 100</em>
-							</span>
-						</div>
-							<img src="./assets/images/ames100.png" class="article-banner" alt="">
-						<h3 class="article-subtitle mb-1 mt-3">
-							Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings
-						</h3>
-						<p style="font-size: 13px; line-height: 1.5">
-							Precipitable water is primarily measured using radiosondes, ground-based global positioning systems (GPS), sun photometers, and microwave radiometry (MWRI). This limits the number of precipitable water measurement sites, which affects forecast accuracy in regards to storm formation, strength, and the potential for precipitation. Socorro, NM is among the sites that do not have the capability to measure precipitable water. Our research builds upon a previous study which determined an exponential relationship between infrared clear sky temperature measurements and precipitable water over the Gulf Coast of Texas. We are analyzing this relationship for the climate zone found in Socorro, NM. Daily ground and clear sky temperature measurements are being taken with low-cost infrared thermometers. Radiosonde precipitable water measurements from Albuquerque and Santa Teresa NWS monitoring sites are input into our dataset and analysed via our newly developed computational tool; which shows that there is a correlation ($R^2 = 0.707$) between clear sky temperature and precipitable water. Our research demonstrates the capability to measure and analyze precipitable water with low cost instrumentation in higher altitude arid climate zones similar to those found in the desert Southwest. We are building a platform to expand our tools and methods so that they can be used to determine and analyse similar correlations over a greater variety of climate zones.
 						</p>
 					</div>
 				</div>
