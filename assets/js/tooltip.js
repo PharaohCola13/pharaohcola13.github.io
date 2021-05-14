@@ -8,8 +8,7 @@ tippy('#skill-python', {
 	content: '<strong>Proficiencies:</strong><br />' +
 	'<ul><li>GUI Development</li>' +
 	'<li>Data Analysis</li>' +
-	'<li>Machine Learning</li>' +
-	'<li>Quantum Computing</li></ul>'
+	'<li>Machine Learning</li></ul>'
 
 })
 

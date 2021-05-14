@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
 	<link rel="stylesheet" href="https//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
-
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     <meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,6 +68,11 @@
                         <span>Projects</span>
                     </a>
                 </li>
+<!--				<li class="nav-item">-->
+<!--                    <a class="nav-link " href="#papers" data-target="#papers">-->
+<!--                        <span>Published Papers</span>-->
+<!--                    </a>-->
+<!--				</li>-->
                 <li class="nav-item">
                     <a class="nav-link " href="#conferences" data-target="#conferences">
                         <span>Conferences</span>
@@ -75,13 +80,6 @@
                 </li>
             </ul>
         </div>
-        <!--<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link js-dark-toggle" href="#">-->
-                    <!--<i class="fas fa-moon" aria-hidden="true"></i>-->
-                <!--</a>-->
-            <!--</li>-->
-        <!--</ul>-->
     </div>
 </nav>
 <span class="js-widget-page d-none"></span>
@@ -127,6 +125,12 @@
 								</a>
 							</li>
 						</ul>
+<!--						<br>-->
+<!--						<a itemprop="sameAs" target="_blank" href="./assets/pdf/resume.pdf" rel="noopener" style="font-size: 30px">-->
+<!--							<p>Resume-->
+<!--							<i class="material-icons">summarize</i>-->
+<!--							</p>-->
+<!--						</a>-->
 					</div>
 				</div>
 				<div class="col-12 col-lg-8" itemprop="description">
@@ -200,8 +204,8 @@
 	<section id="experience" class="home-section wg-experience">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-4 section-heading">
-					<h1>Work Chronology</h1>
+				<div class="col-xs-12 col-md-4 section-heading">
+					<h1>Work History</h1>
 					<hr />
 				</div>
 				<div class="col-12 col-lg-8">
@@ -329,7 +333,7 @@
 									</video>
 								</div>
 								<div class="card-text">
-									<h4>
+									<h4 id="geoexpanse">
 										<a href="https://pharaohcola13.github.io/GeoExpanse/" target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> GeoExpanse</a>
 									</h4>
 									<div class="card-desription">
@@ -347,31 +351,79 @@
 								<h4>
 									<a href="https://physicsgoddess1972.github.io/Precipitable-Water-Model">
 										<i class="fab fa-github med-icon"></i>
-										Precipitable Water Model
+										Precipitable-Water Model Analysis Tool
 									</a>
 								</h4>
 								<div class="card-description">
 									<p>
 										Collaborative project with <a href="https://physicsgoddess1972.github.io">Vicki Kelsey</a>
 										measuring and analyzing temperature and precipitable water.
+										<h4>Side Projects</h4>
+										<ol>
+											<li style="font-size: 17px"><a href="https://pw-ml-dash.uc.r.appspot.com/">Machine Learning Dashboard</a></li>
+											<li style="font-size: 17px"><a href="https://pw-data-dash.uc.r.appspot.com/">Data Dashboard</a></li>
+											<li style="font-size: 17px"><a href="https://precipitable-water.tech/machine_learning.html">Tensorflow Support Vector Machine</a></li>
+										</ol>
 									</p>
 									<p>
 										This project was presented at PhysCon 2019 and AMES 100.
 									</p>
-									<a class="badge-light">In Progress</a>
+									<a class="badge-light">v2.0 is available</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 	</section>
-	<section id="conferences" class="home-section wg-featured   ">
+<!--	<section id="papers" class="home-section wg-featured">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-xs-12 col-md-4 section-heading">-->
+<!--					<h1>Published Papers</h1>-->
+<!--					<hr />-->
+<!--				</div>-->
+<!--				<div class="col-12 col-lg-8">-->
+<!--					<div class="col-12 col-lg-8">-->
+<!--					<div class="card-simple">-->
+<!--						<div class="article-metadata">-->
+<!--							<div>-->
+<!--								<span>-->
+<!--									<a href="https://physicsgoddess1972.github.io/">V. Kelsey</a>-->
+<!--								</span>-->
+<!--								,-->
+<!--								<span>-->
+<!--								<a href="#">S. Riley</a>-->
+<!--								</span>-->
+<!--								,-->
+<!--								<span>-->
+<!--									K. Minschwaner-->
+<!--								</span>-->
+<!--							</div>-->
+<!--							<span class="article-date">Under Review</span>-->
+<!--							<span class="middot-divider"></span>-->
+<!--							<span class="pub-publication">-->
+<!--								<em>Atmospheric Measurement Techniques</em>-->
+<!--							</span>-->
+<!--						</div>-->
+<!--						<h4>-->
+<!--							Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations-->
+<!--						</h4>-->
+<!--						<a class="badge-light" href="">PDF</a>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+	<section id="conferences" class="home-section wg-featured">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-4 section-heading">
+				<div class="col-xs-12 col-md-4 section-heading">
 					<h1>Conferences</h1>
+					<hr />
 				</div>
 				<div class="col-12 col-lg-8">
 					<div class="card-simple">
@@ -428,7 +480,6 @@
 			</div>
 		</div>
 	</section>
-
 </div>
 <script src="https://unpkg.com/popper.js@1"></script>
 <script src="https://unpkg.com/tippy.js@4"></script>
