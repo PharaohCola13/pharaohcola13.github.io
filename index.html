@@ -29,6 +29,15 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 	</script>
@@ -37,10 +46,8 @@
             document.location = document.URL.replace(/^http:/i, "https:");
         }
 	</script>
-
-	<!--&lt;!&ndash; For all browsers &ndash;&gt;-->
+	<script src="./assets/js/content.js"></script>
 	<link rel="stylesheet" href="./assets/css/about.css">
-	<link rel="stylesheet" href="./assets/css/tooltip.css">
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
 <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
@@ -68,11 +75,11 @@
                         <span>Projects</span>
                     </a>
                 </li>
-<!--				<li class="nav-item">-->
-<!--                    <a class="nav-link " href="#papers" data-target="#papers">-->
-<!--                        <span>Published Papers</span>-->
-<!--                    </a>-->
-<!--				</li>-->
+				<li class="nav-item">
+                    <a class="nav-link " href="#papers" data-target="#papers">
+                        <span>Papers</span>
+                    </a>
+				</li>
                 <li class="nav-item">
                     <a class="nav-link " href="#conferences" data-target="#conferences">
                         <span>Conferences</span>
@@ -89,12 +96,12 @@
 			<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
 				<div class="col-12 col-lg-4">
 					<div id="profile">
-						<img class="portrait" src="assets/img/profile.jpg" itemprop="image" alt="Avatar">
+						<img class="portrait" id="profile-picture">
 						<div class="portrait-title">
-							<h2 itemprop="name">Spencer Riley</h2>
-							<h3 itemprop="jobTitle">Physics Undergraduate</h3>
+							<h2 id="name"></h2>
+							<h3 id="role"></h3>
 							<h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-								<span itemprop="name">New Mexico Institute of Mining and Technology</span>
+								<span id="place"></span>
 							</h3>
 						</div>
 						<link itemprop="url" href="">
@@ -125,34 +132,20 @@
 								</a>
 							</li>
 						</ul>
-<!--						<br>-->
-<!--						<a itemprop="sameAs" target="_blank" href="./assets/pdf/resume.pdf" rel="noopener" style="font-size: 30px">-->
-<!--							<p>Resume-->
-<!--							<i class="material-icons">summarize</i>-->
-<!--							</p>-->
-<!--						</a>-->
+						<a itemprop="sameAs" target="_blank" href="./assets/pdf/resume.pdf" rel="noopener" style="font-size: 30px">
+							<p>Resume
+							<i class="material-icons">summarize</i>
+							</p>
+						</a>
 					</div>
 				</div>
 				<div class="col-12 col-lg-8" itemprop="description">
-					<h1>Biography</h1>
-					<hr />
-					<p>
-						Spencer Riley is a student at the <a href="https://www.nmt.edu">New Mexico Institute of Mining and Technology</a>,
-						currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing
-						various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
-					</p>
-					<p>
-						His ambitions include studying stellar weather in star clusters.
-					</p>
+					<h1>Biography</h1><hr />
+					<p id="bio_description"></p>
 					<div class="row">
 						<div class="col-md-5">
 							<h3>Interests</h3>
-							<ul class="ul-interests">
-								<li>Stellar Astrophysics</li>
-								<li>Quantum Information</li>
-								<li>Differential Geometry</li>
-								<li>Data Analytics and Visualization</li>
-							</ul>
+							<ul class="ul-interests"><li id="interests"></li></ul>
 						</div>
 						<div class="col-md-7">
 							<h3>Education</h3>
@@ -160,10 +153,10 @@
 								<li>
 									<i class="fa-li fas fa-graduation-cap"></i>
 									<div class="description">
-										<p class="course">BSc in Physics. <br>
-											Focus in Astrophysics & Atmospheric Physics.
-											Minor in Mathematics. <br> 2022 <i>(Expected)</i>.</p>
-										<p class="institution">New Mexico Institute of Mining and Technology</p>
+										<p class="course">
+                                            <div id="edu-degree"></div><div id="edu-focus-minor"></div><div id="edu-date"></div>
+                                        </p>
+										<p class="institution" id="edu-place"></p>
 									</div>
 								</li>
 							</ul>
@@ -175,28 +168,9 @@
 	</section>
 	<section id="skills" class="home-section wg-featurette">
 		<div class="container">
-			<div class="row featurette">
+			<div class="row featurette" id="skill">
 				<div class="col-md-12 section-heading">
-					<h1>Skills</h1>
-					<hr />
-				</div>
-				<div class="col-12 col-sm-4">
-					<div class="featurette-icon">
-						<i class="fab fa-python" id="skill-python"></i>
-					</div>
-					<h3>Python</h3>
-				</div>
-				<div class="col-12 col-sm-4">
-					<div class="featurette-icon">
-						<i class="fab fa-r-project" id="skill-r"></i>
-					</div>
-					<h3>R</h3>
-				</div>
-				<div class="col-12 col-sm-4">
-					<div class="featurette-icon">
-						<i class="fas fa-keyboard"></i>
-					</div>
-					<h3>LaTeX</h3>
+					<h1>Skills</h1><hr />
 				</div>
 			</div>
 		</div>
@@ -205,100 +179,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 section-heading">
-					<h1>Work History</h1>
-					<hr />
+					<h1>Work History</h1><hr />
 				</div>
-				<div class="col-12 col-lg-8">
-					<div class="row experience">
-						<div class="col-auto text-center flex-column d-none d-sm-flex">
-							<div class="row h-50">
-								<div class="col ">&nbsp;</div>
-								<div class="col">&nbsp;</div>
-							</div>
-							<div class="m-2">
-								<span class="badge badge-pill border exp-now">&nbsp;</span>
-							</div>
-							<div class="row h-50">
-								<div class="col border-right">&nbsp;</div>
-								<div class="col">&nbsp;</div>
-							</div>
-						</div>
-						<div class="col py-2">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title exp-title text-muted mt-0 mb-1">Research Intern</h4>
-									<h4 class="card-title exp-company text-muted my-0">Institute of Complex Additive Systems Analysis</h4>
-									<div class="text-muted exp-meta">
-										5 Sept 2017 – Present
-										<span class="middot-divider"></span>
-										<span>New Mexico Tech</span>
-									</div>
-									<div class="card-text">TBA
-									</div></div></div></div></div>
-					<div class="row experience">
-						<div class="col-auto text-center flex-column d-none d-sm-flex">
-							<div class="row h-50">
-								<div class="col border-right">&nbsp;</div>
-								<div class="col">&nbsp;</div>
-							</div>
-							<div class="m-2">
-								<span class="badge badge-pill border exp-fill">&nbsp;</span>
-							</div>
-							<div class="row h-50">
-								<div class="col border-right ">&nbsp;</div>
-								<div class="col">&nbsp;</div>
-							</div>
-						</div>
-						<div class="col py-2">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title exp-title text-muted mt-0 mb-1">High School Work Study</h4>
-									<h4 class="card-title exp-company text-muted my-0">National Security Agency</h4>
-									<div class="text-muted exp-meta">
-										6 Sept 2016 – 16 Aug 2017
-										<span class="middot-divider"></span>
-										<span>San Antonio, TX</span>
-									</div>
-									<div class="card-text">
-										The position required a thorough background check, federal investigation including
-										a polygraph, as part of the application in order to obtain Top Secret security clearance.
-										Most of the tasks that were assigned revolved around clerical work, specifically including
-										inventory and data transfer requests added with the Inspector General inspection preparations.
-									</div></div></div></div></div>
-					<div class="row experience">
-						<div class="col-auto text-center flex-column d-none d-sm-flex">
-							<div class="row h-50">
-								<div class="col border-right">&nbsp;</div>
-								<div class="col">&nbsp;</div>
-							</div>
-							<div class="m-2">
-								<span class="badge badge-pill border exp-fill">&nbsp;</span>
-							</div>
-							<div class="row h-50">
-								<div class="col">&nbsp;</div>
-								<div class="col">&nbsp;</div>
-							</div>
-						</div>
-						<div class="col py-2">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title exp-title text-muted mt-0 mb-1">Restaurant Host</h4>
-									<h4 class="card-title exp-company text-muted my-0">Applebee's Restaurant</h4>
-									<div class="text-muted exp-meta">
-										1 Jul 2016 – 20 Mar 2017
-										<span class="middot-divider"></span>
-										<span>San Antonio, TX</span>
-									</div>
-									<div class="card-text">
-										Working as a host included maintaining the restaurant's dining area by busing tables, cleaning
-										restrooms, seating any incoming customers, and any other necessary tasks that have
-										direct or indirect impact of the overall restaurant experience from the perspective of the customer.
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<div class="col-12 col-lg-8" id="workhistory"></div>
 			</div>
 		</div>
 	</section>
@@ -345,155 +228,83 @@
 								</div>
 							</div>
 						</div>
-					<div class="project-card project-item isotope-item js-id-Physics js-id-R">
-						<div class="card">
-							<div class="card-text">
-								<h4>
-									<a href="https://physicsgoddess1972.github.io/Precipitable-Water-Model">
-										<i class="fab fa-github med-icon"></i>
-										Precipitable-Water Model Analysis Tool
-									</a>
-								</h4>
-								<div class="card-description">
-									<p>
-										Collaborative project with <a href="https://physicsgoddess1972.github.io">Vicki Kelsey</a>
-										measuring and analyzing temperature and precipitable water.
-										<h4>Side Projects</h4>
-										<ol>
-											<li style="font-size: 17px"><a href="https://pw-ml-dash.uc.r.appspot.com/">Machine Learning Dashboard</a></li>
-											<li style="font-size: 17px"><a href="https://pw-data-dash.uc.r.appspot.com/">Data Dashboard</a></li>
-											<li style="font-size: 17px"><a href="https://precipitable-water.tech/machine_learning.html">Tensorflow Support Vector Machine</a></li>
-										</ol>
-									</p>
-									<p>
-										This project was presented at PhysCon 2019 and AMES 100.
-									</p>
-									<a class="badge-light">v2.0 is available</a>
+						<div class="project-card project-item isotope-item js-id-Physics js-id-R">
+							<div class="card">
+								<div class="card-text">
+									<h4>
+										<a href="https://physicsgoddess1972.github.io/Precipitable-Water-Model">
+											<i class="fab fa-github med-icon"></i>
+											Precipitable-Water Model Analysis Tool
+										</a>
+									</h4>
+									<div class="card-description">
+										<p>
+											Collaborative project with <a href="https://physicsgoddess1972.github.io">Vicki Kelsey</a>
+											measuring and analyzing temperature and precipitable water.
+											<h4>Side Projects</h4>
+											<ol>
+												<li style="font-size: 17px"><a href="https://pw-ml-dash.uc.r.appspot.com/">Machine Learning Dashboard</a></li>
+												<li style="font-size: 17px"><a href="https://pw-data-dash.uc.r.appspot.com/">Data Dashboard</a></li>
+												<li style="font-size: 17px"><a href="https://precipitable-water.tech/machine_learning.html">Tensorflow Support Vector Machine</a></li>
+											</ol>
+										</p>
+										<p>
+											This project was presented at PhysCon 2019 and AMES 100.
+										</p>
+										<a class="badge-light">v2.0 is available</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-card project-item isotope-item js-id-R js-id-Math">
+							<div class="card">
+								<div class="card-text">
+									<h4>
+										<a href="https://pharaohcola13.github.io/pacviz/book">
+											<i class="fab fa-github med-icon"></i>
+											pacviz
+										</a>
+									</h4>
+									<div class="card-description">
+										<p>
+											A data visualization project for regression analysis.
+										</p>
+										<p>
+											This project was featured in a presentation at PhysCon 2019.
+										</p>
+										<a class="badge-light">v1.0.1 is available</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section id="papers" class="home-section wg-featured">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4 section-heading">
+					<h1>Papers</h1><hr>
+				</div>
+				<div class="col-12 col-lg-8" id="paper"></div>
 			</div>
 		</div>
 	</section>
-<!--	<section id="papers" class="home-section wg-featured">-->
-<!--		<div class="container">-->
-<!--			<div class="row">-->
-<!--				<div class="col-xs-12 col-md-4 section-heading">-->
-<!--					<h1>Published Papers</h1>-->
-<!--					<hr />-->
-<!--				</div>-->
-<!--				<div class="col-12 col-lg-8">-->
-<!--					<div class="col-12 col-lg-8">-->
-<!--					<div class="card-simple">-->
-<!--						<div class="article-metadata">-->
-<!--							<div>-->
-<!--								<span>-->
-<!--									<a href="https://physicsgoddess1972.github.io/">V. Kelsey</a>-->
-<!--								</span>-->
-<!--								,-->
-<!--								<span>-->
-<!--								<a href="#">S. Riley</a>-->
-<!--								</span>-->
-<!--								,-->
-<!--								<span>-->
-<!--									K. Minschwaner-->
-<!--								</span>-->
-<!--							</div>-->
-<!--							<span class="article-date">Under Review</span>-->
-<!--							<span class="middot-divider"></span>-->
-<!--							<span class="pub-publication">-->
-<!--								<em>Atmospheric Measurement Techniques</em>-->
-<!--							</span>-->
-<!--						</div>-->
-<!--						<h4>-->
-<!--							Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations-->
-<!--						</h4>-->
-<!--						<a class="badge-light" href="">PDF</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</section>-->
 	<section id="conferences" class="home-section wg-featured">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 section-heading">
-					<h1>Conferences</h1>
-					<hr />
+					<h1>Conferences</h1><hr />
 				</div>
-				<div class="col-12 col-lg-8">
-					<div class="card-simple">
-						<div class="article-metadata">
-							<div>
-								<span>
-									<a href="https://physicsgoddess1972.github.io/">V. Kelsey</a>
-								</span>
-								,
-								<span>
-								<a href="#">S. Riley</a>
-								</span>
-							</div>
-							<span class="article-date">January 2020</span>
-							<span class="middot-divider"></span>
-							<span class="pub-publication">
-								At <em>American Meteorological Society Centennial</em>
-							</span>
-						</div>
-						<img src="assets/img/ams100.png" class="article-banner" alt="">
-						<h3 class="article-subtitle mb-1 mt-3">
-							Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings
-						</h3>
-						<p style="font-size: 13px; line-height: 1.5">
-							Precipitable water is primarily measured using radiosondes, ground-based global positioning systems (GPS), sun photometers, and microwave radiometry (MWRI). This limits the number of precipitable water measurement sites, which affects forecast accuracy in regards to storm formation, strength, and the potential for precipitation. Socorro, NM is among the sites that do not have the capability to measure precipitable water. Our research builds upon a previous study which determined an exponential relationship between infrared clear sky temperature measurements and precipitable water over the Gulf Coast of Texas. We are analyzing this relationship for the climate zone found in Socorro, NM. Daily ground and clear sky temperature measurements are being taken with low-cost infrared thermometers. Radiosonde precipitable water measurements from Albuquerque and Santa Teresa NWS monitoring sites are input into our dataset and analysed via our newly developed computational tool; which shows that there is a correlation ($R^2 = 0.707$) between clear sky temperature and precipitable water. Our research demonstrates the capability to measure and analyze precipitable water with low cost instrumentation in higher altitude arid climate zones similar to those found in the desert Southwest. We are building a platform to expand our tools and methods so that they can be used to determine and analyse similar correlations over a greater variety of climate zones.
-						</p>
-					</div>
-					<div class="card-simple">
-						<div class="article-metadata">
-							<div>
-								<span>
-									<a href=".">S. Riley</a>
-								</span>
-								,
-								<span>
-								<a href="https://physicsgoddess1972.github.io/">V. Kelsey</a>
-								</span>
-							</div>
-							<span class="article-date">November 2019</span>
-							<span class="middot-divider"></span>
-							<span class="pub-publication">
-								At <em>PhysCon 2019</em>
-							</span>
-						</div>
-							<img src="assets/img/physcon2019.png" class="article-banner" alt="">
-						<h3 class="article-subtitle mb-1 mt-3">
-						   Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings: Data Analysis
-						</h3>
-						<p style="font-size: 13px; line-height: 1.5">
-							Precipitable water can be defined as the total amount of water vapor that exists in a vertical column of air, traditionally measured via radiosondes. Global Positioning System (GPS) networks and microwave-infrared radiometers can also be used to measure precipitable water by analyzing signal delay; these methods are used by NOAA. Precipitable water measurements can be used to forecast extreme weather events and the potential for precipitation. Based on a previous that analyzed the relationship between precipitable water and zenith sky temperature using infrared thermometers, we have developed a rigorous computational utility to study this same correlation for the Socorro, NM climate system. This research highlights the impact of using low-cost instrumentation to accurately forecast precipitation in regions where the data is not available. After thirty-five weeks, the results of our analysis show an exponential correlation ($R^2 = 0.707$) between precipitable water and clear sky temperature, similar to the trends found in previous studies. However, as we continue to collect data, the intrinsic properties of the correlation are continuously evolving. With the availability of our computational tool, we aim to widen our data to include a diverse set of climate systems to further study the relationship between clear sky temperature and precipitable water while also continuing to collect data for the Socorro, NM area.
-						</p>
-					</div>
-				</div>
+				<div class="col-12 col-lg-8" id="conference"></div>
 			</div>
 		</div>
 	</section>
 </div>
 <script src="https://unpkg.com/popper.js@1"></script>
 <script src="https://unpkg.com/tippy.js@4"></script>
-<script src="./assets/js/tooltip.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-
 <script src="./assets/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
