@@ -170,8 +170,8 @@ $(function(){
 
             document.getElementById('paper').appendChild(tree)
             if (Object.values(data.papers)[i].doi !== null){
-                $("#paper-doi"+i).html("PDF")
-                $("#paper-doi"+i).attr({target: "_blank", href: "https://" + String(Object.values(data.papers)[i].doi)})
+                $("#paper-doi"+i).html("Web View")
+                $("#paper-doi"+i).attr({target: "_blank", href: "https://doi.org/" + String(Object.values(data.papers)[i].doi)})
             }
 
             $("#paper-author" + i).html(Object.values(data.papers)[i].author)
