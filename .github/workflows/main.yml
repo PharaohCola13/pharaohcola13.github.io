@@ -1,17 +1,24 @@
-- name: YAML/JSON/XML Converter Action
-  # You may pin to the exact commit or the version.
-  # uses: fabasoad/yaml-json-xml-converter-action@7bc70591754798737773675d47037be8dddefcb4
-  uses: fabasoad/yaml-json-xml-converter-action@v1.0.11
-  with:
-    # Path to the file
-    path: util/content.yml
-    # Format of a file. Possible values: json, xml, yaml.
-    from: yaml
-    # Format of a file as a result. Possible values: json, xml, yaml.
-    to: json
 on:
   push:
     branches:
     - main
     - release/*
   workflow_dispatch:
+
+
+name: Convert
+
+jobs:
+  converter:
+    name: Run converter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: fabasoad/yaml-json-xml-converter-action@main
+        id: yaml2json
+        with:
+          path: 'util/content.yml'
+          from: 'yaml'
+          to: 'json'
+      - name: Print yaml2xml result
+        run: echo "${{ steps.yaml2xml.outputs.data }}"
