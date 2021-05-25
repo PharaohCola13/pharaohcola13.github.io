@@ -3,7 +3,7 @@ role: Physics Undergraduate
 place: New Mexico Institute of Mining and Technology
 profile: assets/img/profile.jpg
 biography:
-  description: Spencer Riley is a student at the New Mexico Institute of Mining and Technology</a>, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
+  description: Spencer Riley is a student at the New Mexico Institute of Mining and Technology, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
   interests:
     item0: Stellar Astrophysics
     item1: Quantum Information
@@ -12,7 +12,7 @@ biography:
     item4: This is a test
   education:
     degree: BSc in Physics
-    focus: Astrophysics & Atmospheric Physics
+    focus: Astrophysics and Atmospheric Physics
     minor: Mathematics
     place: New Mexico Institute of Mining and Technology
     date: May 2022
