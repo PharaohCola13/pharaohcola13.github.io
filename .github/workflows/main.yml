@@ -21,4 +21,5 @@ jobs:
           from: 'yaml'
           to: 'json'
       - name: Print yaml2json result
-        run: echo "${{ steps.yaml2json.outputs.data }}"
+        run: echo "${{ steps.yaml2json.outputs.data }}" >> util/content.json
+        
