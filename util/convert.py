@@ -7,7 +7,7 @@ import json
 os_list = {}
 
 ## Read the YAML file
-with open("content.yml") as infile:
+with open("util/content.yml") as infile:
     os_list = yaml.load(infile, Loader=yaml.FullLoader)
-with open("content.json", 'w') as outfile:
+with open("util/content.json", 'w') as outfile:
     json.dump(os_list, outfile, indent=4)
