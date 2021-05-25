@@ -1,0 +1,11 @@
+name: YAML/JSON/XML Converter Action
+uses: fabasoad/yaml-json-xml-converter-action@v1.0.11
+with:
+  path: util/content.yml
+  from: yaml
+  to: json
+on:
+  push:
+    branches:
+    - main
+    - release/*
