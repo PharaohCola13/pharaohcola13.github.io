@@ -1,9 +1,9 @@
-title: Spencer Riley
+name: Spencer Riley
 role: Physics Undergraduate
 place: New Mexico Institute of Mining and Technology
 profile: assets/img/profile.jpg
 biography:
-  description: Spencer Riley is a student at the New Mexico Institute of Mining and Technology</a>, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
+  description: Spencer Riley is a student at the New Mexico Institute of Mining and Technology, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
   interests:
     item0: Stellar Astrophysics
     item1: Quantum Information
@@ -11,7 +11,7 @@ biography:
     item3: Data Analytics and Visualization
   education:
     degree: BSc in Physics
-    focus: Astrophysics & Atmospheric Physics
+    focus: Astrophysics \& Atmospheric Physics
     minor: Mathematics
     place: New Mexico Institute of Mining and Technology
     date: May 2022
@@ -50,6 +50,37 @@ workhistory:
     state: TX
     start: 1 Jul 2016
     end: 20 Mar 2017
+projects:
+  project0:
+    title: GeoExpanse
+    link: https://pharaohcola13.github.io/GeoExpanse/
+    description: assets/md/geoexpanse.md
+    featured:
+    imgvid: assets/img/Rings.mp4
+    status: In Beta
+    tags:
+      tag0: Math
+      tag1: Python
+  project1:
+    title: Precipitable-Water Model Analysis Tool
+    link: https://physicsgoddess1972.github.io/Precipitable-Water-Model
+    description: assets/md/pmat.md
+    featured: This project was presented at PhysCon 2019 and AMES 100.
+    imgvid:
+    status: v2.0 is available
+    tags:
+      tag0: Physics
+      tag1: R
+  project2:
+    title: pacviz
+    link: https://pharaohcola13.github.io/pacviz/book
+    description: assets/md/pacviz.md
+    featured: This project was featured in a presentation at PhysCon 2019.
+    imgvid:
+    status: v1.0.1 is available
+    tags:
+      tag0: Math
+      tag1: R
 papers:
   paper0:
     title: Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations

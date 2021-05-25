@@ -1,16 +1,16 @@
 $(function(){
     $.getJSON("./util/content.json", function(data){
-        $('#name').html(data.title)
+        $('#name').html(data.name)
         $('#role').html(data.role)
         $('#place').html(data.place)
         $('#profile-picture').attr({src: data.profile})
-        console.log(data.biography.education)
         $('#edu-degree').html(data.biography.education.degree + ".")
         $('#edu-focus-minor').html("Focus in " + data.biography.education.focus +". Minor in "+ data.biography.education.minor)
         $('#edu-date').html(data.biography.education.date + " <em>(Expected)</em>.")
         $('#edu-place').html(data.biography.education.place)
 
         document.getElementById('bio_description').innerHTML = data.biography.description
+
 
         for (let [key, vals] of Object.entries(data.biography.interests)){
             $('#interests').append("<li>" + `${vals}` + "</li>")
@@ -179,6 +179,73 @@ $(function(){
             $("#paper-title" + i).html(Object.values(data.papers)[i].title)
             $("#paper-status"+i).html(Object.values(data.papers)[i].status)
 
+            i++
+        })
+        var i = 0
+        Object.values(data.projects).forEach(val => {
+            var tree = document.createDocumentFragment();
+            var proj = document.createElement('div')
+            var proj2 = document.createElement('div')
+            var projcard = document.createElement('div')
+            var projtext = document.createElement('div')
+            var projdesc = document.createElement('div')
+            var projtitle = document.createElement('h4')
+            var projfeat = document.createElement('p')
+            var projmedia = document.createElement('div')
+            var projstatus = document.createElement('a')
+            var projcardtext = document.createElement('div')
+            var projtext2 = document.createElement('p')
+            var markdown = document.createElement('zero-md')
+            var markstyle = document.createElement('style')
+            var template = document.createElement('template')
+
+            proj.setAttribute('class', 'project-card project-item isotope-item')
+            projcard.setAttribute('class', 'card')
+            projtext.setAttribute('class', 'card-text')
+            projdesc.setAttribute('class', 'card-description')
+            projdesc.setAttribute('style', 'display: flex')
+            projstatus.setAttribute('class', 'badge-light')
+            projmedia.setAttribute('style', "flex: 25%; display: flex; align-items: center; justify-content: center;")
+            projcardtext.setAttribute('style', 'flex: 50%')
+            template.setAttribute('data-merge', 'prepend')
+
+            proj.setAttribute('id', 'proj'+i)
+            projtitle.setAttribute('id', 'project-title'+i)
+            projfeat.setAttribute('id', 'project-feat'+i)
+            projmedia.setAttribute('id', 'project-media'+i)
+            projstatus.setAttribute('id', 'project-status'+i)
+            markdown.setAttribute('id', 'project-text'+i)
+            markstyle.setAttribute('id', 'markstyle')
+            template.setAttribute('id', 'template')
+
+            $('#template').html('<link rel="stylesheet" href="assets/css/about.css">')
+
+            tree.appendChild(proj)
+            proj.appendChild(projcard)
+            projcard.appendChild(projtext)
+            projtext.appendChild(projtitle)
+            projtext.appendChild(projdesc)
+            projdesc.appendChild(projcardtext)
+            projtext.appendChild(projfeat)
+            projcardtext.appendChild(markdown)
+            markdown.appendChild(template)
+            template.appendChild(markstyle)
+            projdesc.appendChild(projmedia)
+            projtext.appendChild(document.createElement('hr'))
+            projtext.appendChild(projstatus)
+            tree.appendChild(document.createElement('br'))
+
+            document.getElementById('projs').appendChild(tree)
+
+            $("#project-title" + i).html('<a href='+ Object.values(data.projects)[i].link +' target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> ' + Object.values(data.projects)[i].title + '</a>')
+            $("#project-status" + i).html(Object.values(data.projects)[i].status)
+            $("#project-feat" + i).html(Object.values(data.projects)[i].featured)
+            $('#project-media' + i).html('<video class="portrait" preload="auto" loop><source  src=' + Object.values(data.projects)[i].imgvid + ' type="video/mp4"></video>')
+            $('#project-text'+i).attr({src: Object.values(data.projects)[i].description})
+
+            for (let vals of Object.values(Object.values(data.projects)[i].tags)){
+                proj.setAttribute('class', "js-id-"+`${vals}` + " " + proj.getAttribute('class'))
+            }
             i++
         })
    })

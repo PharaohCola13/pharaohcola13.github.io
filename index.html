@@ -21,15 +21,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
-	<link rel="stylesheet" href="https//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     <meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
@@ -38,6 +35,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
+	<script type="module" src="assets/js/zero-md.min.js"></script>
 	<script>
 		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 	</script>
@@ -46,8 +44,8 @@
             document.location = document.URL.replace(/^http:/i, "https:");
         }
 	</script>
-	<script src="./assets/js/content.js"></script>
-	<link rel="stylesheet" href="./assets/css/about.css">
+	<link rel="stylesheet" href="assets/css/about.css">
+
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
 <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
@@ -133,9 +131,9 @@
 							</li>
 						</ul>
 						<a itemprop="sameAs" target="_blank" href="./assets/pdf/resume.pdf" rel="noopener" style="font-size: 30px">
-							<p>Resume
-							<i class="material-icons">summarize</i>
-							</p>
+							<div>Resume
+								<i class="material-icons">summarize</i>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -170,7 +168,7 @@
 		<div class="container">
 			<div class="row featurette" id="skill">
 				<div class="col-md-12 section-heading">
-					<h1>Skills</h1><hr>
+					<h1>Skills</h1><hr/>
 				</div>
 			</div>
 		</div>
@@ -179,7 +177,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 section-heading">
-					<h1>Work History</h1><hr>
+					<h1>Work History</h1><hr/>
 				</div>
 				<div class="col-12 col-lg-8" id="workhistory"></div>
 			</div>
@@ -189,9 +187,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 section-heading">
-					<h1>Projects</h1><hr>
+					<h1>Projects</h1><hr/>
 				</div>
-				<div class="col-xs-12 col-md-8">
+				<div class="col-12 col-lg-8">
 					<span class="d-none default-project-filter">*</span>
 					<div class="project-toolbar">
 						<div class="project-filters">
@@ -206,77 +204,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="isotope projects-container js-layout-masonry ">
-						<div class="project-card project-item isotope-item js-id-Math js-id-Python">
-							<div class="card">
-								<div>
-									<video class="portrait" style="float: left" autoplay loop>
-										<source src="assets/img/Rings.mp4" type="video/mp4">
-									</video>
-								</div>
-								<div class="card-text">
-									<h4 id="geoexpanse">
-										<a href="https://pharaohcola13.github.io/GeoExpanse/" target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> GeoExpanse</a>
-									</h4>
-									<div class="card-desription">
-										<p>
-											Python visual interface for modeling 3D geometric structures.
-										</p>
-										<a class="badge-light">In Beta</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="project-card project-item isotope-item js-id-Physics js-id-R">
-							<div class="card">
-								<div class="card-text">
-									<h4>
-										<a href="https://physicsgoddess1972.github.io/Precipitable-Water-Model">
-											<i class="fab fa-github med-icon"></i>
-											Precipitable-Water Model Analysis Tool
-										</a>
-									</h4>
-									<div class="card-description">
-										<p>
-											Collaborative project with <a href="https://physicsgoddess1972.github.io">Vicki Kelsey</a>
-											measuring and analyzing temperature and precipitable water.
-											<h4>Side Projects</h4>
-											<ol>
-												<li style="font-size: 17px"><a href="https://pw-ml-dash.uc.r.appspot.com/">Machine Learning Dashboard</a></li>
-												<li style="font-size: 17px"><a href="https://pw-data-dash.uc.r.appspot.com/">Data Dashboard</a></li>
-												<li style="font-size: 17px"><a href="https://precipitable-water.tech/machine_learning.html">Tensorflow Support Vector Machine</a></li>
-											</ol>
-										</p>
-										<p>
-											This project was presented at PhysCon 2019 and AMES 100.
-										</p>
-										<a class="badge-light">v2.0 is available</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="project-card project-item isotope-item js-id-R js-id-Math">
-							<div class="card">
-								<div class="card-text">
-									<h4>
-										<a href="https://pharaohcola13.github.io/pacviz/book">
-											<i class="fab fa-github med-icon"></i>
-											pacviz
-										</a>
-									</h4>
-									<div class="card-description">
-										<p>
-											A data visualization project for regression analysis.
-										</p>
-										<p>
-											This project was featured in a presentation at PhysCon 2019.
-										</p>
-										<a class="badge-light">v1.0.1 is available</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<div class="isotope projects-container js-layout-masonry" id="projs" style="color: white; h4 color: blue"></div>
 				</div>
 			</div>
 		</div>
@@ -285,7 +213,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 section-heading">
-					<h1>Papers</h1><hr>
+					<h1>Papers</h1><hr/>
 				</div>
 				<div class="col-12 col-lg-8" id="paper"></div>
 			</div>
@@ -295,16 +223,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 section-heading">
-					<h1>Conferences</h1><hr>
+					<h1>Conferences</h1><hr/>
 				</div>
 				<div class="col-12 col-lg-8" id="conference"></div>
 			</div>
 		</div>
 	</section>
 </div>
-<script src="https://unpkg.com/popper.js@1"></script>
-<script src="https://unpkg.com/tippy.js@4"></script>
-<script src="./assets/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+<script src="assets/js/academic.min.js"></script>
+<script src="assets/js/content.js"></script>
+
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

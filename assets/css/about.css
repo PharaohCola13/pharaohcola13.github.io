@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 1rem;
 	margin-bottom: .5rem;
 	line-height: 1.25;
-	color: #313131;
+	color: rgb(152, 166, 173);
 	text-rendering: optimizeLegibility;
 	/* Ensure long words do not overflow into content. */
 	overflow-wrap: break-word;
@@ -164,8 +164,10 @@ figcaption h4 {
 
 
 hr {
-	border: 0;
-	height: 1px;
+	border: none;
+	height: 2px;
+	display:block;
+	clear:both;
 	background-image: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
 }
 
