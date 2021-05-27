@@ -10,16 +10,6 @@ jobs:
   converter:
     name: Run converter
     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v1
-#       - uses: fabasoad/yaml-json-xml-converter-action@main
-#         id: yaml2json
-#         with:
-#           path: 'util/content.yml'
-#           from: 'yaml'
-#           to: 'json'
-#       - name: Print yaml2json result
-#         run: echo "${{ steps.yaml2json.outputs.data }}" >> util/content.json
     steps:
     - uses: actions/checkout@v2
       with:
