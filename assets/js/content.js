@@ -198,6 +198,8 @@ $(function(){
             var markdown = document.createElement('zero-md')
             var markstyle = document.createElement('style')
             var template = document.createElement('template')
+            var badge = document.createElement('a')
+            var divstat = document.createElement('div')
 
             proj.setAttribute('class', 'project-card project-item isotope-item')
             projcard.setAttribute('class', 'card')
@@ -205,9 +207,22 @@ $(function(){
             projdesc.setAttribute('class', 'card-description')
             projdesc.setAttribute('style', 'display: flex')
             projstatus.setAttribute('class', 'badge-light')
+            projstatus.setAttribute('style', 'border-top-left-radius: 25px; border-bottom-left-radius: 25px; background: #00BCC2')
             projmedia.setAttribute('style', "flex: 25%; display: flex; align-items: center; justify-content: center;")
             projcardtext.setAttribute('style', 'flex: 50%')
             template.setAttribute('data-merge', 'prepend')
+            divstat.setAttribute('style', 'display: flex')
+            badge.setAttribute('class', 'badge-light')
+
+            console.log(Object.values(data.projects)[i].maintained.year)
+
+            if (Object.values(data.projects)[i].maintained.bool){
+                badge.setAttribute('style', 'background-color: #00C200; border-top-right-radius: 25px; border-bottom-right-radius: 25px')
+                var main = "Maintained"
+            } else {
+                badge.setAttribute('style', 'background-color: #C20000; border-top-right-radius: 25px; border-bottom-right-radius: 25px')
+                var main = 'Not Maintained (Since ' + Object.values(data.projects)[i].maintained.year + ')'
+            }
 
             proj.setAttribute('id', 'proj'+i)
             projtitle.setAttribute('id', 'project-title'+i)
@@ -217,6 +232,7 @@ $(function(){
             markdown.setAttribute('id', 'project-text'+i)
             markstyle.setAttribute('id', 'markstyle')
             template.setAttribute('id', 'template')
+            badge.setAttribute('id','project-badge'+i)
 
             $('#template').html('<link rel="stylesheet" href="assets/css/about.css">')
 
@@ -232,7 +248,9 @@ $(function(){
             template.appendChild(markstyle)
             projdesc.appendChild(projmedia)
             projtext.appendChild(document.createElement('hr'))
-            projtext.appendChild(projstatus)
+            projtext.appendChild(divstat)
+            divstat.appendChild(projstatus)
+            divstat.appendChild(badge)
             tree.appendChild(document.createElement('br'))
 
             document.getElementById('projs').appendChild(tree)
@@ -242,7 +260,7 @@ $(function(){
             $("#project-feat" + i).html(Object.values(data.projects)[i].featured)
             $('#project-media' + i).html('<video class="portrait" playsinline autoplay muted loop><source  src=' + Object.values(data.projects)[i].imgvid + ' type="video/mp4"></video>')
             $('#project-text'+i).attr({src: Object.values(data.projects)[i].description})
-
+            $('#project-badge' + i).html(main)
             for (let vals of Object.values(Object.values(data.projects)[i].tags)){
                 proj.setAttribute('class', "js-id-"+`${vals}` + " " + proj.getAttribute('class'))
             }

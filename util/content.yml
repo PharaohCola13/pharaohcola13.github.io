@@ -52,35 +52,44 @@ workhistory:
     end: 20 Mar 2017
 projects:
   project0:
-    title: GeoExpanse
-    link: https://pharaohcola13.github.io/GeoExpanse/
-    description: assets/md/geoexpanse.md
-    featured:
-    imgvid: assets/img/Rings.mp4
-    status: In Beta
-    tags:
-      tag0: Math
-      tag1: Python
-  project1:
     title: Precipitable-Water Model Analysis Tool
     link: https://physicsgoddess1972.github.io/Precipitable-Water-Model
     description: assets/md/pmat.md
     featured: This project was presented at PhysCon 2019 and AMES 100.
     imgvid:
-    status: v2.0 is available
+    status: v2.0
+    maintained:
+      bool: yes
+      year:
     tags:
-      tag0: Physics
       tag1: R
-  project2:
+      tag2: Maintained
+  project1:
     title: pacviz
     link: https://pharaohcola13.github.io/pacviz/book
     description: assets/md/pacviz.md
     featured: This project was featured in a presentation at PhysCon 2019.
     imgvid:
-    status: v1.0.1 is available
+    status: v1.0.1
+    maintained:
+      bool: yes
+      year:
     tags:
-      tag0: Math
       tag1: R
+      tag2: Maintained
+  project2:
+    title: GeoExpanse
+    link: https://pharaohcola13.github.io/GeoExpanse/
+    description: assets/md/geoexpanse.md
+    featured:
+    imgvid: assets/img/Rings.mp4
+    status: Beta
+    maintained:
+      bool: false
+      year: 2019
+    tags:
+      tag1: Python
+      tag2: Not-Maintained
 papers:
   paper0:
     title: Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations

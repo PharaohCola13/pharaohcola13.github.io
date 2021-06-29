@@ -18,7 +18,7 @@
 	<link rel="icon" href="assets/img/icon.png" type="image/png">
 	<!-- end SEO -->
 	<!-- http://t.co/dKP3o1e -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
@@ -45,7 +45,7 @@
         }
 	</script>
 	<link rel="stylesheet" href="assets/css/about.css">
-
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
 <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
@@ -102,7 +102,6 @@
 								<span id="place"></span>
 							</h3>
 						</div>
-						<link itemprop="url" href="">
 						<ul class="network-icon" aria-hidden="true">
 							<li>
 								<a itemprop="sameAs" target="_blank" href="mailto:spencerriley620@gmail.com">
@@ -130,11 +129,21 @@
 								</a>
 							</li>
 						</ul>
-						<a itemprop="sameAs" target="_blank" href="https://docs.google.com/viewer?url=https://github.com/PharaohCola13/Resume/raw/main/resume.pdf" rel="noopener" style="font-size: 30px">
-							<div>Resume
-								<i class="material-icons">summarize</i>
-							</div>
-						</a>
+						<br>
+						<ul class="network-icon" aria-hidden="true" style="margin-top: -10px">
+							<li>
+								<a itemprop="sameAs" target="_blank" href="https://docs.google.com/viewer?url=https://github.com/PharaohCola13/Resume/raw/main/resume.pdf" rel="noopener">
+									<i class="fas fa-file-pdf big-icon"></i>
+								</a>
+							</li>
+							<li>
+								<a itemprop="sameAs" target="_blank" href="https://app.gitkraken.com/glo/board/YJeKoiFNpQARwW5M">
+									<div>
+										<i class="fab fa-gitkraken big-icon"></i>
+									</div>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col-12 col-lg-8" itemprop="description">
@@ -194,10 +203,10 @@
 					<div class="project-toolbar">
 						<div class="project-filters">
 							<div class="btn-toolbar">
-								<div class="btn-group flex-wrap">
+								<div class="btn-group flex-wrap" id="btn-tags">
 									<a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
-									<a href="#" data-filter=".js-id-Math" class="btn btn-primary btn-lg">Mathematics</a>
-									<a href="#" data-filter=".js-id-Physics" class="btn btn-primary btn-lg">Physics</a>
+									<a href="#" data-filter=".js-id-Maintained" class="btn btn-primary btn-lg">Maintained</a>
+									<a href="#" data-filter=".js-id-Not-Maintained" class="btn btn-primary btn-lg">Not Maintained</a>
 									<a href="#" data-filter=".js-id-Python" class="btn btn-primary btn-lg">Python</a>
 									<a href="#" data-filter=".js-id-R" class="btn btn-primary btn-lg">R</a>
 								</div>

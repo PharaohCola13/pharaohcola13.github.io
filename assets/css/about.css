@@ -1885,12 +1885,10 @@ a.badge:focus, a.badge:hover {
  *  Button Primary: Color override
  **************************************************/
 .btn-primary {
-	border-color: #29a9ff;
-	background: #fdae55;
+	background: #29A9FF;
 }
 
 .btn-outline-primary {
-	border-color: #29a9ff;
 	color: #29a9ff;
 }
 
@@ -1902,7 +1900,6 @@ a.badge:focus, a.badge:hover {
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
 	color: #fff;
 	background-color: inherit;
-	border-color: #29a9ff;
 }
 
 .dark .btn-outline-primary:not(:disabled):not(.disabled).active, .dark .btn-outline-primary:not(:disabled):not(.disabled):active, .dark .show > .btn-outline-primary.dropdown-toggle {
@@ -1912,7 +1909,6 @@ a.badge:focus, a.badge:hover {
 .btn-outline-primary:hover {
 	color: #fff;
 	background-color: inherit;
-	border-color: #29a9ff;
 }
 
 .dark .btn-outline-primary:hover {
@@ -1937,16 +1933,15 @@ a.badge:focus, a.badge:hover {
 }
 
 .btn-toolbar .btn.btn-primary:hover, .btn-toolbar .btn.btn-primary:focus {
-	background-color: #ff5682 !important;
+	background-color: #E16AD2 !important;
 }
 
 .btn-toolbar .btn.btn-primary:active, .btn-toolbar .btn.btn-primary.active {
-	background-color: #ff5682 !important;
+	background-color: #E16AD2 !important;
 	z-index: -1;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
-	box-shadow: 0 0 0 .1rem #ffd901;
 	z-index: 10;
 }
 
