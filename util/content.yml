@@ -5,28 +5,28 @@ profile: assets/img/profile.jpg
 biography:
   description: Spencer Riley is a student at the New Mexico Institute of Mining and Technology, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
   interests:
-    item0: Stellar Astrophysics
-    item1: Quantum Information
-    item2: Differential Geometry
-    item3: Data Analytics and Visualization
+    - item: Stellar Astrophysics
+    - item: Quantum Information
+    - item: Differential Geometry
+    - item: Data Analytics and Visualization
   education:
     degree: BSc in Physics
     focus: Astrophysics & Atmospheric Physics
     minor: Mathematics
     place: New Mexico Institute of Mining and Technology
     date: May 2022
-skill:
-  skill0:
+skills:
+  - skill:
     icon: fab fa-python
     name: Python
-  skill1:
+  - skill:
     icon: fab fa-r-project
     name: R
-  skill2:
+  - skill:
     icon: fas fa-keyboard
     name: LaTeX
 workhistory:
-  work0:
+  - work:
     title: Research Intern
     description: TBA
     place: Institute of Complex Additive Systems Analysis
@@ -34,7 +34,7 @@ workhistory:
     state: NM
     start: 5 Sept 2017
     end: Present
-  work1:
+  - work:
     title: High School Work Study
     description: The position required a thorough background check, federal investigation including a polygraph, as part of the application in order to obtain Top Secret security clearance. Most of the tasks that were assigned revolved around clerical work, specifically including inventory and data transfer requests added with the Inspector General inspection preparations.
     place: National Security Agency
@@ -42,7 +42,7 @@ workhistory:
     state: TX
     start: 6 Sept 2016
     end: 16 Aug 2017
-  work2:
+  - work:
     title: Restaurant Host
     description: Working as a host included maintaining the restaurant's dining area by busing tables, cleaning restrooms, seating any incoming customers, and any other necessary tasks that have direct or indirect impact of the overall restaurant experience from the perspective of the customer.
     place: Applebee's Restaurant
@@ -51,7 +51,7 @@ workhistory:
     start: 1 Jul 2016
     end: 20 Mar 2017
 projects:
-  project0:
+  - project:
     title: Precipitable-Water Model Analysis Tool
     link: https://physicsgoddess1972.github.io/Precipitable-Water-Model
     description: assets/md/pmat.md
@@ -64,7 +64,7 @@ projects:
     tags:
       tag1: R
       tag2: Maintained
-  project1:
+  - project:
     title: pacviz
     link: https://pharaohcola13.github.io/pacviz/book
     description: assets/md/pacviz.md
@@ -77,7 +77,7 @@ projects:
     tags:
       tag1: R
       tag2: Maintained
-  project2:
+  - project:
     title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
     description: assets/md/geoexpanse.md
@@ -91,7 +91,7 @@ projects:
       tag1: Python
       tag2: Not-Maintained
 papers:
-  paper0:
+  - paper:
     title: Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations
     author: V. Kelsey, S. Riley, K. Minschwaner
     date: 2021
@@ -99,14 +99,14 @@ papers:
     status: Under Review
     doi: 10.5194/amt-2021-130
 conferences:
-  conference0:
+  - conference:
       title: Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings
       author: V. Kelsey, S. Riley
       date: Jan 2020
       place: American Meteorological Society 100
       poster: ./assets/img/ams100.png
       abstract: Precipitable water is primarily measured using radiosondes, ground-based global positioning systems (GPS), sun photometers, and microwave radiometry (MWRI). This limits the number of precipitable water measurement sites, which affects forecast accuracy in regards to storm formation, strength, and the potential for precipitation. Socorro, NM is among the sites that do not have the capability to measure precipitable water. Our research builds upon a previous study which determined an exponential relationship between infrared clear sky temperature measurements and precipitable water over the Gulf Coast of Texas. We are analyzing this relationship for the climate zone found in Socorro, NM. Daily ground and clear sky temperature measurements are being taken with low-cost infrared thermometers. Radiosonde precipitable water measurements from Albuquerque and Santa Teresa NWS monitoring sites are input into our dataset and analysed via our newly developed computational tool; which shows that there is a correlation ($R^2 = 0.707$) between clear sky temperature and precipitable water. Our research demonstrates the capability to measure and analyze precipitable water with low cost instrumentation in higher altitude arid climate zones similar to those found in the desert Southwest. We are building a platform to expand our tools and methods so that they can be used to determine and analyse similar correlations over a greater variety of climate zones.
-  conference1:
+  - conference:
       title: "Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings: Data Analysis"
       author: S. Riley, V.Kelsey
       date: Nov 2019
