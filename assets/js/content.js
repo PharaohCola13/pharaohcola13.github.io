@@ -214,7 +214,7 @@ $(function(){
             divstat.setAttribute('style', 'display: flex')
             badge.setAttribute('class', 'badge-light')
 
-            if (Object.values(data.projects)[i].maintained.bool){
+            if (Object.values(val).maintained.bool){
                 badge.setAttribute('style', 'background-color: #00C200; border-top-right-radius: 25px; border-bottom-right-radius: 25px')
                 var main = "Maintained"
             } else {
@@ -253,19 +253,19 @@ $(function(){
 
             document.getElementById('projs').appendChild(tree)
 
-            $("#project-title" + i).html('<a href='+ Object.values(data.projects)[i].link +' target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> ' + Object.values(data.projects)[i].title + '</a>')
-            $("#project-status" + i).html(Object.values(data.projects)[i].status)
-            $("#project-feat" + i).html(Object.values(data.projects)[i].featured)
-            if (Object.values(data.projects)[i].imgvid.includes('mp4')){
+            $("#project-title" + i).html('<a href='+ val.link +' target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> ' + Object.values(data.projects)[i].title + '</a>')
+            $("#project-status" + i).html(val.status)
+            $("#project-feat" + i).html(val.featured)
+            if (val.imgvid.includes('mp4')){
                 $('#project-media' + i).html('<video class="portrait" playsinline autoplay muted loop><source  src=' + Object.values(data.projects)[i].imgvid + ' type="video/mp4"></video>')
             } else {
-                $('#project-media' + i).html('<img class="portrait" src=' + Object.values(data.projects)[i].imgvid + '>')    
+                $('#project-media' + i).html('<img class="portrait" src=' + val.imgvid + '>')    
             }
             $('#project-text'+i).attr({src: Object.values(data.projects)[i].description})
             $('#project-badge' + i).html(main)
-            for (let vals of Object.values(Object.values(data.projects)[i].tags)){
-                proj.setAttribute('class', "js-id-"+`${vals}` + " " + proj.getAttribute('class'))
-            }
+            Object.values(val.tags).forEach(valt => {
+                proj.setAttribute('class', "js-id-"+ String(valt) + " " + proj.getAttribute('class'))
+            })
             i++
         })
    })
