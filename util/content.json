@@ -84,10 +84,14 @@
                 "bool": true,
                 "year": null
             },
-            "tags": {
-                "tag1": "R",
-                "tag2": "Maintained"
-            }
+            "tags": [
+                {
+                    "tag": "R"
+                },
+                {
+                    "tag": "Maintained"
+                }
+            ]
         },
         {
             "title": "pacviz",
@@ -100,10 +104,14 @@
                 "bool": true,
                 "year": null
             },
-            "tags": {
-                "tag1": "R",
-                "tag2": "Maintained"
-            }
+            "tags": [
+                {
+                    "tag": "R"
+                },
+                {
+                    "tag": "Maintained"
+                }
+            ]
         },
         {
             "title": "GeoExpanse",
@@ -116,10 +124,14 @@
                 "bool": false,
                 "year": 2019
             },
-            "tags": {
-                "tag1": "Python",
-                "tag2": "Not-Maintained"
-            }
+            "tags": [
+                {
+                    "tag": "Python"
+                },
+                {
+                    "tag": "Not-Maintained"
+                }
+            ]
         }
     ],
     "papers": [
