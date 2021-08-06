@@ -10,11 +10,11 @@ biography:
     - item: Differential Geometry
     - item: Data Analytics and Visualization
   education:
-    degree: BSc in Physics
-    focus: Astrophysics & Atmospheric Physics
-    minor: Mathematics
-    place: New Mexico Institute of Mining and Technology
-    date: May 2022
+    - degree: BSc in Physics
+      focus: Astrophysics & Atmospheric Physics
+      minor: Mathematics
+      place: New Mexico Institute of Mining and Technology
+      date: May 2022
 skills:
   - icon: fab fa-python
     name: Python
