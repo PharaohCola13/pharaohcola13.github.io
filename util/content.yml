@@ -55,8 +55,8 @@ projects:
       bool: yes
       year:
     tags:
-      tag1: R
-      tag2: Maintained
+      - tag: R
+      - tag: Maintained
   - title: pacviz
     link: https://pharaohcola13.github.io/pacviz/book
     description: assets/md/pacviz.md
@@ -67,8 +67,8 @@ projects:
       bool: yes
       year:
     tags:
-      tag1: R
-      tag2: Maintained
+      - tag: R
+      - tag: Maintained
   - title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
     description: assets/md/geoexpanse.md
@@ -79,8 +79,8 @@ projects:
       bool: false
       year: 2019
     tags:
-      tag1: Python
-      tag2: Not-Maintained
+      - tag: Python
+      - tag: Not-Maintained
 papers:
   - title: Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations
     author: V. Kelsey, S. Riley, K. Minschwaner
