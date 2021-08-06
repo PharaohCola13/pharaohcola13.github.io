@@ -98,7 +98,7 @@
             "link": "https://pharaohcola13.github.io/pacviz/book",
             "description": "assets/md/pacviz.md",
             "featured": "This project was featured in a presentation at PhysCon 2019.",
-            "imgvid": null,
+            "imgvid": "assets/img/Rings.mp4",
             "status": "v1.0.1",
             "maintained": {
                 "bool": true,
