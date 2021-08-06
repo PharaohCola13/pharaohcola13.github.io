@@ -34,7 +34,7 @@ $(function(){
             skilldiv.appendChild(skillname)
 
             document.getElementById('skill').appendChild(tree)
-            $("#skill-name" + i).html(Object.values(data.skills)[i].name)
+            $("#skill-name" + i).html(val.name)
             i++
         })
         var i = 0
@@ -78,10 +78,10 @@ $(function(){
 
             document.getElementById('workhistory').appendChild(tree)
 
-            $("#work-name" + i).html(Object.values(data.workhistory)[i].title)
-            $("#work-place" + i).html(Object.values(data.workhistory)[i].place)
-            $('#work-misc' + i).html(Object.values(data.workhistory)[i].start + "  --  " + Object.values(data.workhistory)[i].end + "<span class='middot-divider'></span>" + Object.values(data.workhistory)[i].city + ", " + Object.values(data.workhistory)[i].state)
-            $('#work-description' + i).html(Object.values(data.workhistory)[i].description)
+            $("#work-name" + i).html(val.title)
+            $("#work-place" + i).html(val.place)
+            $('#work-misc' + i).html(val.start + "  --  " + val.end + "<span class='middot-divider'></span>" + val.city + ", " + val.state)
+            $('#work-description' + i).html(val.description)
             $('#work-space' + i).html("")
             i++
         })
@@ -119,11 +119,11 @@ $(function(){
             card.appendChild(cabstr)
 
             document.getElementById('conference').appendChild(tree)
-            $("#conference-author" + i).html(Object.values(data.conferences)[i].author)
-            $("#conference-misc" + i).html(Object.values(data.conferences)[i].date + '<span class="middot-divider"></span>' + '<em>' + Object.values(data.conferences)[i].place + '</em>')
-            $("#conference-img" + i).attr({src: Object.values(data.conferences)[i].poster})
-            $("#conference-title" + i).html(Object.values(data.conferences)[i].title)
-            $("#conference-abstract" + i).html(Object.values(data.conferences)[i].abstract)
+            $("#conference-author" + i).html(val.author)
+            $("#conference-misc" + i).html(val.date + '<span class="middot-divider"></span>' + '<em>' + val.place + '</em>')
+            $("#conference-img" + i).attr({src: val.poster})
+            $("#conference-title" + i).html(val.title)
+            $("#conference-abstract" + i).html(val.abstract)
             $("#conference-abstract" + i).attr({style: 'font-size: 13px; line-height: 1.5'})
 
             i++
@@ -161,7 +161,7 @@ $(function(){
             pcard.appendChild(ptitle)
             pcard.appendChild(pstatus)
 
-            if (Object.values(data.papers)[i].doi !== null){
+            if (val.doi !== null){
                 pdoi.setAttribute('class', 'badge-light')
                 pdoi.setAttribute('id', String('paper-doi' + i))
 
@@ -169,15 +169,15 @@ $(function(){
             }
 
             document.getElementById('paper').appendChild(tree)
-            if (Object.values(data.papers)[i].doi !== null){
+            if (val.doi !== null){
                 $("#paper-doi"+i).html("Web View")
-                $("#paper-doi"+i).attr({target: "_blank", href: "https://doi.org/" + String(Object.values(data.papers)[i].doi)})
+                $("#paper-doi"+i).attr({target: "_blank", href: "https://doi.org/" + String(val.doi)})
             }
 
-            $("#paper-author" + i).html(Object.values(data.papers)[i].author)
-            $("#paper-misc" + i).html(Object.values(data.papers)[i].date + '<span class="middot-divider"></span>' + '<em>' + Object.values(data.papers)[i].journal + '</em>')
-            $("#paper-title" + i).html(Object.values(data.papers)[i].title)
-            $("#paper-status"+i).html(Object.values(data.papers)[i].status)
+            $("#paper-author" + i).html(val.author)
+            $("#paper-misc" + i).html(val.date + '<span class="middot-divider"></span>' + '<em>' + val.journal + '</em>')
+            $("#paper-title" + i).html(val.title)
+            $("#paper-status"+i).html(val.status)
 
             i++
         })
@@ -219,7 +219,7 @@ $(function(){
                 var main = "Maintained"
             } else {
                 badge.setAttribute('style', 'background-color: #C20000; border-top-right-radius: 25px; border-bottom-right-radius: 25px')
-                var main = 'Not Maintained (Since ' + Object.values(data.projects)[i].maintained.year + ')'
+                var main = 'Not Maintained (Since ' + val.maintained.year + ')'
             }
 
             proj.setAttribute('id', 'proj'+i)
@@ -253,15 +253,15 @@ $(function(){
 
             document.getElementById('projs').appendChild(tree)
 
-            $("#project-title" + i).html('<a href='+ val.link +' target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> ' + Object.values(data.projects)[i].title + '</a>')
+            $("#project-title" + i).html('<a href='+ val.link +' target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> ' + val.title + '</a>')
             $("#project-status" + i).html(val.status)
             $("#project-feat" + i).html(val.featured)
             if (val.imgvid.includes('mp4')){
-                $('#project-media' + i).html('<video class="portrait" playsinline autoplay muted loop><source  src=' + Object.values(data.projects)[i].imgvid + ' type="video/mp4"></video>')
+                $('#project-media' + i).html('<video class="portrait" playsinline autoplay muted loop><source  src=' + val.imgvid + ' type="video/mp4"></video>')
             } else {
                 $('#project-media' + i).html('<img class="portrait" src=' + val.imgvid + '>')    
             }
-            $('#project-text'+i).attr({src: Object.values(data.projects)[i].description})
+            $('#project-text'+i).attr({src: val.description})
             $('#project-badge' + i).html(main)
             Object.values(val.tags).forEach(valt => {
                 proj.setAttribute('class', "js-id-"+ String(valt) + " " + proj.getAttribute('class'))
