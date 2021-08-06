@@ -265,7 +265,6 @@ $(function(){
             $('#project-badge' + i).html(main)
 
             Object.values(val.tags).forEach(valt => {
-                console.log(String(valt.tag))
                 proj.setAttribute('class', "js-id-"+ String(valt.tag) + " " + proj.getAttribute('class'))
             })
             i++
