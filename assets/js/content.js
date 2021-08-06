@@ -16,7 +16,7 @@ $(function(){
             $('#interests').append("<li>" + `${vals}` + "</li>")
         }
         var i = 0
-        Object.values(data.skill).forEach(val => {
+        Object.values(data.skills).forEach(val => {
             var skill = document.createElement('div')
             var skilldiv = document.createElement('div')
             var skilldivicon = document.createElement('div')
@@ -34,7 +34,7 @@ $(function(){
             skilldiv.appendChild(skillname)
 
             document.getElementById('skill').appendChild(tree)
-            $("#skill-name" + i).html(Object.values(data.skill)[i].name)
+            $("#skill-name" + i).html(Object.values(data.skills)[i].name)
             i++
         })
         var i = 0
