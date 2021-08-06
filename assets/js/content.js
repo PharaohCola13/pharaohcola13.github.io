@@ -256,7 +256,11 @@ $(function(){
             $("#project-title" + i).html('<a href='+ Object.values(data.projects)[i].link +' target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i> ' + Object.values(data.projects)[i].title + '</a>')
             $("#project-status" + i).html(Object.values(data.projects)[i].status)
             $("#project-feat" + i).html(Object.values(data.projects)[i].featured)
-            $('#project-media' + i).html('<video class="portrait" playsinline autoplay muted loop><source  src=' + Object.values(data.projects)[i].imgvid + ' type="video/mp4"></video>')
+            if (Object.values(data.projects)[i].imgvid.includes('mp4')){
+                $('#project-media' + i).html('<video class="portrait" playsinline autoplay muted loop><source  src=' + Object.values(data.projects)[i].imgvid + ' type="video/mp4"></video>')
+            } else {
+                $('#project-media' + i).html('<img class="portrait" src=' + Object.values(data.projects)[i].imgvid + '>')    
+            }
             $('#project-text'+i).attr({src: Object.values(data.projects)[i].description})
             $('#project-badge' + i).html(main)
             for (let vals of Object.values(Object.values(data.projects)[i].tags)){
