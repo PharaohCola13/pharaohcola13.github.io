@@ -13,7 +13,7 @@ $(function(){
         document.getElementById('bio_description').innerHTML = data.biography.description
         
         Object.values(data.biography.interests).forEach(val => {
-             $('#interests').append("<li>" + `val.item` + "</li>")
+             $('#interests').append("<li>" + String(val.item) + "</li>")
         })
         var i = 0
         Object.values(data.skills).forEach(val => {
