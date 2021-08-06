@@ -78,7 +78,7 @@
             "link": "https://physicsgoddess1972.github.io/Precipitable-Water-Model",
             "description": "assets/md/pmat.md",
             "featured": "This project was presented at PhysCon 2019 and AMES 100.",
-            "imgvid": null,
+            "imgvid": "assets/img/pmat.png",
             "status": "v2.0",
             "maintained": {
                 "bool": true,
@@ -98,7 +98,7 @@
             "link": "https://pharaohcola13.github.io/pacviz/book",
             "description": "assets/md/pacviz.md",
             "featured": "This project was featured in a presentation at PhysCon 2019.",
-            "imgvid": "assets/img/Rings.mp4",
+            "imgvid": "assets/img/pacviz.png",
             "status": "v1.0.1",
             "maintained": {
                 "bool": true,
