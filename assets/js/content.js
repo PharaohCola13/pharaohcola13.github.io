@@ -5,16 +5,15 @@ $(function(){
         $('#place').html(data.place)
         $('#profile-picture').attr({src: data.profile})
         
-        console.log(data.biography.education[0])
-        console.log(Object.values(data.biography.education)[0])
-        $('#edu-degree').html(data.biography.education.degree + ".")
-        $('#edu-focus-minor').html("Focus in " + data.biography.education.focus +". Minor in "+ data.biography.education.minor)
-        $('#edu-date').html(data.biography.education.date + " <em>(Expected)</em>.")
-        $('#edu-place').html(data.biography.education.place)
+        console.log(Object.values(data.biography.education)[0].degree)
+        $('#edu-degree').html(Object.values(data.biography.education)[0].degree + ".")
+        $('#edu-focus-minor').html("Focus in " + Object.values(data.biography.education)[0].focus +". Minor in "+ data.biography.education.minor)
+        $('#edu-date').html(Object.values(data.biography.education)[0].date + " <em>(Expected)</em>.")
+        $('#edu-place').html(Object.values(data.biography.education)[0].place)
 
         document.getElementById('bio_description').innerHTML = data.biography.description
-
-        for (let vals of data.biography.interests){
+        console.log(Object.values(data.biography.interests)[0])
+        for (let vals of Object.values(data.biography.interests)){
             $('#interests').append("<li>" + `${vals}` + "</li>")
         }
         var i = 0
