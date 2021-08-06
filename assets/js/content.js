@@ -4,14 +4,15 @@ $(function(){
         $('#role').html(data.role)
         $('#place').html(data.place)
         $('#profile-picture').attr({src: data.profile})
+        
+        console.log(data.biography.education)
         $('#edu-degree').html(data.biography.education.degree + ".")
         $('#edu-focus-minor').html("Focus in " + data.biography.education.focus +". Minor in "+ data.biography.education.minor)
         $('#edu-date').html(data.biography.education.date + " <em>(Expected)</em>.")
         $('#edu-place').html(data.biography.education.place)
 
         document.getElementById('bio_description').innerHTML = data.biography.description
-
-
+        console.log(data.biography.interests)
         for (let [key, vals] of Object.entries(data.biography.interests)){
             $('#interests').append("<li>" + `${vals}` + "</li>")
         }
@@ -213,8 +214,6 @@ $(function(){
             template.setAttribute('data-merge', 'prepend')
             divstat.setAttribute('style', 'display: flex')
             badge.setAttribute('class', 'badge-light')
-
-            console.log(Object.values(data.projects)[i].maintained.year)
 
             if (Object.values(data.projects)[i].maintained.bool){
                 badge.setAttribute('style', 'background-color: #00C200; border-top-right-radius: 25px; border-bottom-right-radius: 25px')
