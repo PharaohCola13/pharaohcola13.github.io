@@ -214,7 +214,7 @@ $(function(){
             divstat.setAttribute('style', 'display: flex')
             badge.setAttribute('class', 'badge-light')
 
-            if (Object.values(val).maintained.bool){
+            if (val.maintained.bool){
                 badge.setAttribute('style', 'background-color: #00C200; border-top-right-radius: 25px; border-bottom-right-radius: 25px')
                 var main = "Maintained"
             } else {
