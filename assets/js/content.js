@@ -5,15 +5,16 @@ $(function(){
         $('#place').html(data.place)
         $('#profile-picture').attr({src: data.profile})
         
-        console.log(data.biography.education)
+        console.log(data.biography.education[0])
+        console.log(Object.values(data.biography.education)[0])
         $('#edu-degree').html(data.biography.education.degree + ".")
         $('#edu-focus-minor').html("Focus in " + data.biography.education.focus +". Minor in "+ data.biography.education.minor)
         $('#edu-date').html(data.biography.education.date + " <em>(Expected)</em>.")
         $('#edu-place').html(data.biography.education.place)
 
         document.getElementById('bio_description').innerHTML = data.biography.description
-        console.log(data.biography.interests)
-        for (let [key, vals] of Object.entries(data.biography.interests)){
+
+        for (let vals of data.biography.interests){
             $('#interests').append("<li>" + `${vals}` + "</li>")
         }
         var i = 0
