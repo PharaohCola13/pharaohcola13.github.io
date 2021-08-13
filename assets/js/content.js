@@ -25,6 +25,7 @@ $(function(){
             var tree = document.createDocumentFragment();
 
             skilldiv.setAttribute('class', 'col-12 col-lg-8')
+            skilldiv.setAttribute('style', 'display: flex; width: 100%;')
             skill.setAttribute("class", "mdl-chip mdl-chip--contact")
             skilldivicon.setAttribute("class", "mdl-chip__contact mdl-color--teal mdl-color-text--white")
             skilltext.setAttribute('class', 'mdl-chip__text')
