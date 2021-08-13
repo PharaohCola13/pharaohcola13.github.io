@@ -15,26 +15,32 @@ $(function(){
         Object.values(data.biography.interests).forEach(val => {
              $('#interests').append("<li>" + String(val.item) + "</li>")
         })
+        <span class="mdl-chip mdl-chip--contact">
+    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">A</span>
+    <span class="mdl-chip__text">Contact Chip</span>
+</span>
         var i = 0
         Object.values(data.skills).forEach(val => {
-            var skill = document.createElement('div')
-            var skilldiv = document.createElement('div')
-            var skilldivicon = document.createElement('div')
-            var skillname = document.createElement('h3')
+            var skill = document.createElement('span')
+            var skilldivicon = document.createElement('span')
+            var skilltext = document.createElement('span')
+            var skillicon = document.createElement('i')
             var tree = document.createDocumentFragment();
 
-            skill.setAttribute("class", "col-12 col-sm-4")
-            skilldiv.setAttribute("class", "featurette-icon")
-            skilldivicon.setAttribute('class', String(val.icon))
-            skillname.setAttribute("id", String("skill-name" + i))
+            skill.setAttribute("class", "mdl-chip mdl-chip--contact")
+            skilldivicon.setAttribute("class", "mdl-chip__contact mdl-color--teal mdl-color-text--white")
+            skilltext.setAttribute('class', 'mdl-chip__text')
+            skillicon.setAttribute("class", 'material-icons')
+            skillicon.setAttribute('id', String('skill-icon' + i))
+            skilltext.setAttribute('id', String('skill-text' + i))
 
             tree.appendChild(skill)
-            skill.appendChild(skilldiv)
-            skilldiv.appendChild(skilldivicon)
-            skilldiv.appendChild(skillname)
+            skill.appendChild(skilldivicon)
+            skill.appendChild(skilltext)
 
             document.getElementById('skill').appendChild(tree)
-            $("#skill-name" + i).html(val.name)
+            $("#skill-icon" + i).html(val.icon)
+            $("#skill-text" + i).html(val.text)
             i++
         })
         var i = 0
