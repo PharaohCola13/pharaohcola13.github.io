@@ -41,6 +41,30 @@
         {
             "icon": "bash",
             "name": "Bash"
+        },
+        {
+            "icon": "javscript",
+            "name": "Javascript"
+        },
+        {
+            "icon": "raspberrypi",
+            "name": "Raspberry Pi"
+        },
+        {
+            "icon": "arduino",
+            "name": "Arduino"
+        },
+        {
+            "icon": "html5",
+            "name": "HTML"
+        },
+        {
+            "icon": "docker",
+            "name": "Docker"
+        },
+        {
+            "icon": "googlecloud",
+            "name": "GCloud"
         }
     ],
     "workhistory": [
