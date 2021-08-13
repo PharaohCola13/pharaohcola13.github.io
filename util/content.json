@@ -31,38 +31,46 @@
     },
     "skills": [
         {
-            "icon": "python",
+            "icon": "devicon-python-plain",
             "name": "Python"
         },
         {
-            "icon": "r",
+            "icon": "devicon-r-original",
             "name": "R"
         },
         {
-            "icon": "bash",
+            "icon": "devicon-bash-plain",
             "name": "Bash"
         },
         {
-            "icon": "javascript",
+            "icon": "devicon-javascript-plain",
             "name": "Javascript"
         },
         {
-            "icon": "html5",
+            "icon": "devicon-html5-plain",
             "name": "HTML"
         },
         {
-            "icon": "docker",
+            "icon": "devicon-docker-plain",
             "name": "Docker"
         },
         {
-            "icon": "googlecloud",
+            "icon": "devicon-googlecloud-plain",
             "name": "GCloud"
+        },
+        {
+            "icon": "devicon-github-original",
+            "name": "GitHub"
+        },
+        {
+            "icon": "devicon-raspberrypi-line",
+            "name": "Raspberrry Pi"
         }
     ],
     "workhistory": [
         {
             "title": "Research Intern",
-            "description": "TBA",
+            "description": "Awaiting Approval",
             "place": "Institute of Complex Additive Systems Analysis",
             "city": "Socorro",
             "state": "NM",
