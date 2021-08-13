@@ -18,7 +18,7 @@ biography:
 skills:
   - icon: python
     name: Python
-  - icon: r-original
+  - icon: r
     name: R
   - icon: bash
     name: Bash
