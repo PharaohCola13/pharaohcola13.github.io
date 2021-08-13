@@ -32,11 +32,11 @@ $(function(){
             skillicon.setAttribute('id', String('skill-icon' + i))
             skilltext.setAttribute('id', String('skill-text' + i))
             
-            tree.appendChild(skill)
-            skill.appendChild(skilldiv)
-            skilldiv.appendChild(skilldivicon)
+            tree.appendChild(skilldiv)
+            skilldiv.appendChild(skill)
+            skill.appendChild(skilldivicon)
             skilldivicon.appendChild(skillicon)
-            skilldiv.appendChild(skilltext)
+            skill.appendChild(skilltext)
 
             document.getElementById('skill').appendChild(tree)
             $("#skill-icon" + i).attr({'class': "devicon-" + val.icon + "-plain"})
