@@ -15,10 +15,6 @@ $(function(){
         Object.values(data.biography.interests).forEach(val => {
              $('#interests').append("<li>" + String(val.item) + "</li>")
         })
-        <span class="mdl-chip mdl-chip--contact">
-    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">A</span>
-    <span class="mdl-chip__text">Contact Chip</span>
-</span>
         var i = 0
         Object.values(data.skills).forEach(val => {
             var skill = document.createElement('span')
