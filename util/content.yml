@@ -22,12 +22,8 @@ skills:
     name: R
   - icon: bash
     name: Bash
-  - icon: javscript
+  - icon: javascript
     name: Javascript
-  - icon: raspberrypi
-    name: Raspberry Pi
-  - icon: arduino
-    name: Arduino
   - icon: html5
     name: HTML
   - icon: docker
