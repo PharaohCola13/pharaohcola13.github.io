@@ -41,7 +41,7 @@ $(function(){
             skill.appendChild(skilltext)
 
             document.getElementById('skill').appendChild(tree)
-            $("#skill-icon" + i).attr({'class': "devicon-" + val.icon + "-plain"})
+            $("#skill-icon" + i).attr({'class': val.icon})
             $("#skill-text" + i).html(val.name)
             i++
         })
