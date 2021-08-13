@@ -24,11 +24,14 @@ $(function(){
             var tree = document.createDocumentFragment();
             
             skill.setAttribute("class", "mdl-chip mdl-chip--contact")
-            skilldivicon.setAttribute("class", "mdl-chip__contact mdl-color--teal mdl-color-text--white")
+            skilldivicon.setAttribute("class", "mdl-chip__contact mdl-color-text--white")
             skilltext.setAttribute('class', 'mdl-chip__text')
             skillicon.setAttribute("class", 'material-icons')
             skillicon.setAttribute('id', String('skill-icon' + i))
             skilltext.setAttribute('id', String('skill-text' + i))
+            
+            skilldivicon.setAttribute('style', 'height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6; ')
+            skill.setAttribute('style', 'width: 142px; height: 64px; ')
             
             tree.appendChild(skill)
             skill.appendChild(skilldivicon)
