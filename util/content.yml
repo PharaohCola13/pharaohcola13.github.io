@@ -16,12 +16,12 @@ biography:
       place: New Mexico Institute of Mining and Technology
       date: May 2022
 skills:
-  - icon: fab fa-python
+  - icon: python
     name: Python
-  - icon: fab fa-r-project
+  - icon: r-original
     name: R
-  - icon: fas fa-keyboard
-    name: LaTeX
+  - icon: bash
+    name: Bash
 workhistory:
   - title: Research Intern
     description: TBA
