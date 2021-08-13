@@ -31,16 +31,16 @@
     },
     "skills": [
         {
-            "icon": "fab fa-python",
+            "icon": "python",
             "name": "Python"
         },
         {
-            "icon": "fab fa-r-project",
+            "icon": "r-original",
             "name": "R"
         },
         {
-            "icon": "fas fa-keyboard",
-            "name": "LaTeX"
+            "icon": "bash",
+            "name": "Bash"
         }
     ],
     "workhistory": [
