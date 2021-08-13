@@ -33,6 +33,7 @@ $(function(){
             skilldivicon.setAttribute('style', 'height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6; ')
             skill.setAttribute('style', 'width: 142px; height: 64px; margin-right: 56px')
             skilltext.setAttribute('style', 'font-size: 14px')
+            skillicon.setAttribute('style', 'color: hsla(231, 15%, 18%, 1);')
             
             tree.appendChild(skill)
             skill.appendChild(skilldivicon)
@@ -40,7 +41,7 @@ $(function(){
             skill.appendChild(skilltext)
 
             document.getElementById('skill').appendChild(tree)
-            $("#skill-icon" + i).attr({'class': "devicon-" + val.icon + "-plain colored"})
+            $("#skill-icon" + i).attr({'class': "devicon-" + val.icon + "-plain"})
             $("#skill-text" + i).html(val.name)
             i++
         })
