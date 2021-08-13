@@ -31,7 +31,8 @@ $(function(){
             skilltext.setAttribute('id', String('skill-text' + i))
             
             skilldivicon.setAttribute('style', 'height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6; ')
-            skill.setAttribute('style', 'width: 142px; height: 64px; ')
+            skill.setAttribute('style', 'width: 142px; height: 64px; margin-right: 56px')
+            skilltext.setAttribute('style', 'font-size: 14px')
             
             tree.appendChild(skill)
             skill.appendChild(skilldivicon)
