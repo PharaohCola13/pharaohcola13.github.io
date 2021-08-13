@@ -17,15 +17,12 @@ $(function(){
         })
         var i = 0
         Object.values(data.skills).forEach(val => {
-            var skilldiv = document.createElement('div')
             var skill = document.createElement('span')
             var skilldivicon = document.createElement('span')
             var skilltext = document.createElement('span')
             var skillicon = document.createElement('i')
             var tree = document.createDocumentFragment();
-
-            skilldiv.setAttribute('class', 'col-12 col-lg-8')
-            skilldiv.setAttribute('style', 'display: flex; width: 100%;')
+            
             skill.setAttribute("class", "mdl-chip mdl-chip--contact")
             skilldivicon.setAttribute("class", "mdl-chip__contact mdl-color--teal mdl-color-text--white")
             skilltext.setAttribute('class', 'mdl-chip__text')
@@ -33,15 +30,14 @@ $(function(){
             skillicon.setAttribute('id', String('skill-icon' + i))
             skilltext.setAttribute('id', String('skill-text' + i))
             
-            tree.appendChild(skilldiv)
-            skilldiv.appendChild(skill)
+            tree.appendChild(skill)
             skill.appendChild(skilldivicon)
             skilldivicon.appendChild(skillicon)
             skill.appendChild(skilltext)
 
             document.getElementById('skill').appendChild(tree)
             $("#skill-icon" + i).attr({'class': "devicon-" + val.icon + "-plain"})
-            $("#skill-text" + i).html(val.text)
+            $("#skill-text" + i).html(val.name)
             i++
         })
         var i = 0
