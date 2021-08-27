@@ -210,7 +210,6 @@ $(function(){
             var divstat = document.createElement('div')
 
             proj.setAttribute('class', 'project-card project-item isotope-item')
-            proj.setAttribute('style', 'position: absolute')
             
             projcard.setAttribute('class', 'card')
             projtext.setAttribute('class', 'card-text')
