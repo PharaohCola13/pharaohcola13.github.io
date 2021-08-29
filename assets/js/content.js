@@ -6,6 +6,7 @@ $(function(){
         $('#profile-picture').attr({src: data.profile})
         
         $('#edu-degree').html(Object.values(data.biography.education)[0].degree + ".")
+        console.log(data.biography.education)
         $('#edu-focus-minor').html("Focus in " + Object.values(data.biography.education)[0].focus +". Minor in "+ data.biography.education.minor)
         $('#edu-date').html(Object.values(data.biography.education)[0].date + " <em>(Expected)</em>.")
         $('#edu-place').html(Object.values(data.biography.education)[0].place)
