@@ -17,8 +17,8 @@ jobs:
         uses: birjolaxew/tectonic-biber-action@master
         with:
           files: |
-            5e87506aa3afa80001813f3d/_default_cv.tex
             5e87506aa3afa80001813f3d/_basic_cv.tex 
+            5e87506aa3afa80001813f3d/_default_cv.tex
       - name: Move
         run: |
           ls 5e87506aa3afa80001813f3d
