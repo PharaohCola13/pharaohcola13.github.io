@@ -15,14 +15,19 @@ jobs:
       - name: Compile
         uses: birjolaxew/tectonic-biber-action@master
         with:
-          files: 5e87506aa3afa80001813f3d/_default_cv.tex, 5e87506aa3afa80001813f3d/_basic_cv.tex 
+          files: |
+            5e87506aa3afa80001813f3d/_default_cv.tex
+            5e87506aa3afa80001813f3d/_basic_cv.tex 
       - name: Move
         run: |
           ls 5e87506aa3afa80001813f3d
-          mv 5e87506aa3afa80001813f3d/resume.pdf ./
+          mv 5e87506aa3afa80001813f3d/_default_cv.pdf ./_default_cv.pdf
+          mv 5e87506aa3afa80001813f3d/_basic_cv.pdf ./_basic_cv.pdf
       - name: Add and commit
         uses: EndBug/add-and-commit@v7
         with:
           default_author: github_actions
           message: Update Resume
-          add: 'resume.pdf'
+          add: |
+            '_default_cv.pdf'
+            '_basic_cv.pdf'
