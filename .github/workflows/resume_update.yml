@@ -17,6 +17,10 @@ jobs:
         with:
           files: |
             5e87506aa3afa80001813f3d/_default_cv.tex
+      - name: Test
+        run: |
+          ls 5e87506aa3afa80001813f3d/
+          find / -name '_basic_cv.tex'          
       - name: Compile
         uses: birjolaxew/tectonic-biber-action@master
         with:
