@@ -67,10 +67,6 @@
             "name": "Raspberrry Pi"
         },
         {
-            "icon": "devicon-arduino-plain-wordmark",
-            "name": "Arduino"
-        },
-        {
             "icon": "devicon-c-plain",
             "name": "C"
         }
