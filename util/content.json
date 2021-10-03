@@ -65,6 +65,14 @@
         {
             "icon": "devicon-raspberrypi-line",
             "name": "Raspberrry Pi"
+        },
+        {
+            "icon": "devicon-arduino-plain",
+            "name": "Arduino"
+        },
+        {
+            "icon": "devicon-c-plain",
+            "name": "C"
         }
     ],
     "workhistory": [
