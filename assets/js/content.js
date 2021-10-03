@@ -7,7 +7,7 @@ $(function(){
         
         $('#edu-degree').html(Object.values(data.biography.education)[0].degree + ".")
 
-        $('#edu-focus-minor').html("Focus in " + Object.values(data.biography.education)[0].focus +". Minor in "+ data.biography.education[0].minor)
+        $('#edu-focus-minor').html("Focus in " + Object.values(data.biography.education)[0].focus +".\nMinor in "+ data.biography.education[0].minor)
         $('#edu-date').html(Object.values(data.biography.education)[0].date + " <em>(Expected)</em>.")
         $('#edu-place').html(Object.values(data.biography.education)[0].place)
 
