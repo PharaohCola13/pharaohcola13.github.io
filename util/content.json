@@ -146,7 +146,7 @@
             "link": "https://pharaohcola13.github.io/salsa",
             "description": "assets/md/salsa.md",
             "featured": null,
-            "imgvid": null,
+            "imgvid": "assets/img/salsa.png",
             "status": "v0.0.0",
             "maintained": {
                 "bool": true,
