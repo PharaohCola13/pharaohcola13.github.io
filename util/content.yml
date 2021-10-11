@@ -83,6 +83,18 @@ projects:
     tags:
       - tag: R
       - tag: Maintained
+  - title: "Some Analysis for Looking at the Sun's Atmosphere"
+    link: https://pharaohcola13.github.io/salsa
+    description: assets/md/salsa.md
+    featured: 
+    imgvid: 
+    status: v0.0.0
+    maintained:
+      bool: yes
+      year:
+    tags:
+      - tag: java
+      - tag: Maintained
   - title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
     description: assets/md/geoexpanse.md
