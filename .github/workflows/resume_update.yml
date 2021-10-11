@@ -13,19 +13,18 @@ jobs:
         run: |
           git clone https://spencerriley620%40gmail.com:${{ secrets.overleaf }}@git.overleaf.com/5e87506aa3afa80001813f3d
           ls 5e87506aa3afa80001813f3d/  
-          cd 5e87506aa3afa80001813f3d/
       - name: Compile basic
         uses: dante-ev/latex-action@latest
         with:
           root_file: ./_basic_cv.tex
           compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
+          args: -interaction=nonstopmode -shell-escape -cd 5e87506aa3afa80001813f3d/
       - name: Compile default
         uses: dante-ev/latex-action@latest
         with:
           root_file: ./_default_cv.tex
           compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
+          args: -interaction=nonstopmode -shell-escape -cd 5e87506aa3afa80001813f3d/
       - name: Move
         run: |
           ls 5e87506aa3afa80001813f3d
