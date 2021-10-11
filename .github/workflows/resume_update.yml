@@ -14,9 +14,9 @@ jobs:
           git clone https://spencerriley620%40gmail.com:${{ secrets.overleaf }}@git.overleaf.com/5e87506aa3afa80001813f3d
           ls 5e87506aa3afa80001813f3d/  
       - name: Compile
-        uses: birjolaxew/tectonic-biber-action@master
+        uses: xu-cheng/latex-action@v2
         with:
-          files: |
+          root_file: |
             5e87506aa3afa80001813f3d/_default_cv.tex
             5e87506aa3afa80001813f3d/_basic_cv.tex
       - name: Move
