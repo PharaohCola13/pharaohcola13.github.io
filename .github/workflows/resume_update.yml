@@ -16,7 +16,7 @@ jobs:
       - name: Install TeXlive
         run: sudo apt-get install texlive texlive-publishers texlive-science latexmk cm-super
       - name: LaTeX compile
-        run: latexmk -pdf ./5e87506aa3afa80001813f3d/_default_cv.pdf
+        run: latexmk -pdf ./5e87506aa3afa80001813f3d/_default_cv.tex
       - name: Move
         run: |
           ls 5e87506aa3afa80001813f3d
