@@ -14,11 +14,11 @@ jobs:
           git clone https://spencerriley620%40gmail.com:${{ secrets.overleaf }}@git.overleaf.com/5e87506aa3afa80001813f3d
           ls 5e87506aa3afa80001813f3d/  
       - name: Compile basic
-        uses: vinay0410/tectonic-action@master
+        uses: vinay0410/tectonic-action@v1.1.2
         with:
           tex_path: '5e87506aa3afa80001813f3d/_basic_cv.tex'
       - name: Compile default
-        uses: vinay0410/tectonic-action@master
+        uses: vinay0410/tectonic-action@v1.1.2
         with:
           tex_path: '5e87506aa3afa80001813f3d/_default_cv.tex'
       - name: Move
