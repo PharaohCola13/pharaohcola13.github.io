@@ -15,11 +15,15 @@ jobs:
           ls 5e87506aa3afa80001813f3d/  
       - name: Install TeXlive
         run: sudo apt-get install texlive texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended
-      - name: Compile
+      - name: Compile 
         run: |
           cd 5e87506aa3afa80001813f3d/
+          echo "Starting Basic"
           pdflatex ./_basic_cv.tex
+          echo "Basic Done"
+          echo "Starting Default"
           pdflatex ./_default_cv.tex
+          echo "Default Done"
       - name: Move
         run: |
           ls 5e87506aa3afa80001813f3d
