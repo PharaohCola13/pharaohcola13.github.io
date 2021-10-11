@@ -14,19 +14,13 @@ jobs:
           git clone https://spencerriley620%40gmail.com:${{ secrets.overleaf }}@git.overleaf.com/5e87506aa3afa80001813f3d
           ls 5e87506aa3afa80001813f3d/  
       - name: Compile basic
-        uses: dante-ev/latex-action@latest
+        uses: vinay0410/tectonic-action@master
         with:
-          working_directory: 5e87506aa3afa80001813f3d/
-          root_file: ./_basic_cv.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
+          tex_path: '5e87506aa3afa80001813f3d/_basic_cv.tex'
       - name: Compile default
-        uses: dante-ev/latex-action@latest
+        uses: vinay0410/tectonic-action@master
         with:
-          working_directory: 5e87506aa3afa80001813f3d/
-          root_file: ./_default_cv.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
+          tex_path: '5e87506aa3afa80001813f3d/_default_cv.tex'
       - name: Move
         run: |
           ls 5e87506aa3afa80001813f3d
