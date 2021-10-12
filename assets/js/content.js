@@ -96,7 +96,6 @@ $(function(){
         })
         var i = 0
         Object.values(data.conferences).forEach(val => {
-            var con = document.createElement('div')
             var card = document.createElement('div')
             var article = document.createElement('div')
             var tree = document.createDocumentFragment();
@@ -106,7 +105,11 @@ $(function(){
             var ctitle = document.createElement('h3')
             var cabstr = document.createElement('p')
 
-            card.setAttribute('class', 'card-simple')
+            if (i == 0){
+                card.setAttribute('class', 'card-simple carousel-item active')
+            } else {
+                card.setAttribute('class', 'card-simple carousel-item')
+            }
             article.setAttribute('class', 'article-metadata')
             cimg.setAttribute('class', 'article-banner')
             ctitle.setAttribute('class', 'article-subtitle mb-1 mt-3')
@@ -117,9 +120,7 @@ $(function(){
             ctitle.setAttribute('id', String('conference-title' + i))
             cabstr.setAttribute('id', String('conference-abstract' + i))
 
-            tree.appendChild(con)
-            tree.appendChild(document.createElement('br'))
-            con.appendChild(card)
+            tree.appendChild(card)
             card.appendChild(article)
             article.appendChild(cauthor)
             article.appendChild(cmisc)
@@ -135,6 +136,19 @@ $(function(){
             $("#conference-abstract" + i).html(val.abstract)
             $("#conference-abstract" + i).attr({style: 'font-size: 13px; line-height: 1.5'})
 
+            i++
+        })
+        var i = 0
+        Object.values(data.conferences).forEach(val => {
+            var tree = document.createDocumentFragment();
+            var car_li = document.createElement('li')
+            car_li.setAttribute('data-target', '#carousel-conf')
+            car_li.setAttribute('data-slide-to', i)
+            tree.appendChild(car_li)
+            if (i == 0){
+                car_li.setAttribute('class', 'active')
+            }
+            document.getElementById('carousel-tabs1').appendChild(tree)
             i++
         })
         var i = 0
@@ -210,7 +224,7 @@ $(function(){
             var badge = document.createElement('a')
             var divstat = document.createElement('div')
 
-            proj.setAttribute('class', 'carousel-item project-card project-item isotope-item')
+            proj.setAttribute('class', 'project-card project-item isotope-item carousel-item')
             
             projcard.setAttribute('class', 'card')
             projtext.setAttribute('class', 'card-text')
@@ -268,16 +282,35 @@ $(function(){
             $("#project-feat" + i).html(val.featured)
             if (val.imgvid.includes('mp4')){
                 $('#project-media' + i).html('<video class="portrait" playsinline autoplay muted loop><source  src=' + val.imgvid + ' type="video/mp4"></video>')
-            } else {
+            } else if (val.imgvid.includes('png')){
                 $('#project-media' + i).html('<img class="portrait" src=' + val.imgvid + '>')    
             }
             $('#project-text'+i).attr({src: val.description})
             $('#project-badge' + i).html(main)
 
             Object.values(val.tags).forEach(valt => {
-                proj.setAttribute('class', "js-id-"+ String(valt.tag) + " " + proj.getAttribute('class'))
+                if (i == 0){
+                    proj.setAttribute('class', "active js-id-"+ String(valt.tag) + " " + proj.getAttribute('class'))
+                } else {
+                    proj.setAttribute('class', "js-id-"+ String(valt.tag) + " " + proj.getAttribute('class'))
+
+                }
             })
             i++
         })
+        var i = 0
+        Object.values(data.projects).forEach(val => {
+            var tree = document.createDocumentFragment();
+            var car_li = document.createElement('li')
+            car_li.setAttribute('data-target', '#carousel-proj')
+            car_li.setAttribute('data-slide-to', i)
+            tree.appendChild(car_li)
+            if (i == 0){
+                car_li.setAttribute('class', 'active')
+            }
+            document.getElementById('carousel-tabs').appendChild(tree)
+            i++
+        })
+
    })
 })

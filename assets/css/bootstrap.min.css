@@ -5734,7 +5734,6 @@ button.close {
 .carousel-inner {
     position: relative;
     width: 100%;
-    overflow: hidden
 }
 
 .carousel-item {
@@ -5831,7 +5830,6 @@ button.close {
 
 .carousel-control-next,.carousel-control-prev {
     position: absolute;
-    top: 0;
     bottom: 0;
     display: -ms-flexbox;
     display: flex;
