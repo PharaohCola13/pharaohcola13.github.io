@@ -69,6 +69,10 @@
         {
             "icon": "devicon-c-plain",
             "name": "C"
+        },
+        {
+            "icon": "devicon-android-plain",
+            "name": "Android"
         }
     ],
     "workhistory": [
