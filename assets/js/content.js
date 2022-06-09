@@ -5,12 +5,20 @@ $(function(){
         $('#place').html(data.place)
         $('#profile-picture').attr({src: data.profile})
         
-        $('#edu-degree').html(Object.values(data.biography.education)[0].degree + ".")
-
-        $('#edu-focus-minor').html("Focus in " + Object.values(data.biography.education)[0].focus + '.<br>' + "Minor in "+ data.biography.education[0].minor)
-        $('#edu-date').html(Object.values(data.biography.education)[0].date + " <em>(Expected)</em>.")
-        $('#edu-place').html(Object.values(data.biography.education)[0].place)
-
+        var i = 0
+        Object.values(data.biography.education).forEach(val => {    
+            $('#edu-degree').html(val.degree + ".")
+            if (val.focus !== null && val.minor !== null){
+                $('#edu-focus-minor').html("Focus in " + val.focus + '.<br>' + "Minor in "+ val.minor)
+            }
+            if (new Date() < val.date){
+                $('#edu-date').html(val.date + " <em>(Expected)</em>.")
+            } else {
+                $('#edu-date').html(val.date)
+            }
+            $('#edu-place').htmlval.place)
+        })
+        
         document.getElementById('bio_description').innerHTML = data.biography.description
         
         Object.values(data.biography.interests).forEach(val => {
