@@ -147,7 +147,11 @@
 					<div class="row">
 						<div class="col-md-5">
 							<h3>Interests</h3>
-							<ul class="ul-interests"><li id="interests"></li></ul>
+							<ul class="ul-interests">
+								{% for item in biography.interests %}
+									<li>{{ item }}<li>
+								{% endfor %}
+							</ul>
 						</div>
 						<div class="col-md-7">
 							<h3>Education</h3>
