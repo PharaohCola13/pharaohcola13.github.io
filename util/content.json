@@ -1,7 +1,7 @@
 {
     "name": "Spencer Riley",
-    "role": "Physics Undergraduate",
-    "place": "New Mexico Institute of Mining and Technology",
+    "role": "Physics Graduate Student",
+    "place": "Montana State University",
     "profile": "assets/img/profile.jpg",
     "biography": {
         "description": "Spencer Riley is a student at the New Mexico Institute of Mining and Technology, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.",
@@ -23,6 +23,8 @@
             {
                 "degree": "PhD in Physics",
                 "place": "Montana State University",
+                "focus": null,
+                "minor": null,
                 "date": "TBA"
             },
             {
@@ -86,6 +88,10 @@
         {
             "icon": "devicon-flutter-plain",
             "name": "Flutter"
+        },
+        {
+            "icon": "devicon-kubernetes-plain",
+            "name": "Kubernetes"
         }
     ],
     "workhistory": [
