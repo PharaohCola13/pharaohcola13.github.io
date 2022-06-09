@@ -21,6 +21,11 @@
         ],
         "education": [
             {
+                "degree": "PhD in Physics",
+                "place": "Montana State University",
+                "date": "TBA"
+            },
+            {
                 "degree": "BSc in Physics",
                 "focus": "Astrophysics & Atmospheric Physics",
                 "minor": "Mathematics",
@@ -73,9 +78,26 @@
         {
             "icon": "devicon-android-plain",
             "name": "Android"
+        },
+        {
+            "icon": "devicon-java-plain",
+            "name": "Java"
+        },
+        {
+            "icon": "devicon-flutter-plain",
+            "name": "Flutter"
         }
     ],
     "workhistory": [
+        {
+            "title": "Post-Bachelor's Researcher",
+            "description": "TBA",
+            "place": "Institute of Complex Additive Systems Analysis",
+            "city": "Socorro",
+            "state": "NM",
+            "start": "23 May 2022",
+            "end": "1 Aug 2022"
+        },
         {
             "title": "Research Intern",
             "description": "The position involved tasks regarding a variety of different projects around the theme of complex systems analysis. As a part of a team, I have worked on projects regarding data preprocessing for language detection models, analysis of RF and Bluetooth models, and Internet-Of-Things research and development.",
@@ -83,7 +105,7 @@
             "city": "Socorro",
             "state": "NM",
             "start": "5 Sept 2017",
-            "end": "Present"
+            "end": "22 May 2022"
         },
         {
             "title": "High School Work Study",
@@ -190,13 +212,21 @@
         {
             "title": "Atmospheric precipitable water vapor and its correlation with clear-sky infrared temperature observations",
             "author": "V. Kelsey, S. Riley, K. Minschwaner",
-            "date": 2022,
+            "date": "18 Mar 2022",
             "journal": "Atmospheric Measurement Techniques",
             "status": "Published",
             "doi": "10.5194/amt-15-1563-2022"
         }
     ],
     "conferences": [
+        {
+            "title": "Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Observations",
+            "author": "V. Kelsey, Spencer Riley",
+            "date": "Apr 2022",
+            "place": "5th Texas Weather Conference",
+            "poster": "./assets/img/5txwx_poster.png",
+            "abstract": "Precipitable water vapor (PWAT) is the vertically integrated amount of water vapor in the atmosphere, and it is a valuable predictor for weather forecasting. Currently, the use of sophisticated instrumentation can limit the number of PWAT measurement sites, which affects the accuracy of forecast models in regards to storm formation, strength, and the potential for precipitation. We have analyzed relationships between PWAT and zenith clear sky temperature measurements for the dry climate zone found in the North American Desert Southwest, specifically over Socorro, New Mexico (34$^{\\circ}$N, 107$^{\\circ}$W). Daily measurements of the ground and zenith sky temperatures have been made at Socorro for two complete annual cycles using low-cost infrared thermal sensors. Radiosonde measurements of PWAT from National Weather Service stations located in nearby Albuquerque, and Santa Teresa, New Mexico, are input into our dataset and analysed via a newly developed computational tool. Our results show that an exponential relationship between PWAT and zenith clear sky temperature holds for the Desert Southwest, but with parameters that are different from those obtained previously over the more moist climate zone of the Gulf Coast of Texas. Model simulations can accurately reproduce the observed relationship between PWAT and temperature, and the results suggest that half of the signal in temperature is directly related to changes in opacity due to changes in PWAT, while the other half is due to changes in air temperature that usually accompany changes in PWAT."
+        },
         {
             "title": "Atmospheric Precipitable Water and its Correlation with Clear Sky Infrared Temperature Readings",
             "author": "V. Kelsey, S. Riley",
