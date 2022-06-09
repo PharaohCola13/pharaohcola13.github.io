@@ -16,6 +16,7 @@ $(function(){
 // 									</div>
         var i = 0
         Object.values(data.biography.education).forEach(val => {  
+            var eduico = document.createElement('i')
             var edu = document.createElement('div')
             var edubox = document.createElement('p')
             var edudeg = document.createElement('div')
@@ -24,6 +25,7 @@ $(function(){
             var eduins = document.createElement('p')
             var tree = document.createDocumentFragment();
             
+            eduico.setAttribute('class', 'fa-li fas fa-graduation-cap')
             edu.setAttribute('class', 'description')
             edubox.setAttribute('class', 'course')
             edudeg.setAttribute('id', String('edu-degree' + i))
@@ -32,6 +34,7 @@ $(function(){
             eduins.setAttribute('class', 'institution')
             eduins.setAttribute('id', String('edu-place' + i))
                         
+            tree.append(eduico)
             tree.appendChild(edu)
             edu.appendChild(edubox)
             edubox.appendChild(edudeg)
@@ -44,6 +47,8 @@ $(function(){
             $('#edu-degree' + i).html(val.degree + ".")
             if (val.focus !== null && val.minor !== null){
                 $('#edu-focus-minor' + i).html("Focus in " + val.focus + '.<br>' + "Minor in "+ val.minor)
+            } else {
+                 $('#edu-focus-minor' + i).html('')
             }
             if (new Date() < val.date){
                 $('#edu-date' + i).html(val.date + " <em>(Expected)</em>.")
