@@ -16,12 +16,12 @@ $(function(){
 // 									</div>
         var i = 0
         Object.values(data.biography.education).forEach(val => {  
-            var edu = document.create('div')
-            var edubox = document.create('p')
-            var edudeg = document.create('div')
-            var edufoc = document.create('div')
-            var edudat = document.create('div')
-            var eduins = document.create('p')
+            var edu = document.createElement('div')
+            var edubox = document.createElement('p')
+            var edudeg = document.createElement('div')
+            var edufoc = document.createElement('div')
+            var edudat = document.createElement('div')
+            var eduins = document.createElement('p')
             var tree = document.createDocumentFragment();
             
             edu.setAttribute('class', 'description')
