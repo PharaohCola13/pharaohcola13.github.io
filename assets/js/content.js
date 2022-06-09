@@ -16,7 +16,7 @@ $(function(){
             } else {
                 $('#edu-date').html(val.date)
             }
-            $('#edu-place').htmlval.place)
+            $('#edu-place').html(val.place)
         })
         
         document.getElementById('bio_description').innerHTML = data.biography.description
