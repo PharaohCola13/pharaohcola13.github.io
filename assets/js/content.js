@@ -34,17 +34,20 @@ $(function(){
             eduins.setAttribute('class', 'institution')
             eduins.setAttribute('id', String('edu-place' + i))
                         
-            tree.append(eduico)
+            tree.appendChild(eduico)
             tree.appendChild(edu)
             edu.appendChild(edubox)
             edubox.appendChild(edudeg)
             edubox.appendChild(edufoc)
             edubox.appendChild(edudat)
             edu.appendChild(eduins)
+            edu.appendChild(document.createElement('br'))
 
             document.getElementById('edu-history').appendChild(tree)
 
             $('#edu-degree' + i).html(val.degree + ".")
+            console.log(val.focus)
+            console.log(val.minor)
             if (val.focus !== null && val.minor !== null){
                 $('#edu-focus-minor' + i).html("Focus in " + val.focus + '.<br>' + "Minor in "+ val.minor)
             } else {
