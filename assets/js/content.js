@@ -5,18 +5,54 @@ $(function(){
         $('#place').html(data.place)
         $('#profile-picture').attr({src: data.profile})
         
+        
+
+// 									<i class="fa-li fas fa-graduation-cap"></i>
+// 									<div class="description">
+// 										<p class="course">
+//                                             <div id="edu-degree"></div><div id="edu-focus-minor"></div><div id="edu-date"></div>
+//                                         </p>
+// 										<p class="institution" id="edu-place"></p>
+// 									</div>
         var i = 0
-        Object.values(data.biography.education).forEach(val => {    
-            $('#edu-degree').html(val.degree + ".")
+        Object.values(data.biography.education).forEach(val => {  
+            var edu = document.create('div')
+            var edubox = document.create('p')
+            var edudeg = document.create('div')
+            var edufoc = document.create('div')
+            var edudat = document.create('div')
+            var eduins = document.create('p')
+            var tree = document.createDocumentFragment();
+            
+            edu.setAttribute('class', 'description')
+            edubox.setAttribute('class', 'course')
+            edudeg.setAttribute('id', String('edu-degree' + i))
+            edufoc.setAttribute('id', String('edu-focus-minor' + i))
+            edudat.setAttribute('id', String('edu-date' + i))
+            eduins.setAttribute('class', 'institution')
+            eduins.setAttribute('id', String('edu-place' + i))
+                        
+            tree.appendChild(edu)
+            edu.appendChild(edubox)
+            edubox.appendChild(edudeg)
+            edubox.appendChild(edufoc)
+            edubox.appendChild(edudat)
+            edu.appendChild(eduins)
+
+            document.getElementById('edu-history').appendChild(tree)
+
+            $('#edu-degree' + i).html(val.degree + ".")
             if (val.focus !== null && val.minor !== null){
-                $('#edu-focus-minor').html("Focus in " + val.focus + '.<br>' + "Minor in "+ val.minor)
+                $('#edu-focus-minor' + i).html("Focus in " + val.focus + '.<br>' + "Minor in "+ val.minor)
             }
             if (new Date() < val.date){
-                $('#edu-date').html(val.date + " <em>(Expected)</em>.")
+                $('#edu-date' + i).html(val.date + " <em>(Expected)</em>.")
             } else {
-                $('#edu-date').html(val.date)
+                $('#edu-date' + i).html(val.date)
             }
-            $('#edu-place').html(val.place)
+            $('#edu-place' + i).html(val.place)
+            
+            i++
         })
         
         document.getElementById('bio_description').innerHTML = data.biography.description
