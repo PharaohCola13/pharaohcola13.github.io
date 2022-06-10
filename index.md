@@ -16,8 +16,6 @@ title: Spencer Riley
 	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script src="assets/js/academic.min.js"></script>
-	<script type="module" src="assets/js/zero-md.min.js"></script>
-
 	<script>
 	if (document.location.protocol != "https:") {
 	    document.location = document.URL.replace(/^http:/i, "https:");
