@@ -155,6 +155,7 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
+                    <div class="col-12 col-lg-4"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Development Experience</h1><hr>
                         <p>
@@ -176,42 +177,46 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <h1>Work History</h1><hr/>
-                    {% for job in site.data.content.workhistory %} 
-                        <div class="col-12 col-lg-8">
-                            <div class="row experience">
-                                <div class="col py-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">
-                                            {{job.title}}
-                                        </h4>
-                                        <h4 class="card-title exp-company text-muted my-0">
-                                            {{job.place}}</h4>
-                                        <div class="text-muted exp-meta">
-                                            {{job.start}} -- {{job.end}}
-                                            <span class='middot-divider'></span> 
-                                            {{job.city}}, {{job.state}}
-                                        </div>
-                                        <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                            {{job.description}}
+                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-8">
+                        <h1>Work History</h1><hr>
+                        <p>
+                            {% for job in site.data.content.workhistory %} 
+                                <div class="col-12 col-lg-8">
+                                    <div class="row experience">
+                                        <div class="col py-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title exp-title text-muted mt-0 mb-1">
+                                                    {{job.title}}
+                                                </h4>
+                                                <h4 class="card-title exp-company text-muted my-0">
+                                                    {{job.place}}</h4>
+                                                <div class="text-muted exp-meta">
+                                                    {{job.start}} -- {{job.end}}
+                                                    <span class='middot-divider'></span> 
+                                                    {{job.city}}, {{job.state}}
+                                                </div>
+                                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                                    {{job.description}}
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
-                            </div>
-                            </div>
-                        </div>
-                    {% endfor %}
+                            {% endfor %}
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-4 section-heading">
-                        <h1>Projects</h1><hr/>
-                    </div>
+                    <div class="col-12 col-lg-4"></div>
                     <div class="col-12 col-lg-8">
+                        <h1>Projects</h1><hr>
                         <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 600px;">
                             <div id="carousel-proj" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" id="projs" style="top: 0px; position: absolute;"></div>
