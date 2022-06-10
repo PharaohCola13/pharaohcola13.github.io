@@ -134,7 +134,6 @@ title: Spencer Riley
                             <ul class="ul-edu fa-ul">
                                 {% for edus in site.data.content.biography.education %}
                                 <li>
-<!--                                     <i class="fa-li fas fa-graduation-cap"></i> -->
 					<i class="fa-li material-icons">school</i>
                                     <div class="description">
                                         <p class="course">
@@ -186,8 +185,8 @@ title: Spencer Riley
                         <h1 style="border-bottom: 0; padding-bottom: 0">Work History</h1><hr>
                         <p>
                             {% for job in site.data.content.workhistory %}
-                                <div class="card">
-                                    <div class="card-body">
+                                <div class="card-simple">
+                                    <div class="article-metadata">
                                         <h4 class="card-title exp-title mt-0 mb-1" style="color: #FFF">
                                             {{job.title}}
                                         </h4>
@@ -215,6 +214,12 @@ title: Spencer Riley
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1 style="border-bottom: 0; padding-bottom: 0">Projects</h1><hr>
+		    	{% for projects in site.data.content.projects %}
+			    <div class="card-simple">
+				    <h4>{{ projects.title }}</h4>
+				    <zero-md src="{{projects.description}}"></zero-md>
+			    </div>
+		    	{% endfor %}
                     </div>
                 </div>
             </div>
