@@ -169,10 +169,10 @@
                                         <div class="description">
                                             <p class="course">
                                                  <div>{{edus.degree}}</div>
-                                                 <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>\
+                                                 <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>
                                                  <div>{{edus.date}}</div>
                                              </p>
-                                            <p class="institution">{{edus.place</p>
+                                            <p class="institution">{{edus.place}}</p>
                                         </div>                                    
                                     </li>
                                     {% endfor %}
