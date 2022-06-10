@@ -1,7 +1,3 @@
----
-title:home
----
-
 <head>
 	<link rel="canonical" href="about.html">
 	<meta property="og:url" content="about.html">
@@ -34,7 +30,7 @@ title:home
     <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
         <div class="container">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <span><i class="fas fa-bars"></i></span>
             </button>
             <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
                 <ul class="navbar-nav d-md-inline-flex">
