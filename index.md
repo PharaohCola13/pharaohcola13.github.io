@@ -66,7 +66,6 @@
             </div>
         </div>
     </nav>
-    <span class="js-widget-page d-none"></span>
     <div id="main" role="main">
         <section class="home-section">
             <div class="container">
@@ -120,14 +119,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8" itemprop="description">
+                    <div class="col-12 col-lg-8">
                         <h1>Biography</h1><hr>
                         <p>{{site.data.content.biography.description}}</p>
                         <div class="row">
                             <h3>Interests</h3>
                             <ul class="ul-interests">
                                 {% for items in site.data.content.biography.interests %}
-                                    {{ items.item }}
+                                    <li>{{ items.item }}</li>
                                 {% endfor %}
                             </ul> 
                             <h3>Education</h3>
@@ -154,21 +153,28 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-8" section-heading">
-                        <h1>Development Experience</h1><hr/>
-                    </div>
-                    <div id="skill"></div>
+                    <h1>Development Experience</h1><hr/>
+                    {% for skill in site.data.content.skills %}
+                        <span class="mdl-chip mdl-chip--contact" style="height: 64px; margin-right: 56px; text-align: left;">
+                            <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6;">
+                                <i class="material-icons" style="color: #23252f; line-height: 1.5">{{ skill.icon }}</i>
+                            </span>
+                            <span class="mdl-chip__text" style="font-size: 14px">
+                                {{ skill.name }}
+                            </span>
+                        </span>
+                    {% endfor %}
                 </div>
             </div>
         </section>
-        <section id="experience" class="home-section wg-experience">
+        <section class="home-section">
             <div class="container">
                 <div class="row">
                     <h1>Work History</h1><hr/>
                     {% for job in site.data.content.workhistory %} 
                         <div class="col-12 col-lg-8">
                             <div class="row experience">
-                            <div class="col py-2">
+                                <div class="col py-2">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title exp-title text-muted mt-0 mb-1">
@@ -179,7 +185,7 @@
                                         <div class="text-muted exp-meta">
                                             {{job.start}} -- {{job.end}}
                                             <span class='middot-divider'></span> 
-                                            {{job.city}},{{job.state}}
+                                            {{job.city}}, {{job.state}}
                                         </div>
                                         <div class="col-auto text-center flex-column d-none d-sm-flex">
                                             {{job.description}}
@@ -187,13 +193,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
             </div>
         </section>
-        <section id="projects" class="home-section wg-portfolio">
+        <section class="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 section-heading">
