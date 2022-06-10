@@ -29,9 +29,9 @@
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
     <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
         <div class="container">
-            <div class="d-none d-lg-inline-flex">
-                <a class="navbar-brand" href=".">{{site.data.content.name}}</a>
-            </div>
+<!--            <div class="d-none d-lg-inline-flex">-->
+<!--                <a class="navbar-brand" href=".">{{site.data.content.name}}</a>-->
+<!--            </div>-->
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span>
                     <i class="fas fa-bars"></i>
@@ -70,8 +70,8 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4" >
-                        <div id="profile" style="position: fixed; z-index: 5000">
+                    <div class="col-12 col-lg-4">
+                        <div id="profile">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
                                 <h2>{{site.data.content.name}}</h2>
@@ -161,8 +161,8 @@
                         <p>
                         {% for skill in site.data.content.skills %}
                             <span class="mdl-chip mdl-chip--contact" style="height:64px; margin-right: 56px; text-align: left;">
-                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; line-height: 64px; width: 64px; background-color: #be6db6;">
-                                    <i class="material-icons {{ skill.icon }}" style="color: #23252f; line-height: 1.5; height: 64px; width: 64px"></i>
+                                <span class="mdl-chip__contact mdl-color-text--white" style="background-color: #be6db6;">
+                                    <i class="material-icons {{ skill.icon }}" style="color: #23252f; font-size: 35px"></i>
                                 </span>
                                 <span class="mdl-chip__text" style="font-size: 14px">
                                     {{ skill.name }}
@@ -184,12 +184,12 @@
                             {% for job in site.data.content.workhistory %}
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1" style="color: #FFF">
+                                        <h4 class="card-title exp-title mt-0 mb-1" style="color: #FFF">
                                             {{job.title}}
                                         </h4>
-                                        <h4 class="card-title exp-company text-muted my-0" style="color: #FFF">
+                                        <h4 class="card-title exp-company my-0" style="color: #FFF">
                                             {{job.place}}</h4>
-                                        <div class="text-muted exp-meta" style="color: #FFF">
+                                        <div class="exp-meta" style="color: #FFF">
                                             {{job.start}} -- {{job.end}}
                                             <span class='middot-divider'></span>
                                             {{job.city}}, {{job.state}}
