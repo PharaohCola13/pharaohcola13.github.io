@@ -1,41 +1,31 @@
-<!-- Belongs at: /_includes/navigation.html -->
-
-<!-- This finds the current page so it can be highlighted. -->
-
-{% for entry in site.data.navigation %}
-{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
-    {% if fullurl == page.url %}
-        {% assign current_page = fullurl %}
-        {% break %}
-    {% elsif page.url contains fullurl %}
-        {% assign current_page = fullurl %}
-    {% endif %}
-{% endfor %}
-
-<!-- Then we build the nav bar. -->
-<nav>
-    <ul>
-    {% for entry in site.data.navigation %}
-        {% if entry.url == current_page %}
-            <!-- uses yellow, you can change to any other hexadecimal colour code. -->
-            {% assign current = ' style="background-color: #FFFFFF"' %}
-        {% else %}
-            <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-            {% assign current = null %}
-        {% endif %}
-        {% assign sublinks = entry.sublinks %}
-        {% if sublinks %}
-        <li{{ current }}>
-            <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-            <ul>
-                {% for sublink in sublinks %}
-                <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-                {% endfor %}
+<nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+            <ul class="navbar-nav d-md-inline-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-history" data-target="#work-history">
+                        <span>Work History</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" data-target="#projects">
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#papers" data-target="#papers">
+                        <span>Papers</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#conferences" data-target="#conferences">
+                        <span>Conferences</span>
+                    </a>
+                </li>
             </ul>
-        </li>
-        {% else %}
-        <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
-        {% endif %}
-    {% endfor %}
-    </ul>
+        </div>
+    </div>
 </nav>
