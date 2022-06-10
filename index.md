@@ -29,9 +29,6 @@
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
     <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
         <div class="container">
-<!--            <div class="d-none d-lg-inline-flex">-->
-<!--                <a class="navbar-brand" href=".">{{site.data.content.name}}</a>-->
-<!--            </div>-->
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span>
                     <i class="fas fa-bars"></i>
@@ -43,7 +40,7 @@
             <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
                 <ul class="navbar-nav d-md-inline-flex">
                     <li class="nav-item">
-                        <a class="nav-link " href="#experience" data-target="#experience">
+                        <a class="nav-link " href="#work-history" data-target="#work-history">
                             <span>Work History</span>
                         </a>
                     </li>
@@ -120,7 +117,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-8">
-                        <h1>Biography</h1><hr>
+                        <h1 style="border-bottom: 0; padding-bottom: 0">Biography</h1><hr>
                         <p>{{site.data.content.biography.description}}</p>
                         <div class="row">
                             <h3>Interests</h3>
@@ -152,16 +149,16 @@
                 </div>
             </div>
         </section>
-        <section class="home-section">
+        <section id="dev" class="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
-                        <h1>Development Experience</h1><hr>
+                        <h1  style="border-bottom: 0; padding-bottom: 0">Development Experience</h1><hr>
                         <p>
                         {% for skill in site.data.content.skills %}
                             <span class="mdl-chip mdl-chip--contact" style="height:64px; margin-right: 56px; text-align: left;">
-                                <span class="mdl-chip__contact mdl-color-text--white" style="background-color: #be6db6;">
+                                <span class="mdl-chip__contact mdl-color-text--white" style="background-color: #be6db6; height:64px; width: 64px">
                                     <i class="material-icons {{ skill.icon }}" style="color: #23252f; font-size: 35px"></i>
                                 </span>
                                 <span class="mdl-chip__text" style="font-size: 14px">
@@ -174,12 +171,12 @@
                 </div>
             </div>
         </section>
-        <section class="home-section">
+        <section id="work-history" class="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
-                        <h1>Work History</h1><hr>
+                        <h1 style="border-bottom: 0; padding-bottom: 0">Work History</h1><hr>
                         <p>
                             {% for job in site.data.content.workhistory %}
                                 <div class="card">
@@ -205,12 +202,12 @@
                 </div>
             </div>
         </section>
-        <section class="home-section">
+        <section id="projects" class="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
-                        <h1>Projects</h1><hr>
+                        <h1 style="border-bottom: 0; padding-bottom: 0">Projects</h1><hr>
                         <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 600px;">
                             <div id="carousel-proj" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" id="projs" style="top: 0px; position: absolute;"></div>
@@ -232,7 +229,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
-                        <h1>Papers</h1><hr/>
+                        <h1  style="border-bottom: 0; padding-bottom: 0">Papers</h1><hr/>
                         {% for article in site.data.content.papers %}
                             <div class="card-simple">
                                 <div class="article-metadata">
@@ -258,7 +255,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
-                        <h1>Conferences</h1><hr/>
+                        <h1 style="border-bottom: 0; padding-bottom: 0">Conferences</h1><hr/>
                         <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 1050px;">
                             <div id="carousel-conf" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" id="conference" style="top: 0px; position: absolute;"></div>
