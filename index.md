@@ -70,7 +70,7 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4" style="position: fixed">
+                    <div class="col-12 col-lg-4" style="position: sticky">
                         <div id="profile">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
@@ -119,7 +119,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-lg-8" style="position: absolute">
                         <h1>Biography</h1><hr>
                         <p>{{site.data.content.biography.description}}</p>
                         <div class="row">
