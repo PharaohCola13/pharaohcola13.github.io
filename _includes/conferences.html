@@ -1,0 +1,25 @@
+<section id="conferences" class="home-section wg-featured">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
+            <div class="col-12 col-lg-8">
+                <h1 style="border-bottom: 0; padding-bottom: 0">Conferences</h1><hr/>
+                {% for talks in site.data.content.conferences %}
+                    <div class="card-simple">
+                        <div class="article-metadata">
+                            <div>{{talks.author}}</div>
+                            <div>
+                                {{talks.date}}
+                                <span class="middot-divider"></span>
+                                <em>{{talks.place}}</em>
+                            </div>
+                        </div>
+                        <h4>{{talks.title}}</h4>
+                        <img class="article-banner" src="{{talks.poster}}">
+                        <p>{{talks.abstract}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
