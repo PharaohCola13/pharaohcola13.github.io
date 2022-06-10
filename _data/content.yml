@@ -128,7 +128,7 @@ papers:
     status: Published
     doi: 10.5194/amt-15-1563-2022
 conferences:
-  - title: The Precipitable-water Model Analysis Tool: An open-source suite for estimating precipitable water with low-cost instrumentation
+  - title: "The Precipitable-water Model Analysis Tool: An open-source suite for estimating precipitable water with low-cost instrumentation"
     author: Spencer Riley, V. Kelsey, K. Minschwaner
     date: Apr 2022
     place: 5th Texas Weather Conference
