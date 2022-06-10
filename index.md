@@ -158,7 +158,7 @@
                         <p>
                         {% for skill in site.data.content.skills %}
                             <span class="mdl-chip mdl-chip--contact" style="height:64px; margin-right: 56px; text-align: left;">
-                                <span class="mdl-chip__contact mdl-color-text--white" style="background-color: #be6db6; height:64px; width: 64px">
+                                <span class="mdl-chip__contact mdl-color-text--white" style="background-color: #be6db6; height:64px; width: 64px; line-height: 4">
                                     <i class="material-icons {{ skill.icon }}" style="color: #23252f; font-size: 35px"></i>
                                 </span>
                                 <span class="mdl-chip__text" style="font-size: 14px">
@@ -208,18 +208,6 @@
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1 style="border-bottom: 0; padding-bottom: 0">Projects</h1><hr>
-                        <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 600px;">
-                            <div id="carousel-proj" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" id="projs" style="top: 0px; position: absolute;"></div>
-                            </div>
-                                <ol class="carousel-indicators" id="carousel-tabs"></ol>
-                                <a class="carousel-control-prev" data-target="#carousel-proj" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a class="carousel-control-next" data-target="#carousel-proj" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon"></span>
-                                </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -256,18 +244,21 @@
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1 style="border-bottom: 0; padding-bottom: 0">Conferences</h1><hr/>
-                        <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 1050px;">
-                            <div id="carousel-conf" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" id="conference" style="top: 0px; position: absolute;"></div>
+                        {% for talks in site.data.content.conferences %}
+                            <div class="card-simple">
+                                <div class="article-metadata">
+                                    <div>{{talks.author}}</div>
+                                    <div>
+                                        {{talks.date}}
+                                        <span class="middot-divider"></span>
+                                        <em>{{talks.place}}</em>
+                                    </div>
+                                </div>
+                                <h4>{{talks.title}}</h4>
+                                <img class="article-banner" src="{{talks.poster}}">
+                                <p>{{talks.abstract}}</p>
                             </div>
-                                <ol class="carousel-indicators" id="carousel-tabs1"></ol>
-                                <a class="carousel-control-prev" data-target="#carousel-conf" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a class="carousel-control-next" data-target="#carousel-conf" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon"></span>
-                                </a>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
