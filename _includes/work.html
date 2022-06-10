@@ -1,0 +1,31 @@
+<section id="work-history" class="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
+            <div class="col-12 col-lg-8">
+                <h1 style="border-bottom: 0; padding-bottom: 0">Work History</h1><hr>
+                <p>
+                    {% for job in site.data.content.workhistory %}
+                        <div class="card-simple">
+                            <div class="article-metadata">
+                                <h4 class="card-title exp-title mt-0 mb-1">
+                                    {{job.title}}
+                                </h4>
+                                <h4 class="card-title exp-company my-0">
+                                    {{job.place}}</h4>
+                                <div class="exp-meta">
+                                    {{job.start}} -- {{job.end}}
+                                    <span class='middot-divider'></span>
+                                    {{job.city}}, {{job.state}}
+                                </div>
+                                <div class="col-auto flex-column d-none d-sm-flex" style="color: #FFF">
+                                    {{job.description}}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
