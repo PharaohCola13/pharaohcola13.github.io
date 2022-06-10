@@ -1,3 +1,7 @@
+---
+title:home
+---
+
 <head>
 	<link rel="canonical" href="about.html">
 	<meta property="og:url" content="about.html">
@@ -27,7 +31,37 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
-    {% include navigation.html %}
+    <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                <ul class="navbar-nav d-md-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work-history" data-target="#work-history">
+                            <span>Work History</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" data-target="#projects">
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#papers" data-target="#papers">
+                            <span>Papers</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#conferences" data-target="#conferences">
+                            <span>Conferences</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div id="main" role="main">
         <section class="home-section">
             <div class="container">
