@@ -135,18 +135,18 @@ title: Spencer Riley
                                 {% for edus in site.data.content.biography.education %}
                                 <li>
 					<i class="fa-li material-icons">school</i>
-                                    <div class="description">
-                                        <p class="course">
-                                             <div>{{edus.degree}}</div>
-					     {% if edus.focus != null and edus.minor != null %}
-	                                             <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>
-					     {% endif %}
-					     {% if edus.date != null %}
-	                                             <div>{{edus.date}}</div>
-					     {% endif %}
-                                         </p>
-                                        <p class="institution">{{edus.place}}</p>
-                                    </div>
+					<div class="description">
+						<p class="course">
+						     <div>{{edus.degree}}</div>
+						     {% if edus.focus != null and edus.minor != null %}
+							     <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>
+						     {% endif %}
+						     {% if edus.date != null %}
+							     <div>{{edus.date}}</div>
+						     {% endif %}
+						 </p>
+						<p class="institution">{{edus.place}}</p>
+					</div>
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -187,12 +187,12 @@ title: Spencer Riley
                             {% for job in site.data.content.workhistory %}
                                 <div class="card-simple">
                                     <div class="article-metadata">
-                                        <h4 class="card-title exp-title mt-0 mb-1" style="color: #FFF">
+                                        <h4 class="card-title exp-title mt-0 mb-1">
                                             {{job.title}}
                                         </h4>
-                                        <h4 class="card-title exp-company my-0" style="color: #FFF">
+                                        <h4 class="card-title exp-company my-0">
                                             {{job.place}}</h4>
-                                        <div class="exp-meta" style="color: #FFF">
+                                        <div class="exp-meta">
                                             {{job.start}} -- {{job.end}}
                                             <span class='middot-divider'></span>
                                             {{job.city}}, {{job.state}}
@@ -216,9 +216,19 @@ title: Spencer Riley
                         <h1 style="border-bottom: 0; padding-bottom: 0">Projects</h1><hr>
 		    	{% for projects in site.data.content.projects %}
 			    <div class="card-simple">
-				    <h4>{{ projects.title }}</h4>
-				    <zero-md src="{{projects.description}}"></zero-md>
-			    </div>
+				<h4>{{projects.title}}</h4>
+				<zero-md src="{{projects.description}}">
+				{% if projects.maintained.bool == yes %}
+					<p class="badge-light">
+					    {{projects.ma}}
+					</p>					    
+				{% endif %}
+				{% for tag in projects.tags %}
+					<p class="badge-light">
+						{{tag.tag}}
+					</p>
+				{% endfor %}
+			</div>
 		    	{% endfor %}
                     </div>
                 </div>
