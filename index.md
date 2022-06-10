@@ -70,8 +70,8 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4" style="position: fixed">
-                        <div id="profile">
+                    <div class="col-12 col-lg-4" >
+                        <div id="profile" style="position: fixed">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
                                 <h2>{{site.data.content.name}}</h2>
@@ -119,7 +119,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8" style="position: relative">
+                    <div class="col-12 col-lg-8">
                         <h1>Biography</h1><hr>
                         <p>{{site.data.content.biography.description}}</p>
                         <div class="row">
@@ -182,24 +182,20 @@
                         <h1>Work History</h1><hr>
                         <p>
                             {% for job in site.data.content.workhistory %} 
-                                <div class="col-12 col-lg-8">
-                                    <div class="row experience">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4 class="card-title exp-title text-muted mt-0 mb-1">
-                                                    {{job.title}}
-                                                </h4>
-                                                <h4 class="card-title exp-company text-muted my-0">
-                                                    {{job.place}}</h4>
-                                                <div class="text-muted exp-meta">
-                                                    {{job.start}} -- {{job.end}}
-                                                    <span class='middot-divider'></span> 
-                                                    {{job.city}}, {{job.state}}
-                                                </div>
-                                                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                                    {{job.description}}
-                                                </div>
-                                            </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">
+                                            {{job.title}}
+                                        </h4>
+                                        <h4 class="card-title exp-company text-muted my-0">
+                                            {{job.place}}</h4>
+                                        <div class="text-muted exp-meta">
+                                            {{job.start}} -- {{job.end}}
+                                            <span class='middot-divider'></span> 
+                                            {{job.city}}, {{job.state}}
+                                        </div>
+                                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                            {{job.description}}
                                         </div>
                                     </div>
                                 </div>
