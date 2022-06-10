@@ -1,0 +1,96 @@
+<section class="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div id="profile">
+                    <img class="portrait" src="{{site.data.content.profile}}">
+                    <div class="portrait-title">
+                        <h2>{{site.data.content.name}}</h2>
+                        <h3>{{site.data.content.role}}</h3>
+                        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+                            <span>{{site.data.content.place}}</span>
+                        </h3>
+                    </div>
+                    <ul class="network-icon" aria-hidden="true">
+                        <li>
+                            <a itemprop="sameAs" target="_blank" href="mailto:me@sriley.dev">
+                                <i class="fas fa-envelope big-icon" id="mail"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" target="_blank" href="https://github.sriley.dev" rel="noopener">
+                                <i class="fab fa-github big-icon" id="git"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" target="_blank" href="https://orcid.org/0000-0001-7949-9163" rel="noopener">
+                                <i class="ai ai-orcid big-icon" id="orcid"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" target="_blank" href="https://rgate.sriley.dev" rel="noopener">
+                                <i class="ai ai-researchgate big-icon" id="rgate"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="network-icon" aria-hidden="true" style="margin-top: -10px">
+                        <li>
+                            <a itemprop="sameAs" target="_blank" href="https://cv.sriley.dev" rel="noopener">
+                                <i class="fas fa-file-pdf big-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" target="_blank" href="https://board.sriley.dev">
+                                <div>
+                                    <i class="fab fa-trello big-icon"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <h1 style="border-bottom: 0; padding-bottom: 0">Biography</h1><hr>
+                <p>{{site.data.content.biography.description}}</p>
+                <div class="row" style="display: contents">
+                    <h3>Interests</h3>
+                    <ul class="ul-edu fa-ul">
+                        {% for items in site.data.content.biography.interests %}
+    <li>
+      <i class="fa-li material-icons">hexagon</i>
+      <div class="description">
+      <p class="course">
+    <div>{{ items.item }}</div>
+      </p>
+  </div>
+    </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="row" style="display: contents">
+                    <h3>Education</h3>
+                    <ul class="ul-edu fa-ul">
+                        {% for edus in site.data.content.biography.education %}
+                        <li>
+  <i class="fa-li material-icons">school</i>
+  <div class="description">
+    <p class="course">
+         <div>{{edus.degree}}</div>
+         {% if edus.focus != null and edus.minor != null %}
+           <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>
+         {% endif %}
+         {% if edus.date != null %}
+           <div>{{edus.date}}</div>
+         {% endif %}
+     </p>
+    <p class="institution">{{edus.place}}</p>
+  </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
