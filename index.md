@@ -216,21 +216,23 @@ title: Spencer Riley
                         <h1 style="border-bottom: 0; padding-bottom: 0">Projects</h1><hr>
 		    	{% for projects in site.data.content.projects %}
 				<div class="card-simple">
-					<h4>{{projects.title}}</h4>
+					 <div class="article-metadata">
+						{% if projects.maintained.bool == true %}
+							<a class="badge-light">Maintained</a>	
+						{% else %}
+							<a class="badge-light">Not-Maintained</a>
+						{% endif %}
+					</div>
+					 <h4>{{projects.title}}</h4>
 					<zero-md src="{{projects.description}}">
 						<template>
 							<link rel="stylesheet" href="assets/css/about.css">
 						</template>
 					</zero-md>
-					{% if projects.maintained.bool == yes %}
-						<a class="badge-light">Maintained</a>	
-					{% else %}
-						<a class="badge-light">Not-Maintained</a>
-					{% endif %}
 					{% for tag in projects.tags %}
 						<a class="badge-light">{{tag.tag}}</a>
 					{% endfor %}
-				</div>
+			    </div>
 		    	{% endfor %}
                     </div>
                 </div>
