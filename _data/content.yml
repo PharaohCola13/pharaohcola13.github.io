@@ -1,7 +1,7 @@
 name: Spencer Riley
 role: Physics Graduate Student
 place: Montana State University
-profile: assets/img/profile.jpg
+profile: ./assets/img/profile.jpg
 biography:
   description: Spencer Riley is a student at the New Mexico Institute of Mining and Technology, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
   interests:
@@ -78,31 +78,28 @@ workhistory:
 projects:
   - title: Precipitable-Water Model Analysis Tool
     link: https://physicsgoddess1972.github.io/Precipitable-Water-Model
-    description: assets/md/pmat.md
+    description: ./assets/md/pmat.md
     featured: This project was presented at PhysCon 2019 and AMES 100.
     imgvid: assets/img/pmat.png
     status: v2.0
     maintained:
       bool: true
-      year:
     tags:
       - tag: R
   - title: pacviz
     link: https://pharaohcola13.github.io/pacviz/book
-    description: assets/md/pacviz.md
+    description: ./assets/md/pacviz.md
     featured: This project was featured in a presentation at PhysCon 2019.
-    imgvid: assets/img/pacviz.png
+    imgvid: ./assets/img/pacviz.png
     status: v1.0.1
     maintained:
       bool: true
-      year:
     tags:
       - tag: R
   - title: "Some Analysis for Looking at the Sun's Atmosphere"
     link: https://pharaohcola13.github.io/salsa
-    description: assets/md/salsa.md
-    featured: null
-    imgvid: assets/img/salsa.png
+    description: ./assets/md/salsa.md
+    imgvid: ./assets/img/salsa.png
     status: v0.0.0
     maintained:
       bool: true
@@ -111,8 +108,7 @@ projects:
       - tag: java
   - title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
-    description: assets/md/geoexpanse.md
-    featured:
+    description: ./assets/md/geoexpanse.md
     imgvid: assets/img/Rings.mp4
     status: Beta
     maintained:
