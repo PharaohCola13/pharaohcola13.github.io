@@ -86,6 +86,9 @@ projects:
       bool: true
     tags:
       - tag: R
+      - tag: Atmospheric Science
+      - tag: Python
+      - tag: Docker
   - title: pacviz
     link: https://pacviz.sriley.dev
     description: pacviz.md
@@ -96,6 +99,7 @@ projects:
       bool: true
     tags:
       - tag: R
+      - tag: Data Analysis
   - title: "Some Analysis for Looking at the Sun's Atmosphere"
     link: https://pharaohcola13.github.io/salsa
     description: salsa.md
@@ -104,7 +108,7 @@ projects:
     maintained:
       bool: true
     tags:
-      - tag: java
+      - tag: Flutter      
   - title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
     description: geoexpanse.md
@@ -115,6 +119,7 @@ projects:
       year: 2019
     tags:
       - tag: Python
+      - tag: Tkinter
 papers:
   - title: Atmospheric precipitable water vapor and its correlation with clear-sky infrared temperature observations
     author: V. Kelsey, S. Riley, K. Minschwaner
