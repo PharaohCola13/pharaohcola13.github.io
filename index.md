@@ -27,6 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
+	{% include navigation.html}	
     <div id="main" role="main">
         <section class="home-section">
             <div class="container">
