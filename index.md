@@ -70,7 +70,7 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" style="position: fixed">
                         <div id="profile">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
@@ -161,7 +161,7 @@
                         <p>
                         {% for skill in site.data.content.skills %}
                             <span class="mdl-chip mdl-chip--contact" style="height: 64px; margin-right: 56px; text-align: left;">
-                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6;">
+                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; line-height: 64px; width: 64px; background-color: #be6db6;">
                                     <i class="material-icons {{ skill.icon }}" style="color: #23252f; line-height: 1.5"></i>
                                 </span>
                                 <span class="mdl-chip__text" style="font-size: 14px">
@@ -184,7 +184,6 @@
                             {% for job in site.data.content.workhistory %} 
                                 <div class="col-12 col-lg-8">
                                     <div class="row experience">
-                                        <div class="col py-2">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4 class="card-title exp-title text-muted mt-0 mb-1">
@@ -202,7 +201,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                             {% endfor %}
