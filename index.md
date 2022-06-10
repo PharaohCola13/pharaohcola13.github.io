@@ -26,12 +26,12 @@ title: Spencer Riley
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
 	{% include navigation.html %}
-    <div id="main" role="main">
-	{% include bio.html %}
-	{% include skill.html %}
-	{% include work.html %}
-	{% include projects.html %}
-	{% include papers.html %}
-	{% include conferences.html %}
-    </div>
+	<div id="main" role="main">
+		{% include bio.html %}
+		{% include skill.html %}
+		{% include work.html %}
+		{% include projects.html %}
+		{% include papers.html %}
+		{% include conferences.html %}
+	</div>
 </body>
