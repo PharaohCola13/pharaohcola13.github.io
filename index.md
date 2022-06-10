@@ -152,15 +152,13 @@
                         <h1>Biography</h1><hr>
                         <p>{{site.data.content.biography.description}}</p>
                         <div class="row">
-                            <div class="col-md-5">
+                            <div>
                                 <h3>Interests</h3>
                                 <ul class="ul-interests">
                                     {% for items in site.data.content.biography.interests %}
                                         <li>{{ items.item }}<li>
                                     {% endfor %}
-                                </ul>
-                            </div>
-                            <div>
+                                </ul> 
                                 <h3>Education</h3>
                                 <ul class="ul-edu fa-ul">
                                     {% for edus in site.data.content.biography.education %}
