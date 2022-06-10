@@ -114,15 +114,21 @@ title: Spencer Riley
                     <div class="col-12 col-lg-8">
                         <h1 style="border-bottom: 0; padding-bottom: 0">Biography</h1><hr>
                         <p>{{site.data.content.biography.description}}</p>
-                        <div class="row" style="display: block">
+                        <div class="row" style="display: contents">
                             <h3>Interests</h3>
                             <ul class="ul-interests">
                                 {% for items in site.data.content.biography.interests %}
-                                    <li>{{ items.item }}</li>
+				    <li>
+				    	<div class="description">
+					    <p class="course">
+						    {{ items.item }}
+					    </p>
+					</div>
+				    </li>
                                 {% endfor %}
                             </ul>
                         </div>
-                        <div class="row" style="display: block">
+                        <div class="row" style="display: contents">
                             <h3>Education</h3>
                             <ul class="ul-edu fa-ul">
                                 {% for edus in site.data.content.biography.education %}
