@@ -12,9 +12,6 @@ biography:
   education:
     - degree: PhD in Physics
       place: Montana State University
-      focus: null
-      minor: null
-      date: null
     - degree: BSc in Physics
       focus: Astrophysics & Atmospheric Physics
       minor: Mathematics
@@ -90,7 +87,6 @@ projects:
       year:
     tags:
       - tag: R
-      - tag: Maintained
   - title: pacviz
     link: https://pharaohcola13.github.io/pacviz/book
     description: assets/md/pacviz.md
@@ -102,7 +98,6 @@ projects:
       year:
     tags:
       - tag: R
-      - tag: Maintained
   - title: "Some Analysis for Looking at the Sun's Atmosphere"
     link: https://pharaohcola13.github.io/salsa
     description: assets/md/salsa.md
@@ -114,7 +109,6 @@ projects:
       year:
     tags:
       - tag: java
-      - tag: Maintained
   - title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
     description: assets/md/geoexpanse.md
@@ -126,7 +120,6 @@ projects:
       year: 2019
     tags:
       - tag: Python
-      - tag: Not-Maintained
 papers:
   - title: Atmospheric precipitable water vapor and its correlation with clear-sky infrared temperature observations
     author: V. Kelsey, S. Riley, K. Minschwaner
