@@ -215,20 +215,20 @@ title: Spencer Riley
                     <div class="col-12 col-lg-8">
                         <h1 style="border-bottom: 0; padding-bottom: 0">Projects</h1><hr>
 		    	{% for projects in site.data.content.projects %}
-			    <div class="card-simple">
-				<h4>{{projects.title}}</h4>
-				<zero-md src="{{projects.description}}">
-				{% if projects.maintained.bool == yes %}
-					<p class="badge-light">
-					    {{projects.ma}}
-					</p>					    
-				{% endif %}
-				{% for tag in projects.tags %}
-					<p class="badge-light">
-						{{tag.tag}}
-					</p>
-				{% endfor %}
-			</div>
+				<div class="card-simple">
+					<h4>{{projects.title}}</h4>
+					<zero-md src="{{projects.description}}"></zero-md>
+					{% if projects.maintained.bool == yes %}
+						<p class="badge-light">
+						    {{projects.ma}}
+						</p>					    
+					{% endif %}
+					{% for tag in projects.tags %}
+						<p class="badge-light">
+							{{tag.tag}}
+						</p>
+					{% endfor %}
+				</div>
 		    	{% endfor %}
                     </div>
                 </div>
