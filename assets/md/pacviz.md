@@ -1,1 +1,0 @@
-A data visualization project for regression analysis.
