@@ -83,7 +83,7 @@ projects:
     imgvid: assets/img/pmat.png
     status: v2.0
     maintained:
-      bool: yes
+      bool: true
       year:
     tags:
       - tag: R
@@ -94,7 +94,7 @@ projects:
     imgvid: assets/img/pacviz.png
     status: v1.0.1
     maintained:
-      bool: yes
+      bool: true
       year:
     tags:
       - tag: R
@@ -105,7 +105,7 @@ projects:
     imgvid: assets/img/salsa.png
     status: v0.0.0
     maintained:
-      bool: yes
+      bool: true
       year:
     tags:
       - tag: java
