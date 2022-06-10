@@ -1,7 +1,3 @@
----
-title:home
----
-
 <head>
 	<link rel="canonical" href="about.html">
 	<meta property="og:url" content="about.html">
