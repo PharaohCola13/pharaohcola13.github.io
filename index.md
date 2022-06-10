@@ -163,7 +163,7 @@
                             <div class="col-md-7">
                                 <h3>Education</h3>
                                 <ul class="ul-edu fa-ul">
-                                    {% for edus in site.data.content.biography.education }
+                                    {% for edus in site.data.content.biography.education %}
                                     <li>
                                         <i class="fa-li fas fa-graduation-cap"></i>
                                         <div class="description">
