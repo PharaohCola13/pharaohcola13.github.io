@@ -71,7 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4" >
-                        <div id="profile" style="position: fixed; z-index=5000">
+                        <div id="profile" style="position: fixed; z-index: 5000">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
                                 <h2>{{site.data.content.name}}</h2>
@@ -128,7 +128,7 @@
                                 {% for items in site.data.content.biography.interests %}
                                     <li>{{ items.item }}</li>
                                 {% endfor %}
-                            </ul> 
+                            </ul>
                         </div>
                         <div class="row">
                             <h3>Education</h3>
@@ -143,7 +143,7 @@
                                              <div>{{edus.date}}</div>
                                          </p>
                                         <p class="institution">{{edus.place}}</p>
-                                    </div>                                    
+                                    </div>
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -181,8 +181,8 @@
                     <div class="col-12 col-lg-8">
                         <h1>Work History</h1><hr>
                         <p>
-                            {% for job in site.data.content.workhistory %} 
-                                <div class="card">
+                            {% for job in site.data.content.workhistory %}
+                                <div class="card" style="color: #FFF">
                                     <div class="card-body">
                                         <h4 class="card-title exp-title text-muted mt-0 mb-1">
                                             {{job.title}}
@@ -191,7 +191,7 @@
                                             {{job.place}}</h4>
                                         <div class="text-muted exp-meta">
                                             {{job.start}} -- {{job.end}}
-                                            <span class='middot-divider'></span> 
+                                            <span class='middot-divider'></span>
                                             {{job.city}}, {{job.state}}
                                         </div>
                                         <div class="col-auto flex-column d-none d-sm-flex">
@@ -233,8 +233,23 @@
                     <div class="col-12 col-lg-4"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Papers</h1><hr/>
+                        {% for article in site.data.content.papers %}
+                            <div class="card-simple">
+                                <div class="article-metadata">
+                                    <div>{{article.author}}</div>
+                                    <div>
+                                        {{article.date}}
+                                        <span class="middot-divider"></span>
+                                        <em>{{article.journal}}</em>
+                                    </div>
+                                </div>
+                                <h4>{{article.title}}</h4>
+                                <a class="badge-light" target="_blank", href="https://doi.org/{{article.doi}}">
+                                    {{article.status}}
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
-                    <div class="col-12 col-lg-8" id="paper"></div>
                 </div>
             </div>
         </section>
@@ -244,8 +259,6 @@
                     <div class="col-12 col-lg-4"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Conferences</h1><hr/>
-                    </div>
-                    <div class="col-12 col-lg-8">
                         <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 1050px;">
                             <div id="carousel-conf" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" id="conference" style="top: 0px; position: absolute;"></div>
