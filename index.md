@@ -71,7 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4" >
-                        <div id="profile" style="position: fixed; z-order=5000">
+                        <div id="profile" style="position: fixed; z-order=-1">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
                                 <h2>{{site.data.content.name}}</h2>
@@ -160,8 +160,8 @@
                         <h1>Development Experience</h1><hr>
                         <p>
                         {% for skill in site.data.content.skills %}
-                            <span class="mdl-chip mdl-chip--contact" style="height: 64px; margin-right: 56px; text-align: left;">
-                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; line-height: 64px; width: 64px; background-color: #be6db6;">
+                            <span class="mdl-chip mdl-chip--contact" style="height:128px; margin-right: 56px; text-align: left;">
+                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 128px; line-height: 128px; width: 128px; background-color: #be6db6;">
                                     <i class="material-icons {{ skill.icon }}" style="color: #23252f; line-height: 1.5"></i>
                                 </span>
                                 <span class="mdl-chip__text" style="font-size: 14px">
@@ -184,17 +184,17 @@
                             {% for job in site.data.content.workhistory %} 
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title">
+                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">
                                             {{job.title}}
                                         </h4>
-                                        <h4 class="card-title">
+                                        <h4 class="card-title exp-company text-muted my-0">
                                             {{job.place}}</h4>
                                         <div class="text-muted exp-meta">
                                             {{job.start}} -- {{job.end}}
                                             <span class='middot-divider'></span> 
                                             {{job.city}}, {{job.state}}
                                         </div>
-                                        <div>
+                                        <div class="col-auto flex-column d-none d-sm-flex">
                                             {{job.description}}
                                         </div>
                                     </div>
