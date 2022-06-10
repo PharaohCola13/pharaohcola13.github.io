@@ -116,7 +116,7 @@
                     <div class="col-12 col-lg-8">
                         <h1 style="border-bottom: 0; padding-bottom: 0">Biography</h1><hr>
                         <p>{{site.data.content.biography.description}}</p>
-                        <div class="row">
+                        <div class="row" style="display: block">
                             <h3>Interests</h3>
                             <ul class="ul-interests">
                                 {% for items in site.data.content.biography.interests %}
@@ -124,7 +124,7 @@
                                 {% endfor %}
                             </ul>
                         </div>
-                        <div class="row">
+                        <div class="row" style="display: block">
                             <h3>Education</h3>
                             <ul class="ul-edu fa-ul">
                                 {% for edus in site.data.content.biography.education %}
@@ -152,7 +152,7 @@
                     <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1  style="border-bottom: 0; padding-bottom: 0">Development Experience</h1><hr>
-                        <p>
+                        <p style="text-align:center">
                         {% for skill in site.data.content.skills %}
                             <span class="mdl-chip mdl-chip--contact" style="height:64px; margin-right: 56px; text-align: left;">
                                 <span class="mdl-chip__contact mdl-color-text--white" style="background-color: #be6db6; height:64px; width: 64px; line-height: 4">
