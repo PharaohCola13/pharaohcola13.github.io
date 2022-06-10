@@ -142,7 +142,7 @@
 				</div>
 				<div class="col-12 col-lg-8" itemprop="description">
 					<h1>Biography</h1><hr>
-					<p id="bio_description"></p>
+					<p>{{site.data.content.biography.description}}</p>
 					<div class="row">
 						<div class="col-md-5">
 							<h3>Interests</h3>
@@ -154,7 +154,9 @@
 						</div>
 						<div class="col-md-7">
 							<h3>Education</h3>
-							<ul class="ul-edu fa-ul"><li id="edu-history"></li></ul>
+							<ul class="ul-edu fa-ul">
+                                <li id="edu-history"></li>
+                            </ul>
 						</div>
 					</div>
 				</div>
@@ -177,7 +179,31 @@
 				<div class="col-xs-12 col-md-4 section-heading">
 					<h1>Work History</h1><hr/>
 				</div>
-				<div class="col-12 col-lg-8" id="workhistory"></div>
+                {% for job in site.data.content.workhistory %} 
+				<div class="col-12 col-lg-8">
+                    <div class="row experience">
+                        <div class="col py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title exp-title text-muted mt-0 mb-1">
+                                        {{job.title}}
+                                    </h4>
+                                    <h4 class="card-title exp-company text-muted my-0">
+                                        {{job.place}}</h4>
+                                    <div class="text-muted exp-meta">
+                                        {{job.start}} -- {{job.end}}
+                                        <span class='middot-divider'></span> 
+                                        {{job.city}},{{job.state}}
+                                    </div>
+                                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                        {{job.description}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
 			</div>
 		</div>
 	</section>
