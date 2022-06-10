@@ -1,3 +1,59 @@
+<head>
+	<meta charset="utf-8">
+    <title>About | Spencer Riley</title>
+
+	<meta property="og:locale" content="en-US">
+	<meta property="og:site_name" content="Home | Spencer Riley">
+	<meta property="og:title" content="Spencer Riley Personal">
+
+	<link rel="canonical" href="about.html">
+	<meta property="og:url" content="about.html">
+
+	<meta property="og:description" content="About me">
+	<link rel="icon" href="assets/img/icon.png" type="image/png">
+	<!-- end SEO -->
+	<!-- http://t.co/dKP3o1e -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-indigo.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+[//]: # (	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>)
+
+[//]: # (	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" crossorigin="anonymous"></script>)
+
+[//]: # (	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>)
+
+[//]: # (	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" crossorigin="anonymous"></script>)
+
+[//]: # (	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" crossorigin="anonymous"></script>)
+
+[//]: # (	<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" crossorigin="anonymous"></script>)
+
+[//]: # (	<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" crossorigin="anonymous"></script>)
+
+[//]: # (<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>)
+	<script src="assets/js/academic.min.js"></script>
+
+[//]: # (	<script src="assets/js/content.js"></script>)
+	<script type="module" src="assets/js/zero-md.min.js"></script>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+	</script>
+	<script>
+        if (document.location.protocol != "https:") {
+            document.location = document.URL.replace(/^http:/i, "https:");
+        }
+	</script>
+
+[//]: # (	<link rel="stylesheet" type="text/css" href="assets/css/about.css">)
+[//]: # (	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">)
+</head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" class="dark" data-offset="71">
     <nav class="navbar navbar-expand-lg navbar-dark compensate-for-scrollbar" id="navbar-main">
         <div class="container">
@@ -107,7 +163,19 @@
                             <div class="col-md-7">
                                 <h3>Education</h3>
                                 <ul class="ul-edu fa-ul">
-                                    <li id="edu-history"></li>
+                                    {% for edus in site.data.content.biography.education }
+                                    <li>
+                                        <i class="fa-li fas fa-graduation-cap"></i>
+                                        <div class="description">
+                                            <p class="course">
+                                                 <div>{{edus.degree}}</div>
+                                                 <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>\
+                                                 <div>{{edus.date}}</div>
+                                             </p>
+                                            <p class="institution">{{edus.place</p>
+                                        </div>                                    
+                                    </li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>
