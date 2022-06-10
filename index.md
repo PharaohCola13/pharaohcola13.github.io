@@ -96,9 +96,9 @@
     </nav>
     <span class="js-widget-page d-none"></span>
     <div id="main" role="main">
-        <section id="about" class="home-section wg-about">
+        <section class="home-section">
             <div class="container">
-                <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
+                <div class="row">
                     <div class="col-12 col-lg-4">
                         <div id="profile">
                             <img class="portrait" src="{{site.data.content.profile}}">
@@ -160,7 +160,7 @@
                                     {% endfor %}
                                 </ul>
                             </div>
-                            <div class="col-md-7">
+                            <div>
                                 <h3>Education</h3>
                                 <ul class="ul-edu fa-ul">
                                     {% for edus in site.data.content.biography.education %}
@@ -183,10 +183,10 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="home-section wg-featurette">
+        <section class="home-section">
             <div class="container">
-                <div class="row featurette">
-                    <div class="col-md-12 section-heading">
+                <div class="row">
+                    <div class="col-12 col-lg-8" section-heading">
                         <h1>Development Experience</h1><hr/>
                     </div>
                     <div id="skill"></div>
