@@ -71,7 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4" >
-                        <div id="profile" style="position: fixed; z-order=-1">
+                        <div id="profile" style="position: fixed; z-index=5000">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
                                 <h2>{{site.data.content.name}}</h2>
@@ -160,9 +160,9 @@
                         <h1>Development Experience</h1><hr>
                         <p>
                         {% for skill in site.data.content.skills %}
-                            <span class="mdl-chip mdl-chip--contact" style="height:128px; margin-right: 56px; text-align: left;">
-                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 128px; line-height: 128px; width: 128px; background-color: #be6db6;">
-                                    <i class="material-icons {{ skill.icon }}" style="color: #23252f; line-height: 1.5"></i>
+                            <span class="mdl-chip mdl-chip--contact" style="height:64px; margin-right: 56px; text-align: left;">
+                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; line-height: 64px; width: 64px; background-color: #be6db6;">
+                                    <i class="material-icons {{ skill.icon }}" style="color: #23252f; line-height: 1.5; height: 64px; width: 64px"></i>
                                 </span>
                                 <span class="mdl-chip__text" style="font-size: 14px">
                                     {{ skill.name }}
@@ -230,7 +230,8 @@
         <section id="papers" class="home-section wg-featured">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-4 section-heading">
+                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-8">
                         <h1>Papers</h1><hr/>
                     </div>
                     <div class="col-12 col-lg-8" id="paper"></div>
@@ -240,7 +241,8 @@
         <section id="conferences" class="home-section wg-featured">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-4 section-heading">
+                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-8">
                         <h1>Conferences</h1><hr/>
                     </div>
                     <div class="col-12 col-lg-8">
