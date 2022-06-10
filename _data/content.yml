@@ -77,7 +77,7 @@ workhistory:
     end: 20 Mar 2017
 projects:
   - title: Precipitable-Water Model Analysis Tool
-    link: https://physicsgoddess1972.github.io/Precipitable-Water-Model
+    link: https://pmat.app
     description: ./assets/md/pmat.md
     featured: This project was presented at PhysCon 2019 and AMES 100.
     imgvid: assets/img/pmat.png
@@ -87,7 +87,7 @@ projects:
     tags:
       - tag: R
   - title: pacviz
-    link: https://pharaohcola13.github.io/pacviz/book
+    link: https://pacviz.sriley.dev
     description: ./assets/md/pacviz.md
     featured: This project was featured in a presentation at PhysCon 2019.
     imgvid: ./assets/img/pacviz.png
@@ -103,7 +103,6 @@ projects:
     status: v0.0.0
     maintained:
       bool: true
-      year:
     tags:
       - tag: java
   - title: GeoExpanse
