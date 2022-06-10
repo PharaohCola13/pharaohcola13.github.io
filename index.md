@@ -129,8 +129,8 @@
                                     <li>{{ items.item }}</li>
                                 {% endfor %}
                             </ul> 
-                            <br>
-                            <br>
+                        </div>
+                        <div class="row">
                             <h3>Education</h3>
                             <ul class="ul-edu fa-ul">
                                 {% for edus in site.data.content.biography.education %}
@@ -155,8 +155,9 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <h1>Development Experience</h1><hr/>
-                    <p>
+                    <div class="col-12 col-lg-8">
+                        <h1>Development Experience</h1><hr>
+                        <p>
                         {% for skill in site.data.content.skills %}
                             <span class="mdl-chip mdl-chip--contact" style="height: 64px; margin-right: 56px; text-align: left;">
                                 <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6;">
@@ -168,6 +169,7 @@
                             </span>
                         {% endfor %}
                     </p>
+                    </div>
                 </div>
             </div>
         </section>
