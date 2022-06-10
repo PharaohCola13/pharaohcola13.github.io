@@ -22,6 +22,8 @@
                         <hr style="background-image: none; height: 0.1em; padding-bottom: 0; margin-bottom: 0; background-color: rgb(68, 71, 90);">
                         {% if projects.featured != null %}
                             <p>{{projects.featured}}</p>
+                        {% else %}
+                            <p></p>
                         {% endif %}
                         {% for tag in projects.tags %}
                             <a class="badge-light">{{tag.tag}}</a>
