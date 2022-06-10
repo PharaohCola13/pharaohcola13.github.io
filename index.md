@@ -222,13 +222,14 @@ title: Spencer Riley
 						{% else %}
 							<a class="badge-light">Not-Maintained</a>
 						{% endif %}
-					</div>
+					</div>					
 					 <h4>{{projects.title}}</h4>
 					<zero-md src="{{projects.description}}">
-						<template>
-							<link rel="stylesheet" href="assets/css/about.css">
-						</template>
 					</zero-md>
+					<hr>
+					{% if projects.featured != null %}
+						<p>{{projects.featured}}</p>
+					{% endif %}
 					{% for tag in projects.tags %}
 						<a class="badge-light">{{tag.tag}}</a>
 					{% endfor %}
