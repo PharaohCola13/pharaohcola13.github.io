@@ -4,27 +4,30 @@
             <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
             <div class="col-12 col-lg-8">
                 <h1 style="border-bottom: 0; padding-bottom: 0">Projects</h1><hr>
-  {% for projects in site.data.content.projects %}
-<div class="card-simple">
-   <div class="article-metadata">
-    {% if projects.maintained.bool == true %}
-      <a class="badge-light">Maintained</a>	
-    {% else %}
-      <a class="badge-light">Not-Maintained</a>
-    {% endif %}
-  </div>					
-   <h4>{{projects.title}}</h4>
-  <zero-md src="{{projects.description}}">
-  </zero-md>
-  <hr>
-  {% if projects.featured != null %}
-    <p>{{projects.featured}}</p>
-  {% endif %}
-  {% for tag in projects.tags %}
-    <a class="badge-light">{{tag.tag}}</a>
-  {% endfor %}
-  </div>
-  {% endfor %}
+                {% for projects in site.data.content.projects %}
+                    <div class="card-simple">
+                        <div class="article-metadata">
+                            {% if projects.maintained.bool == true %}
+                                <a class="badge-light" style="background-color: #135400; border-top-right-radius: 25px; border-bottom-right-radius: 25px">
+                                    Maintained
+                                </a>	
+                            {% else %}
+                                <a class="badge-light" style="background-color: #540000; border-top-right-radius: 25px; border-bottom-right-radius: 25px">
+                                    Not-Maintained
+                                </a>
+                            {% endif %}
+                        </div>					
+                        <h4>{{projects.title}}</h4>
+                        <zero-md src="{{projects.description}}"></zero-md>
+                        <hr style="color: rgb(68, 71, 90)">
+                        {% if projects.featured != null %}
+                            <p>{{projects.featured}}</p>
+                        {% endif %}
+                        {% for tag in projects.tags %}
+                            <a class="badge-light">{{tag.tag}}</a>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
