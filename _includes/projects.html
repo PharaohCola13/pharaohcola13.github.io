@@ -23,9 +23,20 @@
                         <h4>
                             <a href="{{projects.link}}" target="_blank" rel="noopener" style="color: rgb(152, 166, 173)"><i class="fab fa-github small-icon"></i> {{projects.title}}</a>
                         </h4>
-                        <p>
-                            {% include projects/{{projects.description}} %}
-                        </p>
+                        <div style="display: flex">
+                            <div style="flex: 50%">
+                                <p>
+                                    {% include projects/{{projects.description}} %}
+                                </p>
+                            </div>
+                            <div style="flex: 25%; display: flex; align-items: center; justify-content: center;">
+                                {% if projects.imgvid contains "mp4" %}
+                                    <video class="portrait" playsinline autoplay muted loop><source  src="{{projects.imgvid}}" type="video/mp4"></video>
+                                {% elsif projects.imgvid contains "png" %}
+                                    <img class="portrait" src="{{projects.imgvid}}">
+                                {% endif %}
+                            </div>
+                        </div>
                         <hr style="background-image: none; height: 0.1em; padding-bottom: 0; margin-bottom: 0; background-color: rgb(68, 71, 90);">
                         {% if projects.featured != null %}
                             <p>{{projects.featured}}</p>
