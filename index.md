@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -94,12 +93,12 @@
 			<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
 				<div class="col-12 col-lg-4">
 					<div id="profile">
-						<img class="portrait" id="profile-picture">
+						<img class="portrait" src="{{site.data.content.profile}}">
 						<div class="portrait-title">
-							<h2 id="name"></h2>
-							<h3 id="role"></h3>
+							<h2>{{site.data.content.name}}</h2>
+							<h3>{{site.data.content.role}}</h3>
 							<h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-								<span id="place"></span>
+								<span>{{site.data.content.place}}</span>
 							</h3>
 						</div>
 						<ul class="network-icon" aria-hidden="true">
