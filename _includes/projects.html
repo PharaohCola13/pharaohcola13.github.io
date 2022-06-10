@@ -17,7 +17,9 @@
                                 </a>
                             {% endif %}
                         </div>					
-                        <h4>{{projects.title}}</h4>
+                        <h4>
+                        <a href="{{projects.link}}" target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i>{{projects.title}}</a>
+                        </h4>
                         <zero-md src="{{projects.description}}"></zero-md>
                         <hr style="background-image: none; height: 0.1em; padding-bottom: 0; margin-bottom: 0; background-color: rgb(68, 71, 90);">
                         {% if projects.featured != null %}
