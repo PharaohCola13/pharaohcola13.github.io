@@ -1,0 +1,9 @@
+# Belongs at: /_data/navigation.yml
+- title: Work-History
+  url: /#work-history
+- title: Projects
+  url: /#projects
+- title: Papers
+  url: /#papers
+- title: Conferences
+  url: /#conferences
