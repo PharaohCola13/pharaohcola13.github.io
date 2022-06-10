@@ -137,8 +137,12 @@ title: Spencer Riley
                                     <div class="description">
                                         <p class="course">
                                              <div>{{edus.degree}}</div>
-                                             <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>
-                                             <div>{{edus.date}}</div>
+					     {% if edus.focus != null and edus.minor != null %}
+	                                             <div>Focus in {{edus.focus}}<br>Minor in {{edus.minor}}</div>
+					     {% endif %}
+					     {% if edus.date != null %}
+	                                             <div>{{edus.date}}</div>
+					     {% endif %}
                                          </p>
                                         <p class="institution">{{edus.place}}</p>
                                     </div>
