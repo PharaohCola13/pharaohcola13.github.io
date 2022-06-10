@@ -2,3 +2,5 @@ title: Spencer Riley
 layout: null
 permalink: /404.md
 repository: pharaohcola13/pharaohcola13.github.io
+plugins:
+  - jekyll-pdf-embed
