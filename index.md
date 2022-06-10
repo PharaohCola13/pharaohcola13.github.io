@@ -119,7 +119,7 @@ title: Spencer Riley
                             <ul class="ul-edu fa-ul">
                                 {% for items in site.data.content.biography.interests %}
 				    <li>
-				    	<i class="fa-li fas fa-hexagon"></i>
+				    	<i class="material-icons">hexagon</i>
 				    	<div class="description">
 					    <p class="course">
 						<div>{{ items.item }}</div>
@@ -134,7 +134,8 @@ title: Spencer Riley
                             <ul class="ul-edu fa-ul">
                                 {% for edus in site.data.content.biography.education %}
                                 <li>
-                                    <i class="fa-li fas fa-graduation-cap"></i>
+<!--                                     <i class="fa-li fas fa-graduation-cap"></i> -->
+					<i class="material-icons">school</i>
                                     <div class="description">
                                         <p class="course">
                                              <div>{{edus.degree}}</div>
