@@ -1,0 +1,26 @@
+<section id="papers" class="home-section wg-featured">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
+            <div class="col-12 col-lg-8">
+                <h1  style="border-bottom: 0; padding-bottom: 0">Papers</h1><hr/>
+                {% for article in site.data.content.papers %}
+                    <div class="card-simple">
+                        <div class="article-metadata">
+                            <div>{{article.author}}</div>
+                            <div>
+                                {{article.date}}
+                                <span class="middot-divider"></span>
+                                <em>{{article.journal}}</em>
+                            </div>
+                        </div>
+                        <h4>{{article.title}}</h4>
+                        <a class="badge-light" target="_blank" href="https://doi.org/{{article.doi}}">
+                            {{article.status}}
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
