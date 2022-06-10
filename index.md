@@ -155,7 +155,7 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Development Experience</h1><hr>
                         <p>
@@ -177,24 +177,24 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Work History</h1><hr>
                         <p>
                             {% for job in site.data.content.workhistory %}
-                                <div class="card" style="color: #FFF">
+                                <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">
+                                        <h4 class="card-title exp-title text-muted mt-0 mb-1" style="color: #FFF">
                                             {{job.title}}
                                         </h4>
-                                        <h4 class="card-title exp-company text-muted my-0">
+                                        <h4 class="card-title exp-company text-muted my-0" style="color: #FFF">
                                             {{job.place}}</h4>
-                                        <div class="text-muted exp-meta">
+                                        <div class="text-muted exp-meta" style="color: #FFF">
                                             {{job.start}} -- {{job.end}}
                                             <span class='middot-divider'></span>
                                             {{job.city}}, {{job.state}}
                                         </div>
-                                        <div class="col-auto flex-column d-none d-sm-flex">
+                                        <div class="col-auto flex-column d-none d-sm-flex" style="color: #FFF">
                                             {{job.description}}
                                         </div>
                                     </div>
@@ -208,7 +208,7 @@
         <section class="home-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Projects</h1><hr>
                         <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 600px;">
@@ -230,7 +230,7 @@
         <section id="papers" class="home-section wg-featured">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Papers</h1><hr/>
                         {% for article in site.data.content.papers %}
@@ -244,7 +244,7 @@
                                     </div>
                                 </div>
                                 <h4>{{article.title}}</h4>
-                                <a class="badge-light" target="_blank", href="https://doi.org/{{article.doi}}">
+                                <a class="badge-light" target="_blank" href="https://doi.org/{{article.doi}}">
                                     {{article.status}}
                                 </a>
                             </div>
@@ -256,7 +256,7 @@
         <section id="conferences" class="home-section wg-featured">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
                     <div class="col-12 col-lg-8">
                         <h1>Conferences</h1><hr/>
                         <div class="isotope projects-container js-layout-masonry" style="top: 0px; height: 1050px;">
