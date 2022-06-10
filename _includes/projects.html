@@ -33,7 +33,7 @@
                                 {% if projects.imgvid contains "mp4" %}
                                     <video class="portrait" playsinline autoplay muted loop><source  src="{{projects.imgvid}}" type="video/mp4"></video>
                                 {% elsif projects.imgvid contains "png" %}
-                                    <img class="portrait" src="{{projects.imgvid}}">
+                                    <img class="portrait" style="background-color: rgb(38,37,38)" src="{{projects.imgvid}}">
                                 {% endif %}
                             </div>
                         </div>
