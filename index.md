@@ -129,6 +129,8 @@
                                     <li>{{ items.item }}</li>
                                 {% endfor %}
                             </ul> 
+                            <br>
+                            <br>
                             <h3>Education</h3>
                             <ul class="ul-edu fa-ul">
                                 {% for edus in site.data.content.biography.education %}
@@ -154,16 +156,18 @@
             <div class="container">
                 <div class="row">
                     <h1>Development Experience</h1><hr/>
-                    {% for skill in site.data.content.skills %}
-                        <span class="mdl-chip mdl-chip--contact" style="height: 64px; margin-right: 56px; text-align: left;">
-                            <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6;">
-                                <i class="material-icons" style="color: #23252f; line-height: 1.5">{{ skill.icon }}</i>
+                    <p>
+                        {% for skill in site.data.content.skills %}
+                            <span class="mdl-chip mdl-chip--contact" style="height: 64px; margin-right: 56px; text-align: left;">
+                                <span class="mdl-chip__contact mdl-color-text--white" style="height: 64px; font-size: 42px; line-height: 64px; width: 64px; background-color: #be6db6;">
+                                    <i class="material-icons {{ skill.icon }}" style="color: #23252f; line-height: 1.5"></i>
+                                </span>
+                                <span class="mdl-chip__text" style="font-size: 14px">
+                                    {{ skill.name }}
+                                </span>
                             </span>
-                            <span class="mdl-chip__text" style="font-size: 14px">
-                                {{ skill.name }}
-                            </span>
-                        </span>
-                    {% endfor %}
+                        {% endfor %}
+                    </p>
                 </div>
             </div>
         </section>
