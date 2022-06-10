@@ -419,11 +419,23 @@ a[data-fancybox] img {
 /*************************************************
  *  About widget
  **************************************************/
+
 #profile {
 	text-align: center;
 	padding: 30px 10px;
-	position: relative;
+	position: fixed;
 }
+
+
+
+@media only screen and (max-width: 993px) {
+	#profile {
+		text-align: center;
+		padding: 30px 10px;
+		position: relative;
+	}
+}
+
 
 .portrait {
 	width: 200px;
