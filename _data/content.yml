@@ -78,7 +78,7 @@ workhistory:
 projects:
   - title: Precipitable-Water Model Analysis Tool
     link: https://pmat.app
-    description: assets/md/pmat.md
+    description: pmat.md
     featured: This project was presented at PhysCon 2019 and AMES 100.
     imgvid: assets/img/pmat.png
     status: v2.0
@@ -88,7 +88,7 @@ projects:
       - tag: R
   - title: pacviz
     link: https://pacviz.sriley.dev
-    description: assets/md/pacviz.md
+    description: pacviz.md
     featured: This project was featured in a presentation at PhysCon 2019.
     imgvid: assets/img/pacviz.png
     status: v1.0.1
@@ -98,7 +98,7 @@ projects:
       - tag: R
   - title: "Some Analysis for Looking at the Sun's Atmosphere"
     link: https://pharaohcola13.github.io/salsa
-    description: assets/md/salsa.md
+    description: salsa.md
     imgvid: assets/img/salsa.png
     status: v0.0.0
     maintained:
@@ -107,7 +107,7 @@ projects:
       - tag: java
   - title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
-    description: assets/md/geoexpanse.md
+    description: geoexpanse.md
     imgvid: assets/img/Rings.mp4
     status: Beta
     maintained:
