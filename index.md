@@ -71,7 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4" >
-                        <div id="profile" style="position: fixed">
+                        <div id="profile" style="position: fixed; z-order=5000">
                             <img class="portrait" src="{{site.data.content.profile}}">
                             <div class="portrait-title">
                                 <h2>{{site.data.content.name}}</h2>
@@ -184,17 +184,17 @@
                             {% for job in site.data.content.workhistory %} 
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">
+                                        <h4 class="card-title">
                                             {{job.title}}
                                         </h4>
-                                        <h4 class="card-title exp-company text-muted my-0">
+                                        <h4 class="card-title">
                                             {{job.place}}</h4>
                                         <div class="text-muted exp-meta">
                                             {{job.start}} -- {{job.end}}
                                             <span class='middot-divider'></span> 
                                             {{job.city}}, {{job.state}}
                                         </div>
-                                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                        <div>
                                             {{job.description}}
                                         </div>
                                     </div>
