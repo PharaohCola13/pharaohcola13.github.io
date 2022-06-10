@@ -15,7 +15,7 @@
                             </div>
                         </div>
                         <h4>{{talks.title}}</h4>
-                        <img class="article-banner" src="{{talks.poster}}">
+                       {% pdf "assets/pdf/{{talks.poster}}.pdf" %}
                         <p>{{talks.abstract}}</p>
                     </div>
                 {% endfor %}
