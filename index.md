@@ -33,56 +33,7 @@ title: Spencer Riley
 	{% include skill.html %}
 	{% include work.html %}
 	{% include projects.html %}
-        <section id="papers" class="home-section wg-featured">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
-                    <div class="col-12 col-lg-8">
-                        <h1  style="border-bottom: 0; padding-bottom: 0">Papers</h1><hr/>
-                        {% for article in site.data.content.papers %}
-                            <div class="card-simple">
-                                <div class="article-metadata">
-                                    <div>{{article.author}}</div>
-                                    <div>
-                                        {{article.date}}
-                                        <span class="middot-divider"></span>
-                                        <em>{{article.journal}}</em>
-                                    </div>
-                                </div>
-                                <h4>{{article.title}}</h4>
-                                <a class="badge-light" target="_blank" href="https://doi.org/{{article.doi}}">
-                                    {{article.status}}
-                                </a>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="conferences" class="home-section wg-featured">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-4" style="position: relative; z-index:1"></div>
-                    <div class="col-12 col-lg-8">
-                        <h1 style="border-bottom: 0; padding-bottom: 0">Conferences</h1><hr/>
-                        {% for talks in site.data.content.conferences %}
-                            <div class="card-simple">
-                                <div class="article-metadata">
-                                    <div>{{talks.author}}</div>
-                                    <div>
-                                        {{talks.date}}
-                                        <span class="middot-divider"></span>
-                                        <em>{{talks.place}}</em>
-                                    </div>
-                                </div>
-                                <h4>{{talks.title}}</h4>
-                                <img class="article-banner" src="{{talks.poster}}">
-                                <p>{{talks.abstract}}</p>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </section>
+	{% include papers.html %}
+	{% include conferences.html %}
     </div>
 </body>
