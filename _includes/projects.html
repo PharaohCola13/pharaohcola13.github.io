@@ -12,13 +12,16 @@
                                     Maintained
                                 </a>	
                             {% else %}
-                                <a class="badge-light" style="background-color: #540000; border-top-right-radius: 25px; border-bottom-right-radius: 25px">
-                                    Not-Maintained
+                                <a class="badge-light" style="background-color: #540000; border-radius: 25px; border-bottom-right-radius: 25px">
+                                    Not Maintained since {{projects.maintained.year}}
                                 </a>
                             {% endif %}
+                            <a class="badge-light" style="border-radius: 25px;">
+                                {{projects.status}}
+                            </a>
                         </div>					
                         <h4>
-                        <a href="{{projects.link}}" target="_blank" rel="noopener"><i class="fab fa-github small-icon"></i>{{projects.title}}</a>
+                            <a href="{{projects.link}}" target="_blank" rel="noopener" style="color: rgb(152, 166, 173)"><i class="fab fa-github small-icon"></i> {{projects.title}}</a>
                         </h4>
                         <zero-md src="{{projects.description}}"></zero-md>
                         <hr style="background-image: none; height: 0.1em; padding-bottom: 0; margin-bottom: 0; background-color: rgb(68, 71, 90);">
