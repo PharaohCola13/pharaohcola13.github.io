@@ -4,7 +4,7 @@
 
 	<meta property="og:description" content="About me">
 	<link rel="icon" href="assets/img/icon.png" type="image/png">
-
+    <title>{{site.data.content.name}}</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-indigo.min.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
