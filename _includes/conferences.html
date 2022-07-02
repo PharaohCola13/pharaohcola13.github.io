@@ -15,7 +15,8 @@
                             </div>
                         </div>
                         <h4>{{talks.title}}</h4>
-                        <object class="article-banner" style="min-height:40vh;" data="assets/pdf/{{talks.poster}}.pdf?#view=FitH" type='application/pdf'></object>
+<!--                         <object  style="min-height:40vh;" data="assets/pdf/{{talks.poster}}.pdf?#view=FitH" type='application/pdf'></object> -->
+                        <embed class="article-banner" width="100%"  src="https://drive.google.com/viewerng/viewer?url=https://pmat.app/assets/pdf/{{talks.poster}}.pdf&embedded=true">
                         <p>{{talks.abstract}}</p>
                     </div>
                 {% endfor %}
