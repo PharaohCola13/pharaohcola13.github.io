@@ -92,7 +92,7 @@ body {
   border: 5px inset #c07cff;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     .notfound .notfound-404 h2 {
         font-size: 9vw;
 		letter-spacing: 0px;
@@ -106,4 +106,4 @@ body {
   .notfound .notfound-404 h1 {
       font-size: 23vw;
   }
-}
+} */
