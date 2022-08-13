@@ -38,12 +38,6 @@ body {
 
 .notfound .notfound-404 h1 {
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50% , -50%);
-      -ms-transform: translate(-50% , -50%);
-          transform: translate(-50% , -50%);
   font-size: 15vw;
   font-weight: 900;
   margin-top: 0px;
@@ -53,15 +47,11 @@ body {
   color: #030005;
   text-transform: uppercase;
   text-shadow: -2px -2px 2px #c07cff, 2px 2px 2px #00c7ff;
-  letter-spacing: -20px;
 }
 
 
 .notfound .notfound-404 h2 {
   font-family: 'Limelight', sans-serif;
-  position: absolute;
-  left: 0;
-  right: 0;
   top: 60px;
   font-size: 42px;
   font-weight: 900;
