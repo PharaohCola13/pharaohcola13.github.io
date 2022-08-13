@@ -88,21 +88,13 @@ projects:
     description: pacviz.md
     featured: This project was featured in a presentation at PhysCon 2019.
     imgvid: assets/img/pacviz.png
-    status: v1.0.1
+    status: v1.0.2
     maintained:
-      bool: true
+      bool: false
+      year: 2022
     tags:
       - tag: R
-      - tag: Data Analysis
-  - title: "Some Analysis for Looking at the Sun's Atmosphere"
-    link: https://pharaohcola13.github.io/salsa
-    description: salsa.md
-    imgvid: assets/img/salsa.png
-    status: v0.0.0
-    maintained:
-      bool: true
-    tags:
-      - tag: Flutter      
+      - tag: Data Analysis     
   - title: GeoExpanse
     link: https://pharaohcola13.github.io/GeoExpanse/
     description: geoexpanse.md
