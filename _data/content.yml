@@ -55,22 +55,22 @@ workhistory:
     state: NM
     start: 23 May 2022
     end: 1 Aug 2022
-  - title: Research Intern
-    description: The position involved tasks regarding a variety of different projects around the theme of complex systems analysis. As a part of a team, I have worked on projects regarding data preprocessing for language detection models, analysis of RF and Bluetooth models, and Internet-Of-Things research and development.
+  - title: Research Intern --> "Post-Bachelor's Researcher"
+    description: During my time in this position, my contributions to the various projects include: <ul><li>Data preprocessing for language detection models</li><li>Developing analytical methods for RF and Bluetooth models</li><li>Internet-Of-things research and metadata configuration</li><li>Writing Helm Charts for several Kubernetes applications</li></ul>The last project I worked on applied acoustic analysis as a method to detect aircraft.
     place: Institute of Complex Additive Systems Analysis
     city: Socorro
     state: NM
     start: 5 Sept 2017
     end: 22 May 2022
   - title: High School Work Study
-    description: The position required a thorough background check, federal investigation including a polygraph, as part of the application in order to obtain Top Secret security clearance. Most of the tasks that were assigned revolved around clerical work, specifically including inventory and data transfer requests added with the Inspector General inspection preparations.
+    description: As a requirement of this position, I had to pass a background check and a federal investigation to obtain a Top Secret security clearance. The tasks I was assigned involved clerical work relating to inventory, data transfer requests, and documentation management. In addition, I was a part of the effort to prepare for the Inspector General's inspection. 
     place: National Security Agency
     city: San Antonio
     state: TX
     start: 6 Sept 2016
     end: 16 Aug 2017
   - title: Restaurant Host
-    description: Working as a host included maintaining the restaurant's dining area by busing tables, cleaning restrooms, seating any incoming customers, and any other necessary tasks that have direct or indirect impact of the overall restaurant experience from the perspective of the customer.
+    description: Working as a host included maintaining the restaurant's dining area by busing tables, cleaning restrooms, and seating any incoming customers. I was also responsible for ensuring that the overall customer experience was satisfactory.
     place: Applebee's Restaurant
     city: San Antonio
     state: TX
