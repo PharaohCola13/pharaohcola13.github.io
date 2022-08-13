@@ -56,7 +56,7 @@ workhistory:
     start: 23 May 2022
     end: 1 Aug 2022
   - title: Research Intern --> "Post-Bachelor's Researcher"
-    description: During my time in this position, my contributions to the various projects include: <ul><li>Data preprocessing for language detection models</li><li>Developing analytical methods for RF and Bluetooth models</li><li>Internet-Of-things research and metadata configuration</li><li>Writing Helm Charts for several Kubernetes applications</li></ul>The last project I worked on applied acoustic analysis as a method to detect aircraft.
+    description: "During my time in this position, my contributions to the various projects include: <ul><li>Data preprocessing for language detection models</li><li>Developing analytical methods for RF and Bluetooth models</li><li>Internet-Of-things research and metadata configuration</li><li>Writing Helm Charts for several Kubernetes applications</li></ul>The last project I worked on applied acoustic analysis as a method to detect aircraft."
     place: Institute of Complex Additive Systems Analysis
     city: Socorro
     state: NM
