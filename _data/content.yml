@@ -1,9 +1,9 @@
 name: Spencer Riley
-role: Physics Graduate Student
+role: Open source developer
 place: Montana State University
 profile: assets/img/profile.jpg
 biography:
-  description: Spencer Riley is a student at the New Mexico Institute of Mining and Technology, currently studying astrophysics, atmospheric physics, and mathematics as an undergraduate. He has experience developing various Python and R algorithms for the purpose of computational modeling, data analytics, and quantum computing.
+  description: Spencer Riley is an open source developer currently pursuing a doctoral degree from Montana State University in the field of physics. He has experience developing various Python and R algorithms for data analytics, and is exploring methods of numerical simulation and quantum computing.
   interests:
     - item: Stellar Astrophysics
     - item: Quantum Information
