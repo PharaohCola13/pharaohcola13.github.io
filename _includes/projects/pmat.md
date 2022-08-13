@@ -1,1 +1,1 @@
-Collaborative project with Vicki Kelsey measuring and analyzing temperature and precipitable water.
+The purpose of the research is to develop a method to estimate the amount of precipitable water from the effective temperature using low-cost instrumentation. As a  part of the data collection process, we collected daily ground and sky temperatures to be analyzed by our preprocessing and analysis software suite. 
