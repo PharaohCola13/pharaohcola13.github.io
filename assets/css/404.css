@@ -8,9 +8,14 @@ body {
   	margin: 0;
 }
 
+.home-section {
+	padding: 0px
+}
+
 #notfound {
   position: relative;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-color: #000;
 }
 
