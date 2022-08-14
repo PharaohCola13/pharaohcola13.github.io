@@ -31,10 +31,6 @@ skills:
     name: HTML
   - icon: devicon-docker-plain
     name: Docker
-  - icon: devicon-googlecloud-plain
-    name: GCloud
-  - icon: devicon-github-original
-    name: GitHub
   - icon: devicon-raspberrypi-line
     name: Raspberrry Pi
   - icon: devicon-c-plain
