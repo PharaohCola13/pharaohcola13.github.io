@@ -1,1 +1,0 @@
-This data visualizations package utilizes a unique and informal presentation of compariative data analysis and regression. The aim is to provide a method of observing a broad-view perspective on data.
