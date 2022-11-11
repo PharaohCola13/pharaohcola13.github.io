@@ -12,6 +12,39 @@ html {
 	line-height: 1.65;
 }
 
+.mdl-chip {
+	height: 32px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 1px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: hsla(231, 15%, 18%, 1);
+    display: inline-block;
+    color: rgba(0,0,0,.87);
+    margin: 2px 0;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.mdl-chip:hover {
+	height: 32px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 1px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: hsla(231, 15%, 18%, 1);
+    display: inline-block;
+    color: rgba(0,0,0,.87);
+    margin: 2px 0;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+
 /* fallback */
 @font-face {
   font-family: 'Material Icons';
