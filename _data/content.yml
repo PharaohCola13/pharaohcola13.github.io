@@ -65,6 +65,18 @@ workhistory:
     start: 1 Jul 2016
     end: 20 Mar 2017
 projects:
+  - title: FYX Auto-API
+    repo: PharaohCola13/fyx-autoapi
+    link: https://github.com/PharaohCola13/fyx-autoapi
+    featured:
+    logo: 
+    pattern: Floating%20Cogs
+    status: v1.0
+    maintained: 
+      bool: true
+    tags:
+      - tag: Documentation
+      - tag: GitHub Action
   - title: Precipitable-Water Model Analysis Tool
     repo: physicsgoddess1972/Precipitable-Water-Model
     link: https://pmat.app
