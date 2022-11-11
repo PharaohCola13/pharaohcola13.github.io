@@ -20,7 +20,12 @@
                                 {{projects.status}}
                             </a>
                         </div>					
-                        <h4>
+                        <div>
+                            <a href="{{projects.link}}">
+                                <img width="100%" height="100%" href="{{projects.imgvid}}">
+                            </a>
+                        </div>
+                        <!-- <h4>
                             <a href="{{projects.link}}" target="_blank" rel="noopener" style="color: rgb(152, 166, 173)"><i class="fab fa-github small-icon"></i> {{projects.title}}</a>
                         </h4>
                         <div style="display: flex">
@@ -36,7 +41,7 @@
                                     <img class="portrait" style="background-color: rgb(38,37,38)" src="{{projects.imgvid}}">
                                 {% endif %}
                             </div>
-                        </div>
+                        </div> -->
                         <hr style="background-image: none; height: 0.1em; padding-bottom: 0; margin-bottom: 0; background-color: rgb(68, 71, 90);">
                         {% if projects.featured != null %}
                             <p>{{projects.featured}}</p>
