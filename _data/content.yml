@@ -3,20 +3,20 @@ role: Open source developer
 place: Montana State University
 profile: assets/img/profile.jpg
 biography:
-  description: Spencer Riley is an open source developer currently pursuing a doctoral degree from Montana State University in the field of physics. He has experience developing various Python and R algorithms for data analytics, and is exploring methods of numerical simulation and quantum computing.
+  description: Spencer Riley is an open source developer currently pursuing a doctoral degree from Montana State University studying solar physics. He has experience developing various Python and R algorithms for data analytics, and is curerntly working on analyzing high-resolution spectroscopic data.
   interests:
-    - item: Stellar Astrophysics
+    - item: Solar Physics
     - item: Differential Geometry
     - item: Data Analytics and Visualization
   education:
     - degree: Ph.D in Physics
       place: Montana State University
-      date: Fall 2022
+      date: Fall 2022 -- Current
     - degree: B.Sc in Physics
       focus: Astrophysics & Atmospheric Physics
       minor: Mathematics
       place: New Mexico Institute of Mining and Technology
-      date: May 2022
+      date: Fall 2017 -- May 2022
 skills:
   - icon: devicon-python-plain
     name: Python
