@@ -3,7 +3,7 @@ role: Open source developer
 place: Montana State University
 profile: assets/img/profile.jpg
 biography:
-  description: Spencer Riley is an open source developer currently pursuing a doctoral degree from Montana State University studying solar physics. He has experience developing various Python and R algorithms for data analytics, and is curerntly working on analyzing high-resolution spectroscopic data.
+  description: Spencer Riley is an open source developer currently pursuing a doctoral degree from Montana State University studying solar physics. He has experience developing various Python and R algorithms for data analytics, and is curerntly working on analyzing high-resolution spectroscopic data from the Daniel K. Inouye Solar Telescope.
   interests:
     - item: Solar Physics
     - item: Differential Geometry
@@ -92,37 +92,13 @@ projects:
     pattern: Signal
     status: v2.0
     maintained:
-      bool: true
+      bool: false
+      date: 
     tags:
       - tag: R
       - tag: Atmospheric Science
       - tag: Python
       - tag: Docker
-  - title: pacviz
-    repo: PharaohCola13/pacviz
-    link: https://pacviz.sriley.dev
-    featured: This project was featured in a presentation at PhysCon 2019.
-    logo: "https%3A%2F%2Fsriley.dev%2Fassets%2Fimg%2Fpacviz.png"
-    pattern: Charlie%20Brown
-    status: v1.0.2
-    maintained:
-      bool: false
-      year: 2022
-    tags:
-      - tag: R
-      - tag: Data Analysis     
-  - title: GeoExpanse
-    repo: PharaohCola13/GeoExpanse
-    link: https://pharaohcola13.github.io/GeoExpanse/
-    logo: "https%3A%2F%2Fraw.githubusercontent.com%2FPharaohCola13%2FGeoExpanse%2Fmaster%2Fdocs%2Fassets%2Fimages%2Ficon.png"
-    pattern: Diagonal%20Stripes
-    status: Beta
-    maintained:
-      bool: false
-      year: 2019
-    tags:
-      - tag: Python
-      - tag: Tkinter
 papers:
   - title: Atmospheric precipitable water vapor and its correlation with clear-sky infrared temperature observations
     author: V. Kelsey, S. Riley, K. Minschwaner
@@ -131,6 +107,12 @@ papers:
     status: Published
     doi: 10.5194/amt-15-1563-2022
 conferences:
+  - title: "Identification of chromospheric dynamical signatures in solar flares with DKIST"
+    author: Spencer Riley
+    date: Jul 2024
+    place: Hinode-17/IRIS-15/Sphere-3 Meeting
+    poster: hinode_2024jul26_final
+    abstract: "With the emergence of new high-resolution, high-cadence spectral data from the Daniel K. Inouye Solar Telescope, we can probe solar flare energetics and dynamics in the chromosphere on unprecedented small scales. We utilize available Ca II 854.2 nm spectral data to diagnose the dynamics of the flaring chromosphere. In addition, we co-aligned AIA 1600$\r{A}$ with DKIST observations to provide a history of localized heating in the vicinity of the spectral measurements. The aim is to characterize tens of thousands of spectra from a 27 December 2022 C4 solar flare into groups of similar spectral features via a hierarchical k-means algorithm and investigate how the spectral features vary during different stages of the localized heating events defined by AIA 1600$\r{A}$ lightcurves. We find that within a sixty-minute interval centered on the spectral observations, there are strong populations of double-peaked spectral groups in the early gradual phase of the localized heating. Whil e red-enhanced asymmetric spectral groups have strong populations in the later gradual phase and the pre-heating phase. "
   - title: "The Precipitable-water Model Analysis Tool: An open-source suite for estimating precipitable water with low-cost instrumentation"
     author: Spencer Riley, V. Kelsey, K. Minschwaner
     date: Apr 2022
