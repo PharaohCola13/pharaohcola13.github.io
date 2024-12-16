@@ -12,7 +12,7 @@ jobs:
       - name: Clone overleaf
         run: |
           # git clone https://spencerriley%40montana.edu:${{ secrets.overleaf }}@git.overleaf.com/5e87506aa3afa80001813f3d
-          git clone https://git@git.overleaf.com/5e87506aa3afa80001813f3d
+          git clone https://git:${{ secrets.overleaf }}@git.overleaf.com/5e87506aa3afa80001813f3d
           ls 5e87506aa3afa80001813f3d/  
       - name: Install TeXlive
         run:  |
